@@ -1,7 +1,7 @@
 ---
-layout: archives
+layout: posts
 permalink: /projects/
-title: "Projects by Tags"
+title: "Projects"
 author_profile: true
 header:
   image: ""
