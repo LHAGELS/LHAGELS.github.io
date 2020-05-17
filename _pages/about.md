@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 header:
-  image: "/images/bio-photo.jpg"
+  image: ""
 ---
 
-I'm studying "Data Science and Marketing Analytics" in the master at the Erasmus University in Rotterdam. 
+I'm studying "Data Science and Marketing Analytics" in the master at the Erasmus University in Rotterdam.
