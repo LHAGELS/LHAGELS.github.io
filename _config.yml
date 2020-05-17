@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Data Science Projects by Lucas Hagelstein"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Lucas Hagelstein"
+description              : "Prospective Data Scientist from Hamburg, Germany. \Currently I am studying "Data Science and Marketing Analytics" at the Erasmus University Rotterdam"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,10 +93,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Lucas Hagelstein"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Prospective Data Scientist from Hamburg, Germany. \Currently I am studying "Data Science and Marketing Analytics" at the Erasmus University Rotterdam."
+  location         : "Hamburg/Rotterdam"
   email            :
   links:
     - label: "Email"
@@ -111,7 +111,7 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
+    - label: "LHAGELS"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
     - label: "Instagram"
@@ -279,3 +279,11 @@ defaults:
       comments: # true
       share: true
       related: true
+
+  #  pages
+  - scope:
+      path: ""
+      type: Pages
+    values:
+      layout: single
+      author_profile: true
