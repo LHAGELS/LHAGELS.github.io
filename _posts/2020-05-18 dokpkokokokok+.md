@@ -4,7 +4,7 @@ date: 2020-05-18
 tags: [Machine Learning, Data Wrangling]
 header:
   image: ""
-excerpt: "Project, Data Science, Github"
+excerpt: "Projects, Data Science, Github"
 mathjax: "true"
 ---
 
