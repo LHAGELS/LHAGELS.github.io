@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -99,7 +99,7 @@ author:
   location         : "Hamburg, GER & Rotterdam, NL"
   email            :
   links:
-    - label: "Lucas.Hagelstein@gmail.com"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:lucas.hagelstein@gmail.com"
     - label: "Website"
@@ -114,7 +114,7 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/lucas-hagelstein-832375182/"
-    - label: "LHAGELS"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/LHAGELS"
     - label: "Instagram"
