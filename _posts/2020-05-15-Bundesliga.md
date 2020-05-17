@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Bundesliga"
+title: "Bundesliga Sofascore Analysis"
 date: 2020-05-15
 categories: [Machine Learning]
 tags: [Bundesliga, Sofascore]

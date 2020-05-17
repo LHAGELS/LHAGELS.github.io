@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Regressionsmodell"
+title: "Development Oportunities of Micro-Entrepreneurs"
 date: 2020-05-16
 categories: [Machine Learning]
 tags: [Micro-Enterprises, Kenya]

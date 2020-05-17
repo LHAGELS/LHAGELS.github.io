@@ -1,5 +1,5 @@
 ---
-title: "Data Wrangling Customer Analytics"
+title: "Customer Analytics"
 date: 2020-05-17
 categories: [Data Wrangling]
 tags: [BCG Matrix]
