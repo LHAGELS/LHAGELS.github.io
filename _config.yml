@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Data Science Projects by Lucas Hagelstein"
+title                    : "Lucas Hagelstein"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Lucas Hagelstein"
-description              : "Prospective Data Scientist from Hamburg, Germany. Currently I am studying "Data Science and Marketing Analytics" at the Erasmus University Rotterdam"
+description              : "Prospective Data Scientist from Hamburg, Germany."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Lucas Hagelstein"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Prospective Data Scientist from Hamburg, Germany. Currently I am studying "Data Science and Marketing Analytics" at the Erasmus University Rotterdam."
+  bio              : "Prospective Data Scientist from Hamburg, Germany."
   location         : "Hamburg/Rotterdam"
   email            :
   links:
@@ -111,7 +111,7 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "LHAGELS"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
     - label: "Instagram"
@@ -280,10 +280,10 @@ defaults:
       share: true
       related: true
 
-  #  pages
+  # _pages
   - scope:
       path: ""
-      type: Pages
+      type: pages
     values:
       layout: single
       author_profile: true
