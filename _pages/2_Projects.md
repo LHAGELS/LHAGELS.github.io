@@ -3,8 +3,6 @@ layout: posts
 permalink: /projects/
 title: "Projects"
 author_profile: true
-header:
-  image: ""
 ---
 
 {% include base_path %}

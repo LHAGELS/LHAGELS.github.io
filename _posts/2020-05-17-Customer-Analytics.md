@@ -3,8 +3,6 @@ title: "Data Wrangling Customer Analytics"
 date: 2020-05-17
 categories: [Data Wrangling, Data Visualization]
 tags: [BCG Matrix]
-header:
-  image: ""
 excerpt: "Projects, Data Science"
 mathjax: "true"
 ---

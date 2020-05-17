@@ -3,8 +3,6 @@ title: "Machine Learning Bundesliga"
 date: 2020-05-15
 categories: [Machine Learning, Data Visualization]
 tags: [Bundesliga, Sofascore]
-header:
-  image: ""
 excerpt: "Projects, Data Science"
 mathjax: "true"
 ---
