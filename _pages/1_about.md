@@ -5,4 +5,4 @@ header:
   image: ""
 ---
 
-I'm studying the master "Data Science and Marketing Analytics" at the Erasmus University in Rotterdam.
+Currently I am studying "Data Science and Marketing Analytics" at the Erasmus University Rotterdam.
