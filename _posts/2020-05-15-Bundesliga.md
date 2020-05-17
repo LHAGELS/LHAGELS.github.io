@@ -5,7 +5,7 @@ categories: [Machine Learning, Data Visualization]
 tags: [Bundesliga, Sofascore]
 header:
   image: ""
-excerpt: "Data Science"
+excerpt: "Projects, Data Science"
 mathjax: "true"
 ---
 

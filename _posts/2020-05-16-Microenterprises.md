@@ -5,7 +5,7 @@ categories: [Machine Learning, Data Visualization]
 tags: [Micro-Enterprises, Kenya]
 header:
   image: ""
-excerpt: "Data Science, Bachelorarbeit"
+excerpt: "Projects, Data Science, Bachelorthesis"
 mathjax: "true"
 ---
 

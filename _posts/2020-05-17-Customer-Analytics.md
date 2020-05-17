@@ -5,7 +5,7 @@ categories: [Data Wrangling, Data Visualization]
 tags: [BCG Matrix]
 header:
   image: ""
-excerpt: "Data Science"
+excerpt: "Projects, Data Science"
 mathjax: "true"
 ---
 
