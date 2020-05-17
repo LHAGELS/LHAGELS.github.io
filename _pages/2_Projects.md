@@ -3,6 +3,8 @@ layout: archive
 permalink: /projects/
 title: "Projects"
 author_profile: true
+header:
+  image: "/images/Header.jpg"
 ---
 
 {% include base_path %}

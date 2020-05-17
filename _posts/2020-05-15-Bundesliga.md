@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning Bundesliga"
 date: 2020-05-15
-categories: [Machine Learning, Data Visualization]
+categories: [Machine Learning]
 tags: [Bundesliga, Sofascore]
 excerpt: "Projects, Data Science"
 mathjax: "true"

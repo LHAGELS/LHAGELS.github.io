@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning Regressionsmodell"
 date: 2020-05-16
-categories: [Machine Learning, Data Visualization]
+categories: [Machine Learning]
 tags: [Micro-Enterprises, Kenya]
 excerpt: "Projects, Data Science, Bachelorthesis"
 mathjax: "true"
