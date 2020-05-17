@@ -96,7 +96,7 @@ author:
   name             : "Lucas Hagelstein"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Prospective Data Scientist"
-  location         : "Hamburg, GER" + "Rotterdam, NL"
+  location         : "Hamburg, GER & Rotterdam, NL"
   email            :
   links:
     - label: "Lucas.Hagelstein@gmail.com"
