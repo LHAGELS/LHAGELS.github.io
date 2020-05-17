@@ -35,6 +35,7 @@ layout: default
           {% if page.read_time %}
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
+          {% if page.share %}{% include social-share.html %}{% endif %}
         </header>
       {% endunless %}
 
@@ -52,7 +53,6 @@ layout: default
       </section>
 
       <footer class="page__meta">
-        {% if page.share %}{% include social-share.html %}{% endif %}
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
