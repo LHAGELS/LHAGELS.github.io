@@ -1,8 +1,8 @@
 ---
-title: "Data Wrangling post"
-date: 2020-05-17
-categories: [Data Wrangling, Data Visualization]
-tags: [Data Wrangling]
+title: "Machine Learning post"
+date: 2020-05-18
+categories: [Machine Learning]
+tags: [Machine Learning]
 header:
   image: ""
 excerpt: "Project, Data Science, Github"
