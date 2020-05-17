@@ -8,6 +8,8 @@ main:
     url: /data-visualization/
   - title: "Machine Learning"
     url: /machine-learning/
+  - title: "Projects"
+    url: /projects/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
