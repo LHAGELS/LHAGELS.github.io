@@ -99,7 +99,6 @@ author:
   location         : "Hamburg, GER\n Rotterdam, NL"
   email            :
   links:
-  "Contact:"
     - label: "Lucas.Hagelstein@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:lucas.hagelstein@gmail.com"
