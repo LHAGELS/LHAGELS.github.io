@@ -20,7 +20,7 @@ title                    : "Data Science Projects by Lucas Hagelstein"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Lucas Hagelstein"
-description              : "Prospective Data Scientist from Hamburg, Germany. \Currently I am studying "Data Science and Marketing Analytics" at the Erasmus University Rotterdam"
+description              : "Prospective Data Scientist from Hamburg, Germany. Currently I am studying "Data Science and Marketing Analytics" at the Erasmus University Rotterdam"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Lucas Hagelstein"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Prospective Data Scientist from Hamburg, Germany. \Currently I am studying "Data Science and Marketing Analytics" at the Erasmus University Rotterdam."
+  bio              : "Prospective Data Scientist from Hamburg, Germany. Currently I am studying "Data Science and Marketing Analytics" at the Erasmus University Rotterdam."
   location         : "Hamburg/Rotterdam"
   email            :
   links:
