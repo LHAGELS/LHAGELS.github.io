@@ -1,7 +1,6 @@
 ---
 title: "Machine Learning post"
 date: 2020-05-18
-categories: [Machine Learning]
 tags: [Machine Learning]
 header:
   image: ""

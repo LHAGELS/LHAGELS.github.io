@@ -1,7 +1,6 @@
 ---
 title: "Data Wrangling post"
 date: 2020-05-17
-categories: [Data Wrangling, Data Visualization]
 tags: [Data Wrangling]
 header:
   image: ""

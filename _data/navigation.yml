@@ -2,12 +2,6 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Data Wrangling"
-    url: /data-wrangling/
-  - title: "Data Visualization"
-    url: /data-visualization/
-  - title: "Machine Learning"
-    url: /machine-learning/
   - title: "Projects"
     url: /projects/
   # - title: "About"
