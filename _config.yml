@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Data Science Projects by Lucas Hagelstein"
+title                    : "Data Science Projects"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "by Lucas Hagelstein" # site tagline that appears below site title in masthead
 name                     : "Lucas Hagelstein"
 description              : "Prospective Data Scientist"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Lucas Hagelstein"
-  avatar           : "../assets/images/bio-photo.jpg"
+  avatar           : "../images/bio-photo.jpg"
   bio              : "25, Prospective Data Scientist"
   location         : "Hamburg, GER & Rotterdam, NL"
   email            :
