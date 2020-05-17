@@ -12,7 +12,7 @@ header:
 
 {% for categories in group_names %}
   {% assign posts = group_items[forloop.index0] %}
-  <h2 id="{{ categories | slugify }}" class="archive__subtitle">{{ tag }}</h2>
+  <h2 id="{{ categories | slugify }}" class="archive__subtitle">{{ categories }}</h2>
   {% for post in posts %}
     {% include archive-single.html %}
   {% endfor %}
