@@ -96,10 +96,11 @@ author:
   name             : "Lucas Hagelstein"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Prospective Data Scientist"
-  location         : "Hamburg/Rotterdam"
+  location         : "Hamburg, GER\n" + "Rotterdam, NL"
   email            :
   links:
-    - label: "Email: Lucas.Hagelstein@gmail.com"
+  "Contact:"
+    - label: "Lucas.Hagelstein@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:lucas.hagelstein@gmail.com"
     - label: "Website"
@@ -111,15 +112,16 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub: LHAGELS"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/lucas-hagelstein-832375182/"
+    - label: "LHAGELS"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/LHAGELS"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       #url: "https://instagram.com/"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/lucas-hagelstein-832375182/"
+
 
 # Site Footer
 footer:
