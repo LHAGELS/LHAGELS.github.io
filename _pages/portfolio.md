@@ -142,7 +142,7 @@ Here I present selected projects that show my **Data Science skills for Marketin
 For full list of the projects I worked on see [Certificates](/certificates/) section.
 
 &nbsp;
-{% include feature_row id="feature_row1-1" type="left" %}
+{% include feature_row id="feature_row1-1" type="left" id="row2"%}
 {% include feature_row id="feature_row1-2" type="left" %}
 {% include feature_row id="feature_row1-3" type="left" %}
 {% include feature_row id="feature_row1-4" type="left" %}
