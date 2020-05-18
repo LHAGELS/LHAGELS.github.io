@@ -15,7 +15,7 @@ toc_sticky: false
 
 feature_row1-1:
   - image_path: assets/images/constance_university.png
-    title: "B.Sc. Economics | University Constance, GER"
+    title: "B.Sc. Economics | University Konstanz, GER"
     text: "The degree in **economics** gave me a strong foundation not only in economic models and principles but also in **business studies** like Marketing, Finance, Accounting and Organization. By its **quantitative specialization** I gained knowledge in statistics and econometrics as well as the ability of **strong analytical thinking**."
     url: "/assets/docs/Transcript of Records.pdf"
     btn_label: "Transcript of Records"
