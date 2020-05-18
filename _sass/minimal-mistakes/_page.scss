@@ -146,9 +146,11 @@
     margin-bottom: 1em;
     padding: 2.5em 0;
     @include clearfix;
+    background-blend-mode: color;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
+    background-attachment: fixed;
     -webkit-animation: $intro-transition;
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
