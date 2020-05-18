@@ -20,6 +20,7 @@
 
 .archive__item {
   position: relative;
+  font-size: 0.8em;
 
   a {
     position: relative;
@@ -44,7 +45,7 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.725em;
   font-family: $sans-serif-narrow;
   line-height: initial;
   overflow: hidden;
@@ -74,7 +75,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: $type-size-5-5;
 
   & + p {
     text-indent: 0;
@@ -116,6 +117,26 @@
 
   a {
     color: #fff;
+    text-decoration: none;
+  }
+}
+
+.portfolio_caption {
+  color: $dark-gray;
+  font-family: $caption-font-family;
+  font-size: $type-size-8;
+  background: #fff;
+  text-align: left;
+  z-index: 5;
+  opacity: 0.5;
+  border-radius: $border-radius 0 0 0;
+
+  @include breakpoint($large) {
+    padding: 5px 10px;
+  }
+
+  a {
+    color: $dark-gray;
     text-decoration: none;
   }
 }
@@ -444,12 +465,4 @@
       padding-right: 0;
     }
   }
-}
-
-/* Place inside a single layout */
-
-.layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
 }
