@@ -9,17 +9,37 @@ header:
 classes: wide
 ---
 
-### Marketing Analytics with Python | DataCamp [<i class="fas fa-link" aria-hidden="true"></i>](https://www.datacamp.com/statement-of-accomplishment/track/5ce028dc1fb95454ddec86549442d8c8fa79e341)
- - Predicting Customer Churn in Python [<i class="fas fa-link" aria-hidden="true"></i>](https://www.datacamp.com/statement-of-accomplishment/course/7947b18bcde3fed9e459b1b2bebded4bfcf8a302)
- - Customer Analytics and A/B Testing in Python [<i class="fas fa-link" aria-hidden="true"></i>](https://www.datacamp.com/statement-of-accomplishment/course/f9b1378a8315ee335279c53040bbf287fd455976)
- - Customer Segmentation in Python [<i class="fas fa-link" aria-hidden="true"></i>](https://www.datacamp.com/statement-of-accomplishment/course/ba3b88ff56410c965375234a097f96c7109c6a20)
- - Machine Learning for Marketing in Python [<i class="fas fa-link" aria-hidden="true"></i>](https://www.datacamp.com/statement-of-accomplishment/course/617028b2c4adee4da2d94bf59c5d4dd154d35261)
+### Data Science with Python Career Track | DataCamp [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/track/1b9e46a944246b41ce8d6f767b71c7a699beb574)
+ - Introduction to Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/3b4578479f7d0327ca75e98408a0eac880a2bc1d)
+ - Intermediate Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/cfca98d47c68ae7d1026c7b862c76ad35fbaf5eb)
+ - Data Manipulation with Pandas [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/6ab39fb4e1ef7d9a96a3248251fad3d3cc6ce02c)
+ - Merging Dataframes with Pandas [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/d64cd347b219f1310bb6755ec5fe0db5c1b29114)
+ - Introduction to Data Visualization with Matplotlib [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/b1f134347efebd5a220f7afb82a5a82490ebc8d9)
+ - Introduction to Data Visualization with Seaborn [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/c7a9ddf2f0652b8230f5e9c453094e41151b8d4c)
+ - Python Data Science Toolbox (Part 1) [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/269f669084e9caf23c597063f4c29c2ecb34fc44)
+ - Python Data Science Toolbox (Part 2) [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/588271a51788f4c070dea3ba01c10a1cbafe45de)
+ - Intermediate Data Visualization with Seaborn [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/7ba4be244bdab58eed37bdd45ea4e8c7671d4a0e)
+ - Introduction to Importing Data in Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/b10ff253766bffa307fe687dafd18b38c5266eb0)
+ - Intermediate Importing Data in Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/7372bc84af46d7a4132b733486034ac6fa034577)
+ - Cleaning Data in Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/4aa928ca3f33c0906a448c3ceda7c6b847f5a1dc)
+ - Working with Dates and Times in Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/e3482fe47651770d165384b015d6b16c979f6889)
+ - Exploratory Data Analysis in Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/8ff05a1fe3163224ec4810c497500ed8d850ece4)
+ - Analyzing Police Activity with Pandas [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/cb6e173c3a23baf486cc742019c9d2ed0f1b96db)
+ - Statistical Thinking in Python (Part 1) [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/211fac2cb03bf97bcb1a3634e0fab7f5e0d3b9b6)
+ - Statistical Thinking in Python (Part 2) [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/a0c325a9fe3607f8f07c9b3666dde6e3468639da)
+ - Supervised Learning with scikit-learn [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/32d2658974a0196f59699eaaea20ff2e12353365)
+ - Unsupervised Learning in Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/38f3ceb188c9da991bb8cf9ff365c9fbc0479b9c)
+ - Machine Learning with Tree-Based Models in Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/14e7f3aba31121d608d4b364f0cf12f435e5168a)
+ - Case Study: School Budgeting with Machine Learning in Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/8b8d0dde0fc5ac5315ce7c0ca2414cd20823af23)
+ - Cluster Analysis in Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/81dfdd7effc1fbbf4d26b2dd3caa0140fa9ab599)
 
-Projects:
- - Customer Lifetime Value (CLV) [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/CLV_prediction)
- - Cohort Analysis [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/cohort_analysis)
- - RFM Analysis [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/RFM_analysis)
- - Customer Churn Prediction [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/customer_churn)
+ Supervised Projects:
+ - TV, Halftime Shows, and the Big Game
+ - The Android App Market on Google Play
+ - The GitHub History of the Scala Language
+ - A Visual History of Nobel Prize Winners
+ - Dr. Semmelweis and the Discovery of Handwashing
+ - Predicting Credit Card Approvals
 
 ----------------------------------------
 
