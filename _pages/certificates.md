@@ -9,7 +9,7 @@ header:
 classes: wide
 ---
 
-### Data Science with Python Career Track | DataCamp [<i class="fas fa-award fa-3x"></i>](https://www.datacamp.com/statement-of-accomplishment/track/1b9e46a944246b41ce8d6f767b71c7a699beb574)
+### Data Science with Python Career Track | DataCamp  [<i class="fas fa-award fa-1x"></i>](https://www.datacamp.com/statement-of-accomplishment/track/1b9e46a944246b41ce8d6f767b71c7a699beb574)
  1. Introduction to Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/3b4578479f7d0327ca75e98408a0eac880a2bc1d)
  2. Intermediate Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/cfca98d47c68ae7d1026c7b862c76ad35fbaf5eb)
  3. Data Manipulation with Pandas [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/6ab39fb4e1ef7d9a96a3248251fad3d3cc6ce02c)
