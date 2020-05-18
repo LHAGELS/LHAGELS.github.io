@@ -4,8 +4,8 @@ permalink: /certificates/
 title: Certificates
 author_profile: true
 header:
-    overlay_image: /assets/images/joel-filipe-small-warmer.jpg
-    caption: "Photo by [Joel Filipe](https://unsplash.com/@joelfilip) on [Unsplash](https://unsplash.com)"
+    overlay_image: /assets/images/Header1.jpg
+    caption: "Photo by ...  on [Link](...)"
 classes: wide
 ---
 
@@ -15,7 +15,7 @@ classes: wide
  - Customer Segmentation in Python [<i class="fas fa-link" aria-hidden="true"></i>](https://www.datacamp.com/statement-of-accomplishment/course/ba3b88ff56410c965375234a097f96c7109c6a20)
  - Machine Learning for Marketing in Python [<i class="fas fa-link" aria-hidden="true"></i>](https://www.datacamp.com/statement-of-accomplishment/course/617028b2c4adee4da2d94bf59c5d4dd154d35261)
 
-Projects: 
+Projects:
  - Customer Lifetime Value (CLV) [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/CLV_prediction)
  - Cohort Analysis [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/cohort_analysis)
  - RFM Analysis [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/RFM_analysis)
@@ -27,7 +27,7 @@ Projects:
 Tools: Python, Shell, Git, Flask, Plotly, Jupyter Notebook
 
 Syllabus: [<i class="fas fa-paperclip"></i>](https://s3-us-west-2.amazonaws.com/udacity-printer/production/syllabus/syllabus-nd025-1.0.0-en-us.pdf)  
- - Supervised Learning 
+ - Supervised Learning
  - Deep Learning
  - Unsupervised Learning
  - CRISP-DM Process
@@ -38,14 +38,14 @@ Syllabus: [<i class="fas fa-paperclip"></i>](https://s3-us-west-2.amazonaws.com/
  - Natural Language Processing (NLP)
  - Recommendation Systems       
 
-Projects: 
+Projects:
 - Target Audience for Starbucks Rewards Mobile App (Capstone) [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/Starbucks_rewards) [<i class="fas fa-blog" aria-hidden="true"></i>](/Starbucks-Rewards-Program/) [<img src="{{ site.url }}{{ site.baseurl }}/assets/images/icons/ppt2.png" height="25" width="25" alt="">](/assets/docs/reports/kbosko-data-science-starbucks-capstone.pdf)
 - Predicting Charity Donors with Supervised ML [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/finding_donors)
 - Customer Segmentation for Arvato (PCA, K-Means) [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/customer_segmentation)
 - NLP for Disaster Response App [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/disaster_response) [app](https://disaster-reponse-api.herokuapp.com)
 - Recommendation Engines for IBM Platform [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/recommendations_IBM)
 - Image Classifier with PyTorch [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/image_classifier)
-- Data Science blog post [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/insight_fellows) [<i class="fas fa-blog" aria-hidden="true"></i>](/Insight-Data-Science-Fellows/) 
+- Data Science blog post [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/insight_fellows) [<i class="fas fa-blog" aria-hidden="true"></i>](/Insight-Data-Science-Fellows/)
 
 
 
@@ -68,8 +68,8 @@ Syllabus: [<i class="fas fa-paperclip"></i>](https://d20vrrgs8k4bvw.cloudfront.n
  - A/B Testing
  - Time Series Forecasting
  - Segmentation and Clustering
- 
- Projects: 
+
+ Projects:
   - Recommending New Store Format for a Grocery Store (Capstone) [<i class="fas fa-chart-line"></i>](https://public.tableau.com/profile/katerina.bosko#!/vizhome/AllocatingGroceryStorestoSegmentsandForecastingProduceSales/Dashboard3) [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-predictive-analytics-capstone.pdf)
   - Linear Regression Model to Choose New Store Location [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/new_store_location) [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-predictive-analytics-new-store-location.pdf)
   - Linear Regression Model to Predict Sales for a Catalog Launch [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/k-bosko/predicting_catalog_demand) [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-predictive-analytics-catalog.pdf)
@@ -88,7 +88,7 @@ Syllabus: [<i class="fas fa-paperclip"></i>](https://www.coursera.org/specializa
  - Increasing Real Estate Management Profits: Harnessing Data Analytics [<i class="fas fa-link" aria-hidden="true"></i>](https://www.coursera.org/account/accomplishments/records/B9ANNHF2TLMZ)
 
 
-Projects: 
+Projects:
  - Increasing Profits for Watershed Properties [<i class="fas fa-chart-line"></i>](https://public.tableau.com/profile/katerina.bosko#!/vizhome/Bosko_dashboardforWatershedproperties/FinalDashboard) [<img src="{{ site.url }}{{ site.baseurl }}/assets/images/icons/ppt2.png" height="25" width="25" alt="">](/assets/docs/reports/kbosko-excel-to-mysql-capstone-presentation.pdf) [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-excel-to-mysql-capstone-report.pdf)
  - Dillard's Sale Trends: Teradata SQL queries [<i class="far fa-file-pdf" aria-hidden="true"></i>](/assets/docs/reports/kbosko-excel-to-mysql-Teradata-queries.pdf)
 
@@ -113,9 +113,3 @@ Syllabus: [<i class="fas fa-paperclip"></i>](https://www.coursera.org/specializa
 - Introduction to Operations Management [<i class="fas fa-link" aria-hidden="true"></i>](https://www.coursera.org/account/accomplishments/records/BGJX6R478WA6)
  - Introduction to Financial Accounting [<i class="fas fa-link" aria-hidden="true"></i>](https://www.coursera.org/account/accomplishments/records/6VPP8T5N5VXP)
  -  Managing Social and Human Capital [<i class="fas fa-link" aria-hidden="true"></i>](https://www.coursera.org/account/accomplishments/records/RKQ4TPMN9NDY)
-
-
-
-
-
-

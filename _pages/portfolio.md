@@ -3,11 +3,11 @@ layout: single
 title: "Portfolio"
 permalink: /portfolio/
 header:
-    overlay_image: /assets/images/joel-filipe-small-warmer.jpg
-    caption: "Photo by [Joel Filipe](https://unsplash.com/@joelfilip) on [Unsplash](https://unsplash.com)"
+    overlay_image: /assets/images/Header1.jpg
+    caption: "Photo by ...  on [Link](...)"
 author_profile: true
 classes: wide
-date: May 15, 2020
+date: May 18, 2020
 
 feature_row1-1:
   - image_path: assets/images/posts/starbucks-cluster-conversion-rates.png
@@ -20,7 +20,7 @@ feature_row1-1:
     url2: "/Starbucks-Rewards-Program/"
     btn_label2: "Technical Report"
     btn_class: "btn--primary"
-    tags: 
+    tags:
         - Marketing
         - Segmentation
         - k-means clustering
@@ -39,7 +39,7 @@ feature_row1-2:
     url3: "https://github.com/k-bosko/CLV_prediction"
     btn_label3: "Code for CLV Prediction"
     btn_class: "btn--primary"
-    tags: 
+    tags:
     - CLV
     - Cohort Analysis
     - RFM Analysis
@@ -52,7 +52,7 @@ feature_row1-3:
     url: "https://github.com/k-bosko/purchase_analytics"
     btn_label: "Code"
     btn_class: "btn--primary"
-    tags: 
+    tags:
     - EDA
     - Business Analytics
 
@@ -64,7 +64,7 @@ feature_row1-4:
     url: "https://public.tableau.com/profile/katerina.bosko#!/vizhome/Bosko_dashboardforWatershedproperties/FinalDashboard"
     btn_label: "Dashboard"
     btn_class: "btn--primary"
-    tags: 
+    tags:
     - Tableau
     - Excel
     - MySQL
@@ -80,7 +80,7 @@ feature_row1-4:
 #     url2: "https://disaster-reponse-api.herokuapp.com"
 #     btn_label2: "App"
 #     btn_class: "btn--primary"
-#     tags: 
+#     tags:
 #     - NLP
 #     - Flask-app
 #     - ML Pipeline
@@ -96,7 +96,7 @@ feature_row3:
     url: "https://github.com/k-bosko/recommendations_IBM"
     btn_label: "Code"
     btn_class: "btn--primary"
-    tags: 
+    tags:
     - recommender system
     - collaborative filtering
 
@@ -109,7 +109,7 @@ feature_row4:
     url: "https://github.com/k-bosko/customer_segmentation"
     btn_label: "Code"
     btn_class: "btn--primary"
-    tags: 
+    tags:
         - k-means clustering
         - PCA
         - unsupervised ML
@@ -123,7 +123,7 @@ feature_row4:
 #     url: "https://github.com/k-bosko/image_classifier"
 #     btn_label: "Code"
 #     btn_class: "btn--primary"
-#     tags: 
+#     tags:
 #         - deep-learning
 #         - transfer-learning
 #         - PyTorch
@@ -137,7 +137,7 @@ feature_row4:
 
 ## Projects
 
-Here I present selected projects that show my **Data Science skills for Marketing and Business problems**. 
+Here I present selected projects that show my **Data Science skills for Marketing and Business problems**.
 
 For full list of the projects I worked on see [Certificates](/certificates/) section.
 
@@ -150,5 +150,3 @@ For full list of the projects I worked on see [Certificates](/certificates/) sec
 {% include feature_row id="feature_row4" type="left" %}
 {% include feature_row id="feature_row3" type="left" %}
 <!-- {% include feature_row id="feature_row5" type="left" %} -->
-
-
