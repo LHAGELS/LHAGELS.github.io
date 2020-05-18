@@ -93,7 +93,7 @@
 
   img {
     width: 100%;
-    display: block;
+    position: relative;
     margin: 0 auto;
   }
 }
@@ -322,7 +322,7 @@
     }
 
     .archive__item-teaser {
-      margin-bottom: 2em;
+      margin-bottom: 0em;
     }
 
     a.btn::before {
