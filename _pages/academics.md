@@ -16,3 +16,6 @@ feature_row1-1:
     btn_label: "Transcript of Records"
     btn_class: "btn--primary"
 ---
+
+&nbsp;
+{% include feature_row id="feature_row1-1" type="left" %}
