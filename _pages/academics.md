@@ -12,7 +12,7 @@ feature_row1-1:
     alt: "Clusterisation results based on Conversion Rates"
     title: "B.Sc. Economics"
     subtitle: "Constance University, Germany"
-    text: "The degree in economics gave me a strong foundation not only in economic models and principles but also in business studies like Marketing, Finance, Accounting and Organization. By its quantitative specialization I gained knowledge in statistics and econometrics as well as the ability of **strong analytical thinking**."
+    text: "The degree in economics gave me a strong foundation not only in **economic models and principles** but also in business studies like **Marketing, Finance, Accounting and Organization**. By its **quantitative specialization** I gained knowledge in statistics and econometrics as well as the ability of **strong analytical thinking**."
     url: "/assets/docs/Transcript of Records.pdf"
     btn_label: "Transcript of Records"
     btn_class: "btn--primary"
