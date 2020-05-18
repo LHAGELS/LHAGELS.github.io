@@ -25,7 +25,7 @@ feature_row2:
     btn_class: "btn--primary"
 
 feature_row3:
-  - image_path: assets/images/eur_logo.png
+  - image_path: "assets/images/eur_logo.png"
     title: "M.Sc. Data Science and Marketing Analytics | Erasmus University Rotterdam, NL"
     text: "As per September, 1 2020 I will be enrolled as master student at the Erasmus University in Rotterdam to deepen my practical and theoretical knowledge in data science. "
 ---
