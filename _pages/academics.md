@@ -30,7 +30,7 @@ feature_row1-3:
     text: "As per September, 1 2020 I will be enrolled as master student at the Erasmus University in Rotterdam to deepen my practical and theoretical knowledge in data science. "
 ---
 
-### Academic Background
+##### Academic Background
 
 &nbsp;
 {% include feature_row id="feature_row1-1" type="center" %}
