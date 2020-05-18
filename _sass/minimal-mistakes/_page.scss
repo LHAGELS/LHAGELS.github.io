@@ -136,6 +136,12 @@
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
+  background-blend-mode: color;
+  background-image: url(https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.25s;
@@ -146,12 +152,9 @@
     margin-bottom: 1em;
     padding: 2.5em 0;
     @include clearfix;
-    background-blend-mode: color;
-    background-image: url(https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
+    background-position: center;
     -webkit-animation: $intro-transition;
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
