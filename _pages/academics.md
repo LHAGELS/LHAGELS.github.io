@@ -19,7 +19,7 @@ feature_row1:
 feature_row2:
   - image_path: /assets/images/utrecht_university.jpg
     title: "Semester Abroad | University Utrecht, NL"
-    text: "As part of the Erasmus+ Scholarship, I was able to experience the application-oriented teaching of the Netherlands. Subjects like Econometrics, Operations and Supply Chain Management as well as Financial Markets and Institutions further broaden my academic background. Finally, Econometrics with its applications in STATA has caused my interest in data science."
+    text: "As part of the **Erasmus+ Scholarship**, I was able to experience the application-oriented teaching of the Netherlands. Subjects like **Econometrics, Operations and Supply Chain Management as well as Financial Markets and Institutions** further broaden my academic background. Finally, Econometrics with its **applications in STATA** has caused my interest in data science."
     url: "/assets/docs/Confirmation of Stay Utrecht University.pdf"
     btn_label: "Confirmation of Stay"
     btn_class: "btn--primary"
