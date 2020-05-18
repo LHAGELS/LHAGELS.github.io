@@ -11,6 +11,7 @@ classes: wide
 toc: true
 toc_label: "Academics"
 toc_icon: "cog"
+toc_sticky: false
 
 feature_row1-1:
   - image_path: assets/images/constance_university.png
