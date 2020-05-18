@@ -18,4 +18,4 @@ feature_row1-1:
 ---
 
 &nbsp;
-{% include feature_row id="feature_row1-1" type="left" %}
+{% include feature_row id="feature_row1-1" type="center" %}
