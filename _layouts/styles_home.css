@@ -77,14 +77,14 @@ background-image: url("/assets/images/landing/hero_1920x1080.png");
    font-size: 3rem;
    font-weight: 600;
    margin-bottom: 0;
-   background-color: rgba(0,0,0,0.15);
+   background-color: rgba(0,0,0,0.2);
    padding: 0.25em 0.25em 0.25em 0.25em;
 }
 .hero-subtitle {
    font-size: 2rem;
    font-weight: 200;
    margin-top: 0rem;
-   background-color: rgba(0,0,0,0.15);
+   background-color: rgba(0,0,0,0.2);
    padding: 0.5em 0.5em 0.5em 0.5em;
 }
 .hero-button {
