@@ -22,6 +22,7 @@ body {
    background-size: cover;
    background-position: center center;
    filter: brightness(60%);
+   filter: opacity(0.8);
 }
 .hero-content {
    position: relative;
