@@ -68,7 +68,7 @@ background-image: url("/assets/images/landing/hero_1920x1080.png");
 }
 .hero-content {
    position: relative;
-   font-family: "Monserrat", sans-serif;
+   font-family: "Calibri", sans-serif;
    color: white;
    text-align: center;
    margin: 0.625rem;
@@ -77,19 +77,23 @@ background-image: url("/assets/images/landing/hero_1920x1080.png");
    font-size: 3rem;
    font-weight: 600;
    margin-bottom: 0;
+   background-color: rgba(0,0,0,0.15);
+   padding: 0.25em 0.25em 0.25em 0.25em;
 }
 .hero-subtitle {
    font-size: 2rem;
    font-weight: 200;
-   margin-top: 1rem;
+   margin-top: 0rem;
+   background-color: rgba(0,0,0,0.15);
+   padding: 0.5em 0.5em 0.5em 0.5em;
 }
 .hero-button {
    background-color: rgba(71, 215, 74, 0.1);
    color: white;
    border: 1.25px solid rgba(142, 255, 144, 1);
-   margin-top: 12.5rem;
+   margin-top: 12rem;
    padding: 1rem 2rem 1rem 2rem;
-   font-family: "Monserrat", sans-serif;
+   font-family: "Calibri", sans-serif;
    font-size: 2.75rem;
    font-weight: 100;
    border-radius: 20px;
