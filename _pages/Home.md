@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: archive
 permalink: /home/
 title: Home
 author_profile: true
@@ -8,9 +8,6 @@ header:
     caption: "Photo by ...  on [Link](...)"
 classes: wide
 ---
-
-{{ content }}
-
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% for post in paginator.posts %}
