@@ -5,7 +5,7 @@ layout: archive
 {{ content }}
 
 <head>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_home.css">
 </head>
 
 <section class="hero">
@@ -21,9 +21,3 @@ layout: archive
        </button>
     </div>
 </section>
-
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
