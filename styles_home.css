@@ -25,45 +25,27 @@ body {
    filter: opacity(0.85);
    z-index: -2;
 }
-.flex-center {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-content: center;
+.hero-content {
+   position: relative;
+   font-family: "Monserrat", sans-serif;
+   color: white;
+   text-align: center;
+   margin: 0.625rem;
 }
-.hero-message {
-color: #fff;
-text-shadow: #343a40 2px 2px;
-min-width: 100%;
-min-height: 12em;
-position: relative;
+.hero-title {
+   font-size: 3rem;
+   font-weight: 600;
+   margin-bottom: 0;
 }
-.hero-message::before {
-content: "";
-display: block;
-position: absolute;
-margin-left: 0;
-min-width: 100%;
-min-height: 12em;
-z-index: -1;
-opacity: 0.85;
-background-color: #343a40;
-}
-@media(min-width:1024px) {
-.hero-message {
-min-width: 50%;
-min-height: 12em;
-}
-.hero-message::before {
-margin-left: 25%;
-min-width: 50%;
-min-height: 12em;
-}
+.hero-subtitle {
+   font-size: 2rem;
+   font-weight: 200;
+   margin-top: 1rem;
 }
 .hero-button {
-   background-color: #4DDE4F;
+   background-color: #77CF78;
    color: white;
-   border: 3px solid #77CF78;
+   border: 3px solid #4DDE4F;
    margin-top: 8rem;
    padding: 0.9375rem1.875rem;
    font-family: "Monserrat", sans-serif;
@@ -72,11 +54,11 @@ min-height: 12em;
    cursor: point;
 }
 .hero-button:hover {
-   background-color: #6DFF6F;
-   border: 4px solid #9DFF9E;
+   background-color: #9DFF9E;
+   border: 4px solid #6DFF6F;
 }
 .hero::after {
-background-color: #FFB433;
+background-color: #FFB235;
 content: "";
 display: block;
 position: absolute;
