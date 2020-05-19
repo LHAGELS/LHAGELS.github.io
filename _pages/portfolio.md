@@ -126,13 +126,6 @@ feature_row1:
 #         - PyTorch
 ---
 
-## Skills
-
-**Tools**: Python, Jupyter Notebook, R-Studio, Stata16, SQL, Excel
-
-**Libraries**: NumPy, Pandas, SciKit-Learn, MatplotLib, Seaborn, TensorFlow, BeautifulSoup
-
-
 ## Projects
 
 Here I present selected projects that show my **Data Science skills for Marketing and Business problems as well as Policy Development**.
