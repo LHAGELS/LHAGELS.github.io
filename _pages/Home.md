@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: archive
 permalink: /home/
 title: Home
 author_profile: true
@@ -8,10 +8,14 @@ header:
     caption: "Photo by ...  on [Link](...)"
 classes: wide
 ---
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
+{% include base_path %}
+{% include group-by-array collection=site.posts field="categories" %}
+
+{% for tag in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
 {% endfor %}
-
-{% include paginator.html %}
