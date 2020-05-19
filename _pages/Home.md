@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 permalink: /home/
 title: Home
 author_profile: true
@@ -11,10 +11,6 @@ classes: wide
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% for post in posts %}
   {% include archive-single.html %}
 {% endfor %}
 
