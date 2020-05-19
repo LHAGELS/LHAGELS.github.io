@@ -18,7 +18,7 @@ body, html {
     color: white; /* ADD THIS LINE */
 
     /* Background styles */
-    background-image: url(/assets/images/Design ohne Titel.png);
+    background-image: url("/assets/images/Design ohne Titel.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
