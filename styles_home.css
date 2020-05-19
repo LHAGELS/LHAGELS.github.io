@@ -88,10 +88,10 @@ background-image: url("/assets/images/landing/hero_1920x1080.png");
    color: white;
    border: 1px solid rgba(71, 215, 74, 1);
    margin-top: 10rem;
-   padding: 2rem 2rem 2rem 2rem;
+   padding: 2rem 2rem;
    font-family: "Monserrat", sans-serif;
-   font-size: 1.125rem;
-   font-weight: 500;
+   font-size: 5rem;
+   font-weight: 200;
    border-radius: 8px;
    cursor: point;
 }
