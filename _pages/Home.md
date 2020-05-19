@@ -1,11 +1,11 @@
 ---
 layout: archive
+title: ""
 permalink: /home/
-author_profile: true
-title: "Hallo"
 header:
     overlay_image: /assets/images/Header1.jpg
     caption: "Photo by ...  on [Link](...)"
+author_profile: true
 classes: wide
 ---
 
