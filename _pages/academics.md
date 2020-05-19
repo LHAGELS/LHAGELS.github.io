@@ -10,7 +10,7 @@ classes: wide
 
 feature_row1:
   - image_path: assets/images/constance_university.png
-    title: "B.Sc. Economics | University Konstanz, GER"
+    title: "B.Sc. Economics | University of Konstanz, GER"
     text: "The degree in **economics** gave me a strong foundation not only in economic models and principles but also in **business studies** like Marketing, Finance, Accounting and Organization. By its **quantitative specialization** I gained knowledge in statistics and econometrics as well as the ability of **strong analytical thinking**."
     url: "/assets/docs/Transcript of Records.pdf"
     btn_label: "Transcript of Records"
@@ -18,7 +18,7 @@ feature_row1:
 
 feature_row2:
   - image_path: /assets/images/utrecht_university.jpg
-    title: "Semester Abroad | University Utrecht, NL"
+    title: "Semester Abroad | Utrecht University, NL"
     text: "As part of the **Erasmus+ Scholarship**, I was able to experience the application-oriented teaching of the Netherlands. Subjects like **Econometrics, Operations and Supply Chain Management as well as Financial Markets and Institutions** further broaden my academic background. Finally, Econometrics with its **applications in STATA** has caused my interest in data science."
     url: "/assets/docs/Confirmation of Stay Utrecht University.pdf"
     btn_label: "Confirmation of Stay"
