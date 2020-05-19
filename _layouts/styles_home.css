@@ -78,19 +78,19 @@ min-height: 12em;
    margin-top: 1rem;
 }
 .hero-button {
-   background-color: #ae2d59;
+   background-color: #4DDE4F;
    color: white;
-   border: 1px solid #cb376a;
-   margin-top: 5rem;
+   border: 3px solid #77CF78;
+   margin-top: 8rem;
    padding: 0.9375rem1.875rem;
    font-family: "Monserrat", sans-serif;
    font-size: 1.125rem;
    font-weight: 200;
-   cursor: pointer;
+   cursor: point;
 }
 .hero-button:hover {
-   background-color: #cb376a;
-   border: 1px solid #db7598;
+   background-color: #6DFF6F;
+   border: 4px solid #9DFF9E;
 }
 .hero::after {
 background-color: #FFB433;
@@ -102,5 +102,5 @@ left: 0px;
 width: 100%;
 height: 100%;
 z-index: -1;
-opacity: 0.4;
+opacity: 0.1;
 }
