@@ -86,18 +86,18 @@ background-image: url("/assets/images/landing/hero_1920x1080.png");
 .hero-button {
    background-color: rgba(71, 215, 74, 0.1);
    color: white;
-   border: 1px solid rgba(71, 215, 74, 1);
-   margin-top: 10rem;
-   padding: 2rem 2rem;
+   border: 1.25px solid rgba(142, 255, 144, 1);
+   margin-top: 12.5rem;
+   padding: 1rem 2rem 1rem 2rem;
    font-family: "Monserrat", sans-serif;
-   font-size: 2.5rem;
-   font-weight: 200;
-   border-radius: 8px;
+   font-size: 2.75rem;
+   font-weight: 100;
+   border-radius: 20px;
    cursor: point;
 }
 .hero-button:hover {
    background-color: rgba(71, 215, 74, 0.7);
-   border: 1px solid rgba(71, 215, 74, 0.7);
+   border: 1.25px solid rgba(71, 215, 74, 0.7);
 }
 .hero::after {
 background-color: #FFB235;
