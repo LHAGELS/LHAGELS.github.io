@@ -45,7 +45,7 @@ classes: wide
 
 ### <a name="Machine-Learning"></a>Machine Learning Fundamentals with Python [Skill Track] | Datacamp [<i class="fas fa-award fa-1x"></i>](https://www.datacamp.com/statement-of-accomplishment/track/0a97a91f2f6b38d1c61341ac2b799d9a91e90459)
 
- 1. Supervised Learning with scikit-learn [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/32d2658974a0196f59699eaaea20ff2e12353365)
+ 1. Supervised Learning with SciKit-Learn [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/32d2658974a0196f59699eaaea20ff2e12353365)
  2. Unsupervised Learning in Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/38f3ceb188c9da991bb8cf9ff365c9fbc0479b9c)
  3. Linear Classifiers in Python [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/793cff7fc121dfc9ae6c37fc7aa8f4a5d2738206)
  4. Case Study: School Budgeting with Machine Learning [<i class="fas fa-award"></i>](https://www.datacamp.com/statement-of-accomplishment/course/8b8d0dde0fc5ac5315ce7c0ca2414cd20823af23)

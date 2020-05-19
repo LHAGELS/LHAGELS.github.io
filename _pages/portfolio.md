@@ -130,7 +130,7 @@ feature_row1:
 
 **Tools**: Python, Jupyter Notebook, R-Studio, Stata16, SQL, Excel
 
-**Libraries**: NumPy, Pandas, Scikit-learn, matplotlib, seaborn, TensorFlow, BeautifulSoup
+**Libraries**: NumPy, Pandas, SciKit-Learn, MatplotLib, Seaborn, TensorFlow, BeautifulSoup
 
 
 ## Projects
