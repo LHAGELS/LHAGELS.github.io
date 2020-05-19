@@ -4,10 +4,20 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
+<section class="hero">
+    <div class="hero-content">
+       <h1 class="hero-title">
+            Welcome to my Data Science Blog!
+       </h1>
+       <h2 class="hero-subtitle">
+            You will be at least as passionate like me!
+       </h2>
+       <button type="button" class="hero-button" onclick="location.href='index.html'">
+            Let's spark some joy! &raquo;
+       </button>
+    </div>
+</section>
