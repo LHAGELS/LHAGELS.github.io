@@ -309,10 +309,10 @@
     li {
       display: block;
       border-bottom: 1px solid white;
-      background-color: #304a73;
 
       &:last-child {
         border-bottom: none;
+        background-color: #304a73;
       }
     }
   }
