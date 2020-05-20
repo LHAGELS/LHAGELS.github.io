@@ -4,8 +4,6 @@ permalink: /about/
 title: About
 author_profile: true
 header:
-    background-color: "#159957"
-    transform: skewY(-7deg)
 classes: wide
 date: May 18, 2020
 ---
