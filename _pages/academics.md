@@ -4,8 +4,7 @@ permalink: /academics/
 title: Academics
 author_profile: true
 header:
-    overlay_image: /assets/images/Header1.jpg
-    caption: "Photo by ...  on [Link](...)"
+    overlay_image: /assets/images/overlay.png
 classes: wide
 
 feature_row1:

@@ -3,7 +3,6 @@ layout: single
 permalink: /about/
 title: About
 author_profile: true
-header:
 classes: wide
 date: May 18, 2020
 ---
