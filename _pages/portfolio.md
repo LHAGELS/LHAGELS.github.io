@@ -2,9 +2,6 @@
 layout: single
 title: "Portfolio"
 permalink: /portfolio/
-header:
-    overlay_image: /assets/images/Header1.jpg
-    caption: "Photo by ...  on [Link](...)"
 author_profile: true
 classes: wide
 date: May 18, 2020

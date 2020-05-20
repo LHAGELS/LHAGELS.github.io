@@ -3,9 +3,6 @@ layout: single
 permalink: /certificates/
 title: Certificates
 author_profile: true
-header:
-    overlay_image: /assets/images/Header1.jpg
-    caption: "Photo by ...  on [Link](...)"
 classes: wide
 ---
 
