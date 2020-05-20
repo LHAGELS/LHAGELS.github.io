@@ -5,16 +5,9 @@ title: About
 author_profile: true
 header:
     background: linear-gradient(268deg, #405f8f, #1c3050);
-    border-radius: 0 0 100px;
-    content: ' ';
-    height: 600px;
     opacity: 0.25;
     position: absolute;
-    right: calc((100% - 750px) / 2 + 400px);
-    top: -360px;
     transform: skewY(-7deg);
-    width: 2500px;
-    z-index: 1;
 classes: wide
 date: May 18, 2020
 ---
