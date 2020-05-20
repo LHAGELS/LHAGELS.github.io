@@ -4,7 +4,7 @@ permalink: /about/
 title: About
 author_profile: true
 header:
-background: "linear-gradient(268deg, #405f8f, #1c3050)"
+    background: "linear-gradient(268deg, #405f8f, #1c3050)"
     border-radius: 0 0 100px
     content: ' '
     height: 600px
