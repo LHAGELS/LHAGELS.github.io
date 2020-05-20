@@ -4,7 +4,6 @@
 
 .masthead {
   position: relative;
-  border-bottom: 1px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
@@ -30,7 +29,8 @@
     }
 
     nav {
-      z-index: 10;
+      z-index: 10
+      background-color: transparent;
     }
 
     a {
