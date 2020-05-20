@@ -28,6 +28,8 @@ feature_row3:
     title: "M.Sc. Data Science and Marketing Analytics | Erasmus University Rotterdam, NL"
     text: "As per September, 1 2020 I will be enrolled as a master student at the Erasmus University in Rotterdam to deepen my practical and theoretical knowledge in data science. "
 ---
+
+
 &nbsp;
 {% include feature_row id="feature_row1" type="center" %}
 {% include feature_row id="feature_row2" type="center" %}
