@@ -28,8 +28,8 @@
     border: 0.25px solid rgba(38, 57, 85, 1);
     border-radius: 10px 0px 0px 100%;
 
-    @include breakpoint($x-large) {
-      max-width: $max-width;
+    @include breakpoint($max-width) {
+      max-width: 1920px;
     }
 
     nav {
