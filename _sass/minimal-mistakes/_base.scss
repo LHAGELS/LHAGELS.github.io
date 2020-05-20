@@ -14,10 +14,10 @@ body {
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
-  background-image: url('/assets/images/overlay.png');
+  /* background-image: url('/assets/images/overlay.png');
   background-position: right top;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: scroll; */
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
