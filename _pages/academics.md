@@ -3,8 +3,7 @@ layout: single
 permalink: /academics/
 title: Academics
 author_profile: true
-header:
-    overlay_image: /assets/images/overlay.png
+background-image: url(/assets/images/overlay.png)
 classes: wide
 
 feature_row1:
