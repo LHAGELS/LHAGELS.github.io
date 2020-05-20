@@ -3,11 +3,6 @@ layout: single
 permalink: /academics/
 title: Academics
 author_profile: true
-background:
-    image: url('/assets/images/overlay.png')
-    repeat: no-repeat
-    attachment: scroll
-    position: right top
 classes: wide
 
 feature_row1:
