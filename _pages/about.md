@@ -4,10 +4,10 @@ permalink: /about/
 title: About
 author_profile: true
 header:
-    background: linear-gradient(268deg, #405f8f, #1c3050);
-    opacity: 0.25;
-    position: absolute;
-    transform: skewY(-7deg);
+    background: "linear-gradient(268deg, #405f8f, #1c3050)"
+    opacity: 0.25
+    position: absolute
+    transform: skewY(-7deg)
 classes: wide
 date: May 18, 2020
 ---
