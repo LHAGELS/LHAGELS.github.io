@@ -33,7 +33,7 @@
 
   .page__inner-wrap {
     float: left;
-    margin-top: 1em;
+    margin-top: 0em;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -72,7 +72,7 @@
 }
 
 .page__content {
-  margin: 1.5em 0 0 1em;
+  margin: 0.5em 0 0 1em;
   // margin-top: 1.5em;
   h2 {
     padding-top: 0em;
@@ -143,7 +143,7 @@
 
   &--overlay {
     position: relative;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
     padding: 2.5em 0;
     @include clearfix;
     background-size: cover;
