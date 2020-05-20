@@ -74,16 +74,18 @@ background-image: url("/assets/images/landing/hero_1920x1080.png");
    margin: 0.625rem;
 }
 .hero-title {
-   font-size: 4rem;
+   font-size: 4em;
    font-weight: 400;
-   margin-bottom: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
    background-color: rgba(0,0,0,0.25);
    padding: 0.25em 0.25em 0.25em 0.25em;
 }
 .hero-subtitle {
-   font-size: 2rem;
+   font-size: 2em;
    font-weight: 200;
    margin-top: 0rem;
+   margin-bottom: 25%;
    background-color: rgba(0,0,0,0.25);
    padding: 0.5em 0.5em 0.5em 0.5em;
 }
@@ -91,10 +93,9 @@ background-image: url("/assets/images/landing/hero_1920x1080.png");
    background-color: rgba(71, 215, 74, 0.1);
    color: white;
    border: 1.25px solid rgba(142, 255, 144, 1);
-   margin-top: 12rem;
-   padding: 1rem 2rem 1rem 2rem;
+   padding: 0.5em 1rem 0.5rem 1rem;
    font-family: "Calibri", sans-serif;
-   font-size: 2.75rem;
+   font-size: 2.75em;
    font-weight: 100;
    border-radius: 20px;
    cursor: point;
