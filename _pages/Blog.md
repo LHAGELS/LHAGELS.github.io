@@ -1,13 +1,18 @@
 ---
-layout: recent-posts
-permalink: /recent-posts/
-title: Recent posts
+layout: archive
+permalink: /Blog/
+title: Blog
 author_profile: true
 classes: wide
 ---
 
-<div class="blog-index">  
-  {% assign post = site.posts.first %}
-  {% assign content = post.content %}
-  {% include post_detail.html %}
-</div>
+{% include base_path %}
+{% include group-by-array collection=site.posts field="tags" %}
+
+{% for tag in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
