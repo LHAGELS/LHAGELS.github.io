@@ -125,8 +125,8 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  height: 36px;
+  width: 100px;
+  height: 100px;
 
   @include breakpoint($large) {
     display: block;
@@ -236,6 +236,9 @@
 
   &.is--visible {
     display: block;
+    background-color: #304a73;
+    padding: 1em 1em 1em 2em;
+    border-radius: 20px;
   }
 
   @include breakpoint($large) {
@@ -244,7 +247,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    background: #304a73;
+    background: transparent;
     box-shadow: none;
   }
 
