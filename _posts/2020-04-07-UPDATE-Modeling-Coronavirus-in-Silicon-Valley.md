@@ -11,7 +11,7 @@ excerpt: "Shelter-in-place order seems to work - evidence shows a slow down in s
 
 ---
 
-{% include posts_ects_by_modules.html %}
+{% include posts_ects_by_mods.html %}
 
 *This is an UPDATE of my article ["Modeling Coronavirus in Silicon Valley"](https://www.cross-validated.com/Modeling-Coronavirus-in-Silicon-Valley/) from March 23, 2020.*
 
