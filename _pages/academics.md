@@ -9,6 +9,8 @@ feature_row1:
   - image_path: assets/images/constance_university.png
     title: "B.Sc. Economics | University of Konstanz, GER"
     text: "The degree in **economics** gave me a strong foundation not only in economic models and principles but also in **business studies** like Marketing, Finance, Accounting and Organization. By its **quantitative specialization** I gained knowledge in statistics and econometrics as well as the ability of **strong analytical thinking**."
+  - image_path: assets/images/squarify_treemap.png
+    text: "hsafuisfufsafsaniufsa"
     url: "/assets/docs/Transcript of Records.pdf"
     btn_label: "Transcript of Records"
     btn_class: "btn--primary"
