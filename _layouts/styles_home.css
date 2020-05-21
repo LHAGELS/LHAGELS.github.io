@@ -75,18 +75,18 @@ background-image: url("/assets/images/landing/hero_1920x1080.png");
 }
 .hero-title {
    font-size: 4em;
-   font-weight: 400;
+   font-weight: 300;
    margin-top: 0px;
    margin-bottom: 0px;
-   background-color: rgba(0,0,0,0.25);
+   background-color: rgba(0,0,0,0.35);
    padding: 0.25em 0.25em 0.25em 0.25em;
 }
 .hero-subtitle {
    font-size: 2em;
-   font-weight: 200;
+   font-weight: 100;
    margin-top: 0rem;
    margin-bottom: 25%;
-   background-color: rgba(0,0,0,0.25);
+   background-color: rgba(0,0,0,0.35);
    padding: 0.5em 0.5em 0.5em 0.5em;
 }
 .hero-button {
