@@ -4,11 +4,12 @@
   {% capture logo_path %}{{ site.logo }}{% endcapture %}
 {% endif %}
 
-<div class="header_background">
-  <h1>Header</h1>
-</div>
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
+    <div class="header_background">
+      <h1>Header</h1>
+
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         {% unless logo_path == empty %}
@@ -44,6 +45,7 @@
         </button>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      </div>
     </div>
   </div>
 </div>
