@@ -8,6 +8,6 @@ classes: wide
 
 <div class="blog-index">  
   {% assign post = site.posts.first %}
-  {% assign post = site.posts.second %}
+  {% assign content = post.content %}
   {% include post_detail.html %}
 </div>
