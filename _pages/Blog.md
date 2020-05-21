@@ -7,7 +7,7 @@ classes: wide
 ---
 
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts limit:3 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
