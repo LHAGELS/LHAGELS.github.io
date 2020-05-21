@@ -1,15 +1,15 @@
 ---
 layout: archive
-permalink: /blog/
-title: Blog
+permalink: /home/
+title: Recent Posts
 author_profile: true
 classes: wide
 ---
 
 <ul>
-  {% for post in site.posts limit:3 %}
+  {% for post in site.posts limit:5 %}
     <li>
-      <a href="{{ post.url }} {{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
