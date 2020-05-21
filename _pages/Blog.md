@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: recent-posts
 permalink: /recent-posts/
 title: Recent posts
 author_profile: true
