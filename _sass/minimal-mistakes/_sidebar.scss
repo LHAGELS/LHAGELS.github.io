@@ -71,6 +71,13 @@
   }
 }
 
+.background_sidebar {
+  padding: 60px;
+  background-image: linear-gradient(268deg, #405f8f, #1c3050);
+  border: 0.25px solid rgba(38, 57, 85, 1);
+  border-radius: 10px 0px 0px 100%;
+}
+
 .sidebar__right {
   margin-bottom: 1em;
 
@@ -316,13 +323,4 @@
     width: initial;
     margin-right: initial;
   }
-}
-
-.background_sidebar {
-  padding: 60px;
-  text-align: center;
-  font-size: 30px;
-  background-image: linear-gradient(268deg, #405f8f, #1c3050);
-  border: 0.25px solid rgba(38, 57, 85, 1);
-  border-radius: 10px 0px 0px 100%;
 }
