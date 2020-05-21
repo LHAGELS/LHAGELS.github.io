@@ -236,7 +236,7 @@
 
   &.is--visible {
     display: block;
-    background-color: #304a73;
+    background-color: transparent;
     padding: 1em 1em 1em 2em;
     border-radius: 20px;
   }
@@ -265,6 +265,7 @@
 
     @include breakpoint($large) {
       display: none;
+      background-color: #304a73;
     }
   }
 
