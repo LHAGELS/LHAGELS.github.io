@@ -6,17 +6,14 @@ author_profile: true
 classes: wide
 ---
 
-{% assign thedate = '' %}
-
 {% for post in site.posts %}
 
-    {% if thedate != post.date | date: "%m-%d-%Y" %}
-        <h2>{{ post.date | date: "%A, %B %e, %Y" }}</h2>
+    {% capture day %}{{ post.date | date: '%m%d%Y' }}{% endcapture %}
+    {% capture nday %}{{ post.next.date | date: '%m%d%Y' }}{% endcapture %}
+
+    {% if day != nday %}
+        <h5 class="date">{{ post.date | date: "%A, %B %e, %Y" }}</h5>
     {% endif %}
-
-    {% assign thedate = post.date | date: "%m-%d-%Y" %}
-
-    <h3 class="headline"><a href="{{ post.url }}">{{ post.title }}</a></h3>
     {{ post.content }}
     <hr>
 
