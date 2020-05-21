@@ -98,10 +98,14 @@
   }
 }
 
-.header_background {
-   padding: 30px;
-   text-align: center;
-   background-image: linear-gradient(268deg, #405f8f, #1c3050);
-   color: white;
-   font-size: 30px;
- }
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
