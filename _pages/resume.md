@@ -3,7 +3,6 @@ layout: default
 permalink: /resume/
 title: Resume
 author_profile: false
-classes: wide
 date: May 22, 2020
 ---
 
