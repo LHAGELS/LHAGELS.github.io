@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: default
 permalink: /resume/
 title: Resume
 author_profile: false
