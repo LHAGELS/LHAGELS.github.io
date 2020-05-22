@@ -16,3 +16,5 @@ main:
     url: /certificates/
   - title: "Archive"
     url: /year-archive/
+  - title: "Resume test"
+    url: /resume/
