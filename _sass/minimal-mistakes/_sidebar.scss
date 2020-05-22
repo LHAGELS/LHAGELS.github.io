@@ -256,21 +256,6 @@
     box-shadow: none;
   }
 
-  &:before {
-
-    @include breakpoint($large) {
-      display: none;
-      background-color: #304a73;
-    }
-  }
-
-  &:after {
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
-
   li {
     white-space: nowrap;
     padding-right: 10px;
