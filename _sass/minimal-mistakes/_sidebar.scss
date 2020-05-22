@@ -205,7 +205,7 @@
   z-index: 10;
   position: relative;
   cursor: pointer;
-  padding-left: 0.5em;
+  padding-left: 0em;
 
   li:last-child {
     a {
@@ -267,8 +267,7 @@
     border-style: solid;
     border-width: 0 10px 10px;
     border-color: $border-color transparent;
-    z-index: 0
-    background-color:black;
+    z-index: 0;
 
     @include breakpoint($large) {
       display: none;
