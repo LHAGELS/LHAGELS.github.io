@@ -9,11 +9,8 @@ tags:
 
 date: May 25, 2020
 header:
-  teaser: /assets/images/thumbnails/joel-filipe-thumb-800.jpg
+  teaser: /assets/images/thumbnails/squarify_treemap.png
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
-
-feature_row1:
-  - image_path: assets/images/squarify_treemap.png
 ---
 
 ## Let's scrape some data from the web
