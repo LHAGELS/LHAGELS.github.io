@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: posts
 title: "Visualizing the Composition of Study Programmes in Python"
 tags:
   - Web Scraping

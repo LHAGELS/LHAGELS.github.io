@@ -2,7 +2,13 @@
 layout: archive
 ---
 
+{% include reading-time.html %}
+
 {{ content }}
+
+<head>
+  <link rel="stylesheet" href="/_layouts/block_format.css">
+</head>
 
 <ul class="taxonomy__index">
   {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
