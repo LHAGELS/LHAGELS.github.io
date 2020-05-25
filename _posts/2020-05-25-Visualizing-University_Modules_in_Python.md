@@ -324,5 +324,4 @@ Next, we plot our data with the squarify library and get the desired outcome.
   plt.savefig("...system path...")
 ```
 
-&nbsp;
 {% include feature_row id="feature_row1" type="center" %}
