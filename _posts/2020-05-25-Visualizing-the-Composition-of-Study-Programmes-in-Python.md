@@ -14,8 +14,10 @@ excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 
 ---
 
-In this blog post I am going to explain the steps starting from a data table we see on a particular web page, over data cleansing and manipulating thus we end up with a user-friendly presentation of the data.\n
-When performing the analysis steps I often do only present the first few rows of the dataframe to save some space.
+In this blog post I am going to explain the steps starting from a data table we see on a particular web page, over data cleansing and manipulating thus we end up with a user-friendly presentation of the data.
+
+When performing the analysis steps I often do only present the first few rows of the dataframe to save some space.  
+Furthermore, you may read the comments in the coding-section (indicated with **#**) to better understand the written code.
 
 The final result will be a visually representation of the bachelor programme I have attended in Konstanz:
 
@@ -25,8 +27,8 @@ The final result will be a visually representation of the bachelor programme I h
 ## Let's start from scratch!
 
 ### 1. Scrape some data from the web
-There are several libraries for web scraping available. The most common in python are BeautifulSoup and Selenium. Both have their advantages and disadvantages but are intuitively and easy to apply.
-Due to complexity issues of the exam table I use a combination of both in this project.
+There are several libraries for web scraping available. The most common in python are BeautifulSoup and Selenium. Both have their advantages and disadvantages but are intuitively and easy to apply.  
+Due to complexity issues of the exam table we want to scrape in this session I use a combination of both in this project. Selenium has to unveil the required information before the HTML-code can be extracted.
 
 ### 1.1 Set-up the webdriver for your browser
 ```python
@@ -39,7 +41,7 @@ Due to complexity issues of the exam table I use a combination of both in this p
   options.add_argument("--disable-setuid-sandbox")
 ```
 
-### 1.2 Login on the website and navigate to Exam Results
+### 1.2 Login on the Website and Navigate to Exam Results
 ```python
   driver = webdriver.Chrome("...path to you chromedriver.exe...", options=options)#
 
@@ -55,19 +57,21 @@ Due to complexity issues of the exam table I use a combination of both in this p
   password.send_keys("...Password...")
   driver.find_element_by_name("...Element name of Login Button...").click()
 
-  #navigate to the exam results (in this case we deal with an collapsed table thus we need to manually expand the table with Selenium)
+  #navigate to the exam results
+  #(in this case we deal with an collapsed table thus we need to manually expand the table with Selenium)
   driver.get('...Link of the page with your exam results...')
   #find the element to expand the whole table
   driver.find_element_by_id("...id of element that expands the whole table").click()
 ```
 
-First, the algorithm opens the login page and continues entering the login details and "click" submit. Second, it navigates to the page that contains exam results and expands all the root nodes to unveil all modules. At this point we are able to extract the needed HTML-code from the web page.
+First, the algorithm opens the login page and continues entering the login details and "click" submit. Second, it navigates to the page that contains exam results and expands all the root nodes to unveil all modules. At this point we are able to extract the needed HTML-code from the web page.  
+The required information about the web page's elements can be found by the web developer tool of your browser.
 
 ![Selenium Worksteps](/assets/videos/selenium-login-and-toggle.gif)
 
-### 1.3 Find the table of interest and get the HTML code with BeautifulSoup
-In the next step I need to extract the unveiled information. For this purpose I use BeautifulSoup to receive the HTML-code of the result table that is found by the xpath. The xpath is provided by the chrome developer tool. (Check out the web for further explanation)
-Soup_expanded provides the HTML-code of the exam results.
+### 1.3 Find the Table of Interest and get the HTML Code with BeautifulSoup
+In the next step we need to extract the unveiled information. For this purpose we make use of the BeautifulSoup library to receive the HTML-code of the results table that ca be found by its xpath. The xpath is also provided by the web developer tool of your browser. (Check out the web for further explanation)  
+The extracted HTML-code that contains unwrapped information is assigned to the variable _Soup_expanded_.
 
 ```python
   from bs4 import BeautifulSoup
@@ -80,7 +84,7 @@ Soup_expanded provides the HTML-code of the exam results.
 ```
 
 ### 1.4 Create a Pandas Dataframe
-At this point we scraped the data but cannot process the information we received so far. In order to perform data cleansing and manipulation to visualize the data, we assign the HTML-code to a Pandas DataFrame.
+At this point we scraped the data but cannot process the information so far since it is still in HTML-format. In order to perform data cleansing and manipulation to with the goal to visualize data, we assign the HTML-code to a Pandas DataFrame.
 
 ```python
   import pandas as pd
@@ -90,21 +94,28 @@ At this point we scraped the data but cannot process the information we received
 
   #Giving the HTML table to pandas to put in a dataframe object
   df = pd.read_html(str(table), header=1)[0]
+
+  print("The dataframe has",df.shape[0], "rows and", df.shape[1],"columns")
+  print(df["Bonus"].sum(), "of 180 credits")
 ```
 
-Finally, we received a cross-sectional data table that provides observations in rows and different variables (e.g. Grade, Credits, Attempt, Module_nr) in the columns. However, since we have some columns that do not provide utility, we are going to tide up!
+Finally, we receive a cross-sectional data table that provides observations in rows and different variables (e.g. Grade, Credits, Attempt, Module_nr) in the columns. However, since we have some columns that are a bit messy, we are going to tide it up! We find a dataframe shape of 74x25 [rows x columns]. I do not remember that I participated in that many exams!  
+Further, when adding up all credits included in the data, we receive unbeatable 1193 credit points.
 
 ![df.head()](/assets/images/posts/25_05_20/1_4_df.png)
 
 ### 2. Wrangle Dangle Ding Dong!
 ### 2.1 Clean Data is good Data
-Our dataset is quite small thus it seems relatively easy to structure the data.
+Our dataset is small thus it seems quite easy to be structured.
 We face several problems:
-  1. Many variables that do not make sense
-  2. German column names
-  3. Modules are not unique caused to the root node style of the original web table
+  1. Many variables that do not make sense  
+     (e.g. multiple columns with the same information)
+  2. German column names  
+     (since we want to communicate our results to an english audience)
+  3. Some modules are not unique  
+     (caused by the root node style of the original web table)
 
-The following code snippet solves the above mentioned problems. This step is not universal for all students since the provided conditions may vary depending on whether a student did an internship or not. Furthermore, some want to observe rather passed modules than every module that has ever been attended.
+The following code snippet solves the above mentioned problems. This step is not a universal process since the provided conditions may vary depending on whether a student did an internship or not. Furthermore, some want rather observe only passed modules than every module that has ever been attended.
 
 ```python
   #inspect columns and select the data
@@ -125,12 +136,16 @@ The following code snippet solves the above mentioned problems. This step is not
   print(df_modules["Credits"].sum(), "of 180 credits included in the data")
 ```
 ![df_clean.head()](/assets/images/posts/25_05_20/2_1_df.png)
+![df_clean.head()](/assets/images/posts/25_05_20/2_1_after_cleansing.png)
+
+The shape of our data has reduced from 74x25 to 26x5 [rows x columns]. In addition the number of credit points decreased from 1193 to 180 credits.  
+This seems to be much more reliable!
 
 ### 2.2 Rename Modules that cannot be distinguished from Others
-During the double check of the most recent changes we notice 3 modules "Anerkennung" that cannot be distinguished from each other. These are modules I have attended abroad and should be renamed since the scraping process was not able to receive the correct names.
+During doublechecking our data after the recent changes, we notice three modules called "Anerkennung" that cannot be distinguished from each other. These are modules I have attended abroad. We should rename these modules manually since the scraping process was not able to receive the correct names in the automated process.
 
 ```python
-  #Manipulate data in column "Module" since "Anerkennung" is not the modules name (course taken abroad and credited in germany)
+  #Manipulate data in column "Module" since "Anerkennung" is not the modules name (course taken abroad and credited in Germany)
   df_modules["Module"][df_modules["Module_nr"] == "22"] = "Econometrics"
   df_modules["Module"][df_modules["Module_nr"] == "21"] = "Financial Markets & Institutions"
   df_modules["Module"][df_modules["Module_nr"] == "20"] = "Operations & Supply Chain Management"
@@ -141,7 +156,7 @@ During the double check of the most recent changes we notice 3 modules "Anerkenn
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/2_2_abroad_correction.png)
 
 ### 2.3 Provide English Translations of the Modules
-We create a first list of the Module column and zip it (pairwise) with a second list that includes english translations. The resulting object is a german(keys) - english(values) dictionary. Finally, we assign the english names to a new column.
+We create a first list of the Module column and zip it (pairwise) with a second list that includes English translations. The resulting object is a German(keys)-English(values) dictionary. Finally, we assign the English module names to a new column.
 
 ```python
   #create a list of the "Module" column
@@ -184,7 +199,7 @@ We create a first list of the Module column and zip it (pairwise) with a second 
 ```
 
 ### 2.4 Sections Matter!
-It may be of interest which module is assigned to as certain study section for a brief insight into the curriculum. Therefore, I write a dictionary with study sections as keys and lists of modules as values. Each list (value) is assigned to a certain key.
+It may be of interest which module may be classified in a certain study section. This offers deeper insights into the curriculum. Therefore, we write a dictionary with study sections as keys and lists of modules as values. Each module list (value) is assigned to a certain section (key).
 
 ```python
   import numpy as np
@@ -219,16 +234,17 @@ It may be of interest which module is assigned to as certain study section for a
                         "Psychology": ["Social Psychology"],
                         "Internship": ["Internship",
                                        "IT-Module",
-                                       "Negotiations"                                  ]
-                        }
+                                       "Negotiations"
+                                      ]
+                         }
 
   #search for tags in module names
   df_modules["Section"] = "none"
   for i in range(len(section_module_dict.keys())):
-    df_modules["Section"] = np.where(df_modules["Module_eng"].str.contains('|'.join(list(section_module_dict.values())[i])),list(section_module_dict)[i], df_modules["Section"])
-
-  #check if all sections are assigned properly
-  df_modules
+    df_modules["Section"] = np.where(df_modules["Module_eng"].str.contains('|'.join(list(section_module_dict.values())[i])),
+                                     list(section_module_dict)[i],
+                                     df_modules["Section"]
+                                    )
 ```
 
 The "for-loop" searches for strings that are included in the values (lists) for each index of the dictionary. If a certain module is included in the list of an index, the key of this index is assigned to a column "Sections". If the value is not in this list, the column does not change at all.
