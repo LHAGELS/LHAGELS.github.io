@@ -28,7 +28,7 @@ The final result will be a visually representation of the bachelor programme I h
 There are several libraries for web scraping available. The most common in python are BeautifulSoup and Selenium. Both have their advantages and disadvantages but are intuitively and easy to apply.
 Due to complexity issues of the exam table I use a combination of both in this project.
 
-#### 1.1 Set-up the webdriver for your browser
+### 1.1 Set-up the webdriver for your browser
 ```python
   #pip install bs4 selenium
   from selenium import webdriver
@@ -39,7 +39,7 @@ Due to complexity issues of the exam table I use a combination of both in this p
   options.add_argument("--disable-setuid-sandbox")
 ```
 
-#### 1.2 Login on the website and navigate to Exam Results
+### 1.2 Login on the website and navigate to Exam Results
 ```python
   driver = webdriver.Chrome("...path to you chromedriver.exe...", options=options)#
 
@@ -65,7 +65,7 @@ First, the algorithm opens the login page and continues entering the login detai
 
 ![Selenium Worksteps](/assets/videos/selenium-login-and-toggle.gif)
 
-#### 1.3 Find the table of interest and get the HTML code with BeautifulSoup
+### 1.3 Find the table of interest and get the HTML code with BeautifulSoup
 In the next step I need to extract the unveiled information. For this purpose I use BeautifulSoup to receive the HTML-code of the result table that is found by the xpath. The xpath is provided by the chrome developer tool. (Check out the web for further explanation)
 Soup_expanded provides the HTML-code of the exam results.
 
@@ -97,7 +97,7 @@ Finally, we received a cross-sectional data table that provides observations in 
 ![df.head()](/assets/images/posts/25_05_20/1_4_df.png)
 
 ### 2. Wrangle Dangle Ding Dong!
-#### 2.1 Clean Data is good Data
+### 2.1 Clean Data is good Data
 Our dataset is quite small thus it seems relatively easy to structure the data.
 We face several problems:
   1. Many variables that do not make sense
@@ -126,7 +126,7 @@ The following code snippet solves the above mentioned problems. This step is not
 ```
 ![df_clean.head()](/assets/images/posts/25_05_20/2_1_df.png)
 
-#### 2.2 Rename Modules that cannot be distinguished from Others
+### 2.2 Rename Modules that cannot be distinguished from Others
 During the double check of the most recent changes we notice 3 modules "Anerkennung" that cannot be distinguished from each other. These are modules I have attended abroad and should be renamed since the scraping process was not able to receive the correct names.
 
 ```python
@@ -140,7 +140,7 @@ During the double check of the most recent changes we notice 3 modules "Anerkenn
 ```
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/2_2_abroad_correction.png)
 
-#### 2.3 Provide English Translations of the Modules
+### 2.3 Provide English Translations of the Modules
 We create a first list of the Module column and zip it (pairwise) with a second list that includes english translations. The resulting object is a german(keys) - english(values) dictionary. Finally, we assign the english names to a new column.
 
 ```python
@@ -183,7 +183,7 @@ We create a first list of the Module column and zip it (pairwise) with a second 
   df_modules["Module_eng"].replace(modules_dict, inplace=True)
 ```
 
-#### 2.4 Sections Matter!
+### 2.4 Sections Matter!
 It may be of interest which module is assigned to as certain study section for a brief insight into the curriculum. Therefore, I write a dictionary with study sections as keys and lists of modules as values. Each list (value) is assigned to a certain key.
 
 ```python
@@ -233,7 +233,7 @@ It may be of interest which module is assigned to as certain study section for a
 
 The "for-loop" searches for strings that are included in the values (lists) for each index of the dictionary. If a certain module is included in the list of an index, the key of this index is assigned to a column "Sections". If the value is not in this list, the column does not change at all.
 
-#### 2.5 Quantitative or Qualitative?
+### 2.5 Quantitative or Qualitative?
 Finally, universities distinguish between qualitative and quantitative modules. Since there is no identifier which type a module is assigned we have to set up a list manually, again. It is important to work in the respective order of the modules in the dataset to obtain proper allocations. Doublechecking is mandatory!
 
 ```python
@@ -282,7 +282,7 @@ Finally, universities distinguish between qualitative and quantitative modules. 
 After the previous data mining the dataframe has a shape of 26 x 8 [rows x columns]:
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/2_5_translate_sections_type.png)
 ### 3. Data Exploration / Data Mining
-#### 3.1 What is the Composition of the B.Sc. Economics in Konstanz?
+### 3.1 What is the Composition of the B.Sc. Economics in Konstanz?
 The most important information to answer this question are is the proportion of each study section relative to the degree.
 The following code snippet prints the composition of the programme as follows:
     "credits abs." (= "proportion in %") credits in "study section"
@@ -306,7 +306,7 @@ Output of the previous code:
 * 8.0 (= 4.4 %) credits in Psychology
 * 20.0 (= 11.1 %) credits in Statistics
 
-#### 3.2 Visualizing the new Insights as Treemap
+### 3.2 Visualizing the new Insights as Treemap
 As Data Scientist we are interested to communicate our computations in a user friendly way. Therefore I decided to visualize the Results as Treemap since it indicates dimensions well.
 
 First, we introduce two lists. _credits_sec_sizes_ contains the absolute credit points per study section, whereas _credits_sec_labels_ serve as label data and contains the same information plus the name and relative fraction of each section.
