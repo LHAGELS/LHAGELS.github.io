@@ -282,7 +282,7 @@ Finally, universities distinguish between qualitative and quantitative modules. 
 After the previous data mining the dataframe has a shape of 26 x 8 [rows x columns]:
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/2_5_translate_sections_type.png)
 ### 3. Data Exploration / Data Mining
-#### 3.1 How is the composition of the B.Sc. Economics in Konstanz?
+#### 3.1 What is the Composition of the B.Sc. Economics in Konstanz?
 The most important information to answer this question are is the proportion of each study section relative to the degree.
 The following code snippet prints the composition of the programme as follows:
     "credits abs." (= "proportion in %") credits in "study section"
@@ -298,13 +298,13 @@ The following code snippet prints the composition of the programme as follows:
     print(value, "(=", percent, "%)", "credits in", i)
 ```
 Output:
-  43.5 (= 24.2 %) credits in Business Studies
-  58.5 (= 32.5 %) credits in Economics
-  29.0 (= 16.1 %) credits in Internship
-  3.0 (= 1.7 %) credits in Law
-  18.0 (= 10.0 %) credits in Mathematics
-  8.0 (= 4.4 %) credits in Psychology
-  20.0 (= 11.1 %) credits in Statistics
+* 43.5 (= 24.2 %) credits in Business Studies
+* 58.5 (= 32.5 %) credits in Economics
+* 29.0 (= 16.1 %) credits in Internship
+* 3.0 (= 1.7 %) credits in Law
+* 18.0 (= 10.0 %) credits in Mathematics
+* 8.0 (= 4.4 %) credits in Psychology
+* 20.0 (= 11.1 %) credits in Statistics
 
 #### 3.2 Visualizing the new Insights as Treemap
 As Data Scientist we are interested to communicate our computations in a user friendly way. Therefore I decided to visualize the Results as Treemap since it indicates dimensions well.
