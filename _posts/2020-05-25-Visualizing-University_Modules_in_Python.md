@@ -12,8 +12,15 @@ header:
   teaser: /assets/images/thumbnails/squarify_treemap.png
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 ---
+In this blog post I am going to explain the worksteps starting from a data table we see on a webpage, over data cleaning and manipulating thus we end up with a user friendly illustration of the data.
 
-## Let's scrape some data from the web
+The final illustration will be a visually composition representation of the bachelor programme I have attended in Konstanz:
+
+{% include squarify_treemap.html %}
+
+#This is how we start:
+
+## 1. Let's scrape some data from the web
 There are several libraries for web scraping available. The most common in python are BeautifulSoup and Selenium. Both have their advantages and disadvantages but are intuitively and easy to apply.
 Due to complexity issues of the exam table I use a combination of both in this project.
 
@@ -321,4 +328,4 @@ Next, we plot our data with the squarify library and get the desired outcome.
   plt.savefig("...system path...")
 ```
 
-{% include Squarify_Treemap.html %}
+{% include squarify_treemap.html %}
