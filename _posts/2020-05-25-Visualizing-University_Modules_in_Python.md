@@ -274,14 +274,14 @@ The following code snippet prints the composition of the programme as follows:
     "credits abs." (= "proportion in %") credits in "study section"
 
 ```python
-#create a list of unique values
-sections = list(df_modules["Section"].sort_values().unique())
+  #create a list of unique values
+  sections = list(df_modules["Section"].sort_values().unique())
 
-#check for each value in list
-for i in sections:
-  value = sum(df_modules["Credits"][df_modules["Section"] == i])
-  percent = round(sum((df_modules["Credits"][df_modules["Section"] == i]) / sum(df_modules["Credits"]))*100, 1)
-  print(value, "(=", percent, "%)", "credits in", i)
+  #check for each value in list
+  for i in sections:
+    value = sum(df_modules["Credits"][df_modules["Section"] == i])
+    percent = round(sum((df_modules["Credits"][df_modules["Section"] == i]) / sum(df_modules["Credits"]))*100, 1)
+    print(value, "(=", percent, "%)", "credits in", i)
 ```
 
 ### 3.2 Visualizing the new Insights as Treemap
@@ -324,4 +324,4 @@ Next, we plot our data with the squarify library and get the desired outcome.
   plt.savefig("...system path...")
 ```
 
-{% include feature_row id="feature_row1" type="center" %}
+{% include Squarify_Treemap.html %}
