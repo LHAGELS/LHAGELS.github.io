@@ -115,7 +115,7 @@ We face several problems:
   3. Some modules are not unique  
      (caused by the root node style of the original web table)
 
-The following code snippet solves the above mentioned problems. This step is not a universal process since the provided conditions may vary depending on whether a student did an internship or not. Furthermore, some want rather observe only passed modules than every module that has ever been attended.
+>The following code snippet solves the above mentioned problems. This step is not a universal process since the provided conditions may vary depending on whether a student did an internship or not. Furthermore, some want rather observe only passed modules than every module that has ever been attended.
 
 ```python
   #inspect columns and select the data
