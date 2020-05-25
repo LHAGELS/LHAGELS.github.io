@@ -135,10 +135,11 @@ The following code snippet solves the above mentioned problems. This step is not
   #check if the DataFrame includes all credits
   print(df_modules["Credits"].sum(), "of 180 credits included in the data")
 ```
-![df_clean.head()](/assets/images/posts/25_05_20/2_1_df.png)
-![df_shape](/assets/images/posts/25_05_20/2_1_after_cleansing.png)
+![df_clean.head()](/assets/images/posts/25_05_20/2_1_df.png)  
+![df_shape](/assets/images/posts/25_05_20/2_1_after.png)
 
 The shape of our data has reduced from 74x25 to 26x5 [rows x columns]. In addition the number of credit points decreased from 1193 to 180 credits.  
+
 This seems to be much more reliable!
 
 ### 2.2 Rename Modules that cannot be distinguished from Others
