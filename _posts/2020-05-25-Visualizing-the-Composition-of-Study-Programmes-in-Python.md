@@ -12,6 +12,7 @@ header:
   teaser: /assets/images/thumbnails/squarify_treemap.png
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 ---
+
 In this blog post I am going to explain the worksteps starting from a data table we see on a webpage, over data cleaning and manipulating thus we end up with a user friendly illustration of the data.
 
 The final illustration will be a visually composition representation of the bachelor programme I have attended in Konstanz:
