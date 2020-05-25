@@ -14,8 +14,8 @@ excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 
 ---
 
-In this blog post I am going to explain the steps starting from a data table we see on a particular web page, over data cleansing and manipulating thus we end up with a user-friendly presentation of the data.
-When performing the analysis steps I do only present the first few rows of the dataframe to save some space.
+In this blog post I am going to explain the steps starting from a data table we see on a particular web page, over data cleansing and manipulating thus we end up with a user-friendly presentation of the data.\n
+When performing the analysis steps I often do only present the first few rows of the dataframe to save some space.
 
 The final result will be a visually representation of the bachelor programme I have attended in Konstanz:
 
