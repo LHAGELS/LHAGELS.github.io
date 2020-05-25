@@ -59,7 +59,7 @@ Due to complexity issues of the exam table I use a combination of both in this p
   driver.find_element_by_id("...id of element that expands the whole table").click()
 ```
 
-![Hallo](./assets/videos/selenium-login-and-toggle.gif)
+![Hallo](/assets/videos/selenium-login-and-toggle.gif)
 
 #### 1.3 Find the table of interest and get the HTML code with BeautifulSoup
 In the next step I need to extract the unveiled information. For this purpose I use BeautifulSoup to receive the HTML-code of the result table that is found by the xpath. The xpath is provided by the chrome developer tool. (Check out the web for further explanation)
