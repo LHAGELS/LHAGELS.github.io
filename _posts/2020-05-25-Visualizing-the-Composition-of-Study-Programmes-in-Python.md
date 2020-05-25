@@ -247,10 +247,10 @@ It may be of interest which module may be classified in a certain study section.
                                     )
 ```
 
-**The "for-loop" searches for strings that are included in the values (lists) for each index of the dictionary. If a certain module is included in the list of an index, the key of this index is assigned to a column "Sections". If the value is not in this list, the column does not change at all.
+The "for-loop" searches for strings that are included in the values (lists) for each index of the dictionary. If a certain module is included in the list of an index, the key of this index is assigned to a column "Sections". If the value is not in this list, the column does not change at all.
 
 ### 2.5 Quantitative or Qualitative?
-Finally, universities distinguish between qualitative and quantitative modules. Since there is no identifier which type a module is assigned we have to set up a list manually, again. It is important to work in the respective order of the modules in the dataset to obtain proper allocations. Doublechecking is mandatory!
+Finally, universities distinguish between qualitative and quantitative modules. Since there is no identifier which type a module is assigned to we have to set up a list manually. It is important to work in the respective order of the modules in the dataset to obtain proper allocations. Doublechecking is mandatory!
 
 ```python
   #create a list that assign the course type respectively to the module column
@@ -285,10 +285,8 @@ Finally, universities distinguish between qualitative and quantitative modules. 
   #check the lengths of both lists
   print(len(modules_eng), len(type_list))
 
-  #create a dictionary and assign a new column that contains the course type
-  mod_type_dict = dict(zip(modules_eng,type_list))
-  df_modules["type"] = df_modules["Module_eng"]
-  df_modules["type"].replace(mod_type_dict, inplace=True)
+  #create a column "type from the type_list"
+  df_modules["type"] = pd.DataFrame(type_list)
 
   #double check if every type is assigned correctly
   display(df_modules.head())
@@ -314,16 +312,16 @@ The following code snippet prints the composition of the programme as follows:
     print(value, "(=", percent, "%)", "credits in", i)
 ```
 Output of the previous code:
-* 43.5 (= 24.2 %) credits in Business Studies
-* 58.5 (= 32.5 %) credits in Economics
-* 29.0 (= 16.1 %) credits in Internship
-* 3.0 (= 1.7 %) credits in Law
-* 18.0 (= 10.0 %) credits in Mathematics
-* 8.0 (= 4.4 %) credits in Psychology
-* 20.0 (= 11.1 %) credits in Statistics
+* 43.5 (= 24.2%) credits in Business Studies
+* 58.5 (= 32.5%) credits in Economics
+* 29.0 (= 16.1%) credits in Internship
+* 3.0 (= 1.7%) credits in Law
+* 18.0 (= 10.0%) credits in Mathematics
+* 8.0 (= 4.4%) credits in Psychology
+* 20.0 (= 11.1%) credits in Statistics
 
 ### 3.2 Visualizing the new Insights as Treemap
-As Data Scientist we are interested to communicate our computations in a user friendly way. Therefore I decided to visualize the Results as Treemap since it indicates dimensions well.
+As Data Scientist we are interested to communicate our computations in a user friendly way. Therefore I decided to visualize the results as treemap since it indicates dimensions well.
 
 First, we introduce two lists. _credits_sec_sizes_ contains the absolute credit points per study section, whereas _credits_sec_labels_ serve as label data and contains the same information plus the name and relative fraction of each section.
 
