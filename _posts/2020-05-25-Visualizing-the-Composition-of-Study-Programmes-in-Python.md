@@ -11,10 +11,6 @@ date: May 25, 2020
 header:
   teaser: /assets/images/thumbnails/squarify_treemap.png
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
-
-feature_row1:
-  - image_path: /assets/videos/selenium login and toggle.gif
-    text: "First, the algorithm opens the login page to enter the login details and "click" submit. Second, it navigates to the page that contains exam results and expands all the root nodes to unveil all modules."
 ---
 
 In this blog post I am going to explain the steps starting from a data table we see on a particular web page, over data cleansing and manipulating thus we end up with a user-friendly presentation of the data.
