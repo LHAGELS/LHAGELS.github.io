@@ -297,7 +297,7 @@ The following code snippet prints the composition of the programme as follows:
     percent = round(sum((df_modules["Credits"][df_modules["Section"] == i]) / sum(df_modules["Credits"]))*100, 1)
     print(value, "(=", percent, "%)", "credits in", i)
 ```
-Output:
+Output of the previous code:
 * 43.5 (= 24.2 %) credits in Business Studies
 * 58.5 (= 32.5 %) credits in Economics
 * 29.0 (= 16.1 %) credits in Internship
