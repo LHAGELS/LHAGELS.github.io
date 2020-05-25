@@ -18,7 +18,7 @@ There are several libraries for web scraping available. The most common in pytho
 Due to complexity issues of the exam table I use a combination of both in this project.
 
 ### 1.1 Set-up the webdriver for your browser
-```Python
+```python
     #pip install bs4 selenium
     from selenium import webdriver
 
@@ -29,7 +29,7 @@ Due to complexity issues of the exam table I use a combination of both in this p
 ```
 
 ### 1.2 Login on the website and navigate to the Exam Results
-```Python
+```python
     driver = webdriver.Chrome("...path to you chromedriver.exe...", options=options)#
 
     #open the login page
@@ -56,7 +56,7 @@ First, the algorithm opens the login page to enter the login details and "click"
 In the next step I need to extract the unveiled information. For this purpose I use BeautifulSoup to receive the HTML-code of the result table that is found by the xpath. The xpath is provided by the chrome developer tool. (Check out the web for further explanation)
 Soup_expanded provides the HTML-code of the exam results.
 
-```Python
+```python
     from bs4 import BeautifulSoup
 
     #find the table by Xpath
@@ -69,7 +69,7 @@ Soup_expanded provides the HTML-code of the exam results.
 ### 1.4 Create a Pandas Dataframe
 At this point we scraped the data but cannot process the information we received so far. In order to clean, manipulate and visualize the data we assign the HTML-code to a Pandas DataFrame.
 
-```Python
+```python
     import pandas as pd
 
     #Beautiful Soup grabs the HTML table on the page
@@ -92,7 +92,7 @@ We face several problems:
 
 The following code snippet solves the above mentioned problems. This step is not universal for all students since the provided conditions may vary depending on whether a student did an internship or not. Furthermore, some want to observe rather passed modules than every module that has ever been attended.
 
-```Python
+```python
 
     #inspect columns and select the data
     print(df.columns)
@@ -115,7 +115,7 @@ The following code snippet solves the above mentioned problems. This step is not
 ### 2.2 Rename Modules that cannot be distinguished from Others
 During the double check of the most recent changes we notice 3 modules "Anerkennung" that cannot be distinguished from each other. These are modules I have attended abroad and should be renamed since the scraping process was not able to receive the correct names.
 
-```Python
+```python
     #Manipulate data in column "Module" since "Anerkennung" is not the modules name (course taken abroad and credited in germany)
     df_modules["Module"][df_modules["Module_nr"] == "22"] = "Econometrics"
     df_modules["Module"][df_modules["Module_nr"] == "21"] = "Financial Markets & Institutions"
@@ -128,7 +128,7 @@ During the double check of the most recent changes we notice 3 modules "Anerkenn
 ### 2.3 Provide English Translations of the Modules
 We create a first list of the Module column and zip it (pairwise) with a second list that includes english translations. The resulting object is a german(keys) - english(values) dictionary. Finally, we assign the english names to a new column.
 
-```Python
+```python
     #create a list of the "Module" column
     modules_de = list(df_modules["Module"].values)
 
@@ -171,7 +171,7 @@ We create a first list of the Module column and zip it (pairwise) with a second 
 ### 2.4 Sections Matter!
 It may be of interest which module is assigned to as certain study section for a brief insight into the curriculum. Therefore, I write a dictionary with study sections as keys and lists of modules as values. Each list (value) is assigned to a certain key.
 
-```Python
+```python
     import numpy as np
 
     #define a dictionary that assigns each section its modules
