@@ -11,6 +11,7 @@ date: May 25, 2020
 header:
   teaser: /assets/images/thumbnails/squarify_treemap.png
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
+
 ---
 
 In this blog post I am going to explain the steps starting from a data table we see on a particular web page, over data cleansing and manipulating thus we end up with a user-friendly presentation of the data.
@@ -59,7 +60,9 @@ Due to complexity issues of the exam table I use a combination of both in this p
   driver.find_element_by_id("...id of element that expands the whole table").click()
 ```
 
-![Hallo](/assets/videos/selenium-login-and-toggle.gif)
+First, the algorithm opens the login page and continues entering the login details and "click" submit. Second, it navigates to the page that contains exam results and expands all the root nodes to unveil all modules. At this point we are able to extract the needed HTML-code from the web page.
+
+![With and without Selenium](/assets/images/posts/selenium-tool.png)
 
 #### 1.3 Find the table of interest and get the HTML code with BeautifulSoup
 In the next step I need to extract the unveiled information. For this purpose I use BeautifulSoup to receive the HTML-code of the result table that is found by the xpath. The xpath is provided by the chrome developer tool. (Check out the web for further explanation)
