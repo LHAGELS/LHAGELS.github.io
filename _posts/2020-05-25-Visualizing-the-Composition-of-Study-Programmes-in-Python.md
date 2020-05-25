@@ -19,6 +19,7 @@ The final illustration will be a visually composition representation of the bach
 
 {% include Squarify_Treemap.html %}
 
+
 # Let's start from scratch!
 
 ## 1. Scrape some data from the web
@@ -36,7 +37,7 @@ Due to complexity issues of the exam table I use a combination of both in this p
   options.add_argument("--disable-setuid-sandbox")
 ```
 
-### 1.2 Login on the website and navigate to the Exam Results
+### 1.2 Login on the website and navigate to Exam Results
 ```python
   driver = webdriver.Chrome("...path to you chromedriver.exe...", options=options)#
 
