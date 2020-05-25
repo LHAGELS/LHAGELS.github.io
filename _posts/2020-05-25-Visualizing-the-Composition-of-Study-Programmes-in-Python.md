@@ -15,7 +15,7 @@ excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 
 In this blog post I am going to explain the steps starting from a data table we see on a particular web page, over data cleansing and manipulating thus we end up with a user-friendly presentation of the data.
 
-The final illustration will be a visually composition representation of the bachelor programme I have attended in Konstanz:
+The final result will be a visually representation of the bachelor programme I have attended in Konstanz:
 
 {% include Squarify_Treemap.html %}
 
