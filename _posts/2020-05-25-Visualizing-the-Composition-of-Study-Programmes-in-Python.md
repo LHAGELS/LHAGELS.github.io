@@ -63,7 +63,6 @@ Due to complexity issues of the exam table I use a combination of both in this p
   driver.find_element_by_id("...id of element that expands the whole table").click()
 ```
 
-{% include feature_row id="feature_row1" type="left" %}
 ![](/assets/videos/selenium login and toggle.gif)
 
 #### 1.3 Find the table of interest and get the HTML code with BeautifulSoup
