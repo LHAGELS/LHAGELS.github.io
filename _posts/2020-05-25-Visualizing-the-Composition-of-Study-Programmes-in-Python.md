@@ -13,7 +13,7 @@ header:
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 
 feature_row1:
-  - image_path: assets/videos/selenium login and toggle.gif
+  - image_path: /assets/videos/selenium login and toggle.gif
     text: "First, the algorithm opens the login page to enter the login details and "click" submit. Second, it navigates to the page that contains exam results and expands all the root nodes to unveil all modules."
 ---
 
@@ -64,6 +64,7 @@ Due to complexity issues of the exam table I use a combination of both in this p
 ```
 
 {% include feature_row id="feature_row1" type="left" %}
+![](name-of-giphy.gif)
 
 #### 1.3 Find the table of interest and get the HTML code with BeautifulSoup
 In the next step I need to extract the unveiled information. For this purpose I use BeautifulSoup to receive the HTML-code of the result table that is found by the xpath. The xpath is provided by the chrome developer tool. (Check out the web for further explanation)
