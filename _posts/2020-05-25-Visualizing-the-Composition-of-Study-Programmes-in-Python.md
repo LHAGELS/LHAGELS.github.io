@@ -20,13 +20,13 @@ The final result will be a visually representation of the bachelor programme I h
 {% include Squarify_Treemap.html %}
 
 
-# Let's start from scratch!
+## Let's start from scratch!
 
-## 1. Scrape some data from the web
+### 1. Scrape some data from the web
 There are several libraries for web scraping available. The most common in python are BeautifulSoup and Selenium. Both have their advantages and disadvantages but are intuitively and easy to apply.
 Due to complexity issues of the exam table I use a combination of both in this project.
 
-### 1.1 Set-up the webdriver for your browser
+#### 1.1 Set-up the webdriver for your browser
 ```python
   #pip install bs4 selenium
   from selenium import webdriver
@@ -37,7 +37,7 @@ Due to complexity issues of the exam table I use a combination of both in this p
   options.add_argument("--disable-setuid-sandbox")
 ```
 
-### 1.2 Login on the website and navigate to Exam Results
+#### 1.2 Login on the website and navigate to Exam Results
 ```python
   driver = webdriver.Chrome("...path to you chromedriver.exe...", options=options)#
 
@@ -61,7 +61,7 @@ Due to complexity issues of the exam table I use a combination of both in this p
 
 First, the algorithm opens the login page to enter the login details and "click" submit. Second, it navigates to the page that contains exam results and expands all the root nodes to unveil all modules.
 
-### 1.3 Find the table of interest and get the HTML code with BeautifulSoup
+#### 1.3 Find the table of interest and get the HTML code with BeautifulSoup
 In the next step I need to extract the unveiled information. For this purpose I use BeautifulSoup to receive the HTML-code of the result table that is found by the xpath. The xpath is provided by the chrome developer tool. (Check out the web for further explanation)
 Soup_expanded provides the HTML-code of the exam results.
 
@@ -90,9 +90,9 @@ At this point we scraped the data but cannot process the information we received
 
 Finally, we received a cross-sectional data table that provides observations in rows and different variables (e.g. Grade, Credits, Attempt, Module_nr and much more needless variables)
 
-## 2. Wrangle Dangle Ding Dong!
+### 2. Wrangle Dangle Ding Dong!
 
-### 2.1 Clean Data is good Data
+#### 2.1 Clean Data is good Data
 Since our dataset is quite small it seems relatively easy to structure our data.
 We face several problems:
   1. Many variables that do not make sense
@@ -121,7 +121,7 @@ The following code snippet solves the above mentioned problems. This step is not
   print(df_modules["Credits"].sum(), "of 180 credits included in the data")
 ```
 
-### 2.2 Rename Modules that cannot be distinguished from Others
+#### 2.2 Rename Modules that cannot be distinguished from Others
 During the double check of the most recent changes we notice 3 modules "Anerkennung" that cannot be distinguished from each other. These are modules I have attended abroad and should be renamed since the scraping process was not able to receive the correct names.
 
 ```python
@@ -134,7 +134,7 @@ During the double check of the most recent changes we notice 3 modules "Anerkenn
   df_modules[df_modules["Module_nr"].str.len() == 2]
 ```
 
-### 2.3 Provide English Translations of the Modules
+#### 2.3 Provide English Translations of the Modules
 We create a first list of the Module column and zip it (pairwise) with a second list that includes english translations. The resulting object is a german(keys) - english(values) dictionary. Finally, we assign the english names to a new column.
 
 ```python
@@ -177,7 +177,7 @@ We create a first list of the Module column and zip it (pairwise) with a second 
   df_modules["Module_eng"].replace(modules_dict, inplace=True)
 ```
 
-### 2.4 Sections Matter!
+#### 2.4 Sections Matter!
 It may be of interest which module is assigned to as certain study section for a brief insight into the curriculum. Therefore, I write a dictionary with study sections as keys and lists of modules as values. Each list (value) is assigned to a certain key.
 
 ```python
@@ -227,7 +227,7 @@ It may be of interest which module is assigned to as certain study section for a
 
 The "for-loop" searches for strings that are included in the values (lists) for each index of the dictionary. If a certain module is included in the list of an index, the key of this index is assigned to a column "Sections". If the value is not in this list, the column does not change at all.
 
-### 2.5 Quantitative or Qualitative?
+#### 2.5 Quantitative or Qualitative?
 Finally, universities distinguish between qualitative and quantitative modules. Since there is no identifier which type a module is assigned we have to set up a list manually, again. It is important to work in the respective order of the modules in the dataset to obtain proper allocations. Doublechecking is mandatory!
 
 ```python
@@ -272,9 +272,9 @@ Finally, universities distinguish between qualitative and quantitative modules. 
   df_modules
 ```
 
-## 3. Data Exploration / Data Mining
+### 3. Data Exploration / Data Mining
 
-### 3.1 How is the composition of the B.Sc. Economics in Konstanz?
+#### 3.1 How is the composition of the B.Sc. Economics in Konstanz?
 The most important information to answer this question are is the proportion of each study section relative to the degree.
 The following code snippet prints the composition of the programme as follows:
     "credits abs." (= "proportion in %") credits in "study section"
@@ -290,7 +290,7 @@ The following code snippet prints the composition of the programme as follows:
     print(value, "(=", percent, "%)", "credits in", i)
 ```
 
-### 3.2 Visualizing the new Insights as Treemap
+#### 3.2 Visualizing the new Insights as Treemap
 As Data Scientist we are interested to communicate our computations in a user friendly way. Therefore I decided to visualize the Results as Treemap since it indicates dimensions well.
 
 First, we introduce two lists. _credits_sec_sizes_ contains the absolute credit points per study section, whereas _credits_sec_labels_ serve as label data and contains the same information plus the name and relative fraction of each section.
