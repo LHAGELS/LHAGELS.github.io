@@ -93,7 +93,7 @@ At this point we scraped the data but cannot process the information we received
 
 Below, we find the dataset having many useless columns thus we have to tide up.
 
-![df.head()](./assets/images/posts/20_05_20/1_4_df.PNG)
+![df.head()](/assets/images/posts/25_05_20/1_4_df.PNG)
 
 Finally, we received a cross-sectional data table that provides observations in rows and different variables (e.g. Grade, Credits, Attempt, Module_nr and much more needless variables)
 
