@@ -131,6 +131,9 @@ author:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/lucas-hagelstein-832375182/"
+    - label: "Xing"
+      icon: "fab fa-fw fa-xing"
+      url: "https://www.google.de"
 
 # Site Footer
 # footer:
