@@ -62,7 +62,7 @@ Due to complexity issues of the exam table I use a combination of both in this p
 
 First, the algorithm opens the login page and continues entering the login details and "click" submit. Second, it navigates to the page that contains exam results and expands all the root nodes to unveil all modules. At this point we are able to extract the needed HTML-code from the web page.
 
-![With and without Selenium](/assets/images/posts/selenium-tool.png)
+![Selenium Worksteps](/assets/images/posts/selenium-login-and-toggle.gif)
 
 #### 1.3 Find the table of interest and get the HTML code with BeautifulSoup
 In the next step I need to extract the unveiled information. For this purpose I use BeautifulSoup to receive the HTML-code of the result table that is found by the xpath. The xpath is provided by the chrome developer tool. (Check out the web for further explanation)
