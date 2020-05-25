@@ -13,7 +13,12 @@
     position: relative;
     z-index: 10;
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   @include breakpoint($large) {
@@ -145,7 +150,6 @@
     border-radius: 1em;
     margin: auto;
     border: 0px solid white;
-    margin-bottom: 20px;
     // @include breakpoint($large) {
     //   padding: 0px;
     //   border: 0px solid $border-color;
