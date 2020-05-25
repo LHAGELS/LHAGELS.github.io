@@ -1,5 +1,5 @@
 ---
-title: "How to visualize your University Modules in Python"
+title: "Visualizing University Modules in Python"
 tags:
   - Web Scraping
   - Selenium
