@@ -91,6 +91,8 @@ At this point we scraped the data but cannot process the information we received
   df = pd.read_html(str(table), header=1)[0]
 ```
 
+Below, we find the dataset having many useless columns thus we have to tide up.
+
 ![df.head()](/assets/images/posts/20_05_20/1_4 df.png)
 
 Finally, we received a cross-sectional data table that provides observations in rows and different variables (e.g. Grade, Credits, Attempt, Module_nr and much more needless variables)
