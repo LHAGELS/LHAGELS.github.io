@@ -29,7 +29,7 @@ feature_row3:
 
 
 &nbsp;
+{% include feature_row id="feature_row3" type="center" %}
 {% include feature_row id="feature_row1" type="center" %}
 {% include Squarify_Treemap.html %}
 {% include feature_row id="feature_row2" type="center" %}
-{% include feature_row id="feature_row3" type="center" %}
