@@ -13,7 +13,7 @@ header:
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 
 ---
-{% include reading-time %}
+{% include reading-time.html %}
 
 In this blog post I am going to explain the steps starting from a data table we see on a particular web page, over data cleansing and manipulating thus we end up with a user-friendly presentation of the data.
 
