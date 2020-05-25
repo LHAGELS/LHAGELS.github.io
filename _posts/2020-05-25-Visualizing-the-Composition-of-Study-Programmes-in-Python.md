@@ -62,7 +62,7 @@ Due to complexity issues of the exam table I use a combination of both in this p
 
 First, the algorithm opens the login page and continues entering the login details and "click" submit. Second, it navigates to the page that contains exam results and expands all the root nodes to unveil all modules. At this point we are able to extract the needed HTML-code from the web page.
 
-![Selenium Worksteps](/assets/images/posts/selenium-login-and-toggle.gif)
+![Selenium Worksteps](/assets/videos/selenium-login-and-toggle.gif)
 
 #### 1.3 Find the table of interest and get the HTML code with BeautifulSoup
 In the next step I need to extract the unveiled information. For this purpose I use BeautifulSoup to receive the HTML-code of the result table that is found by the xpath. The xpath is provided by the chrome developer tool. (Check out the web for further explanation)
@@ -90,6 +90,8 @@ At this point we scraped the data but cannot process the information we received
   #Giving the HTML table to pandas to put in a dataframe object
   df = pd.read_html(str(table), header=1)[0]
 ```
+
+![df.head()](/assets/images/posts/20_05_20/1_4 df.png)
 
 Finally, we received a cross-sectional data table that provides observations in rows and different variables (e.g. Grade, Credits, Attempt, Module_nr and much more needless variables)
 
