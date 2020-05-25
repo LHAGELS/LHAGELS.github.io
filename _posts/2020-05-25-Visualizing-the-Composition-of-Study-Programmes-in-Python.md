@@ -136,7 +136,7 @@ The following code snippet solves the above mentioned problems. This step is not
   print(df_modules["Credits"].sum(), "of 180 credits included in the data")
 ```
 ![df_clean.head()](/assets/images/posts/25_05_20/2_1_df.png)
-![df_clean.head()](/assets/images/posts/25_05_20/2_1_after_cleansing.png)
+![df_shape](/assets/images/posts/25_05_20/2_1_after_cleansing.png)
 
 The shape of our data has reduced from 74x25 to 26x5 [rows x columns]. In addition the number of credit points decreased from 1193 to 180 credits.  
 This seems to be much more reliable!
@@ -247,7 +247,7 @@ It may be of interest which module may be classified in a certain study section.
                                     )
 ```
 
-The "for-loop" searches for strings that are included in the values (lists) for each index of the dictionary. If a certain module is included in the list of an index, the key of this index is assigned to a column "Sections". If the value is not in this list, the column does not change at all.
+**The "for-loop" searches for strings that are included in the values (lists) for each index of the dictionary. If a certain module is included in the list of an index, the key of this index is assigned to a column "Sections". If the value is not in this list, the column does not change at all.
 
 ### 2.5 Quantitative or Qualitative?
 Finally, universities distinguish between qualitative and quantitative modules. Since there is no identifier which type a module is assigned we have to set up a list manually, again. It is important to work in the respective order of the modules in the dataset to obtain proper allocations. Doublechecking is mandatory!
