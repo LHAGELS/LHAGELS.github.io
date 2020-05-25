@@ -17,7 +17,7 @@ In this blog post I am going to explain the steps starting from a data table we 
 
 The final result will be a visually representation of the bachelor programme I have attended in Konstanz:
 
-{% include squarify_treemap.html %}
+{% include Squarify_Treemap.html %}
 
 
 ## Let's start from scratch!
@@ -330,4 +330,4 @@ Next, we plot our data with the squarify library and get the desired outcome.
   plt.savefig("...system path...")
 ```
 
-{% include squarify_treemap.html %}
+{% include Squarify_Treemap.html %}
