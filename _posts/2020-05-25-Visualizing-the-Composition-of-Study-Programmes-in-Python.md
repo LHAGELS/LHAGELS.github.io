@@ -2,9 +2,12 @@
 title: "Visualizing the Composition of Study Programmes in Python"
 tags:
   - Web Scraping
+  - Data Cleansing
+  - Data manipulation
+  - Data Mining
+  - Data Visualization
   - Selenium
   - BeautifulSoup
-  - Data Visualization
   - Python
 
 date: May 25, 2020
@@ -14,9 +17,9 @@ excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 
 ---
 
-In this blog post I am going to explain the *methodology of a data science project* with with simplified data starting from a data table we see on a particular web page, over data cleansing and manipulating thus we end up with a user-friendly presentation of the data.
+In this blog post I am going to explain the **methodology of a data science project** with simplified data starting at **Web Scraping** a data table from a particular web page, over **data cleansing and manipulating** thus we end up with a user-friendly **data visualization**.
 
-When performing the analysis I often do only present the first few rows of the dataframe to save some space. Furthermore, you may read the comments in the coding-section (indicated with *#*) to get a better understanding of the written code.
+When performing the analysis I often do only present the first few rows of the dataframe to save some space. Furthermore, you may read the comments in the coding-section (indicated with **#**) to get a better understanding of the written code.
 
 The final result will be a visually representation of the B.Sc. Economics in Konstanz:
 
@@ -24,11 +27,11 @@ The final result will be a visually representation of the B.Sc. Economics in Kon
 
 ## Let's start from scratch!
 
-### 1. Scrape some data from the web
-There are several libraries for web scraping available. The most common in python are BeautifulSoup and Selenium. Both have their advantages and disadvantages but are intuitively and easy to apply.  
-Due to complexity issues of the exam table we want to scrape in this session I use a combination of both in this project. Selenium has to unveil the required information before the HTML-code can be extracted.
+### 1. Scrape some Data from the Web
+There are several libraries for web scraping available. The most common used in python are **BeautifulSoup and Selenium**. Both have their advantages and disadvantages but are **intuitively and easy to apply**.  
+Due to complexity issues of the exam table we want to scrape in this session I use a combination of both in this project. **Selenium unveils** the required information while **Beautifulsoup extracts** the HTML-code in this case.
 
-### 1.1 Set-up the webdriver for your browser
+### 1.1 Set-up the Webdriver for your Browser
 ```python
   #pip install bs4 selenium
   from selenium import webdriver
@@ -62,13 +65,13 @@ Due to complexity issues of the exam table we want to scrape in this session I u
   driver.find_element_by_id("...id of element that expands the whole table").click()
 ```
 
-First, the algorithm opens the login page and continues entering the login details and "click" submit. Second, it navigates to the page that contains exam results and expands all the root nodes to unveil all modules. At this point we are able to extract the needed HTML-code from the web page.  
-The required information about the web page's elements can be found by the web developer tool of your browser.
+First, the algorithm opens the login page and continues entering the login details and "click" submit. Second, it navigates to the page that contains exam results and **expands all the root nodes to unveil all modules**. At this point we are able to **extract the desired HTML-code** from the web page.  
+The required information about the web page's elements can be found by the **web developer tool** of your browser. (_Check out the web for further explanation_)  
 
 ![Selenium Worksteps](/assets/videos/selenium-login-and-toggle.gif)
 
-### 1.3 Find the Table of Interest and get the HTML Code with BeautifulSoup
-In the next step we need to extract the unveiled information. For this purpose we make use of the BeautifulSoup library to receive the HTML-code of the results table that ca be found by its xpath. The xpath is also provided by the web developer tool of your browser. (Check out the web for further explanation)  
+### 1.3 Find the Table of interest and extract the HTML Code with BeautifulSoup
+In the next step we need to **extract the unveiled information**. For this purpose we make use of the **BeautifulSoup** library to receive the HTML-code of the results table that ca be **found by its xpath**. The xpath is also provided by the web developer tool of your browser.
 The extracted HTML-code that contains unwrapped information is assigned to the variable _Soup_expanded_.
 
 ```python
@@ -82,7 +85,7 @@ The extracted HTML-code that contains unwrapped information is assigned to the v
 ```
 
 ### 1.4 Create a Pandas Dataframe
-At this point we scraped the data but cannot process the information so far since it is still in HTML-format. In order to perform data cleansing and manipulation to with the goal to visualize data, we assign the HTML-code to a Pandas DataFrame.
+At this point we scraped the data but **cannot process the information so far** since it is still in HTML-format. In order to perform data cleansing and manipulation to with the goal to visualize data, we **assign the HTML-code to a Pandas DataFrame**.
 
 ```python
   import pandas as pd
@@ -97,23 +100,23 @@ At this point we scraped the data but cannot process the information so far sinc
   print(df["Bonus"].sum(), "of 180 credits")
 ```
 
-Finally, we receive a cross-sectional data table that provides observations in rows and different variables (e.g. Grade, Credits, Attempt, Module_nr) in the columns. However, since we have some columns that are a bit messy, we are going to tide it up! We find a dataframe shape of 74x25 [rows x columns]. I do not remember that I participated in that many exams!  
-Further, when adding up all credits included in the data, we receive unbeatable 1193 credit points.
+Finally, we receive a **cross-sectional data** table that provides **observations in rows** and different **variables in the columns** (e.g. Grade, Credits, Attempt, Module_nr). However, since we have some columns that are a bit messy, we are going to tide them up! The dataframe has a shape of **74x25 [rows x columns]**. I do not remember that I participated in that many exams! There may be a bug!!
+Further, when adding up all credits included in the data, we receive unbeatable **1193 credit points**.
 
 ![df.head()](/assets/images/posts/25_05_20/1_4_df.png)
 
 ### 2. Wrangle Dangle Ding Dong!
 ### 2.1 Clean Data is good Data
 Our dataset is small thus it seems quite easy to be structured.
-We face several problems:
-  1. Many variables that do not make sense  
+We face several **problems**:
+  1. Many **variables repeat information**  
      (e.g. multiple columns with the same information)
-  2. German column names  
-     (since we want to communicate our results to an english audience)
-  3. Some modules are not unique  
+  2. **German** column names  
+     (since we want to communicate our results to an **English audience**)
+  3. Some modules cannot be distinguished from another
      (caused by the root node style of the original web table)
 
-The following code snippet solves the above mentioned problems. This step is not a universal process since the provided conditions may vary depending on whether a student did an internship or not. Furthermore, some want rather observe only passed modules than every module that has ever been attended.
+The following code snippet solves the above mentioned problems. This process is **not universal** since the provided conditions may vary depending on whether a student did an internship or not. Furthermore, some want rather observe only passed modules than every module that has ever been attended.
 
 ```python
   #inspect columns and select the data
@@ -136,12 +139,12 @@ The following code snippet solves the above mentioned problems. This step is not
 ![df_clean.head()](/assets/images/posts/25_05_20/2_1_df.png)  
 ![df_shape](/assets/images/posts/25_05_20/2_1_after.png)
 
-The shape of our data has reduced from 74x25 to 26x5 [rows x columns]. In addition the number of credit points decreased from 1193 to 180 credits.  
+The shape of our data has **reduced from 74x25 to 26x5** [rows x columns]. In addition the number of credit points **decreased from 1193 to 180** credits.  
 
-This seems to be much more reliable!
+This seems to be much **more reliable!**
 
-### 2.2 Rename Modules that cannot be distinguished from Others
-During doublechecking our data after the recent changes, we notice three modules called "Anerkennung" that cannot be distinguished from each other. These are modules I have attended abroad. We should rename these modules manually since the scraping process was not able to receive the correct names in the automated process.
+### 2.2 Rename Modules that cannot be distinguished from others
+During **doublechecking** our data after the recent changes, we notice three modules called "Anerkennung" that cannot be distinguished from each other. These are modules I have attended abroad. We should **rename these modules manually** since the scraping process was not able to receive the correct names in the automated process.
 
 ```python
   #Manipulate data in column "Module" since "Anerkennung" is not the modules name (course taken abroad and credited in Germany)
@@ -155,7 +158,7 @@ During doublechecking our data after the recent changes, we notice three modules
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/2_2_abroad_correction.png)
 
 ### 2.3 Provide English Translations of the Modules
-We create a first list of the Module column and zip it (pairwise) with a second list that includes English translations. The resulting object is a German(keys)-English(values) dictionary. Finally, we assign the English module names to a new column.
+We create a first list of the Module column and **zip it pairwise** with a second list including the English translations. The resulting object is a **German(keys)-English(values)** dictionary. Finally, we assign the English module names to a new column.
 
 ```python
   #create a list of the "Module" column
@@ -198,7 +201,7 @@ We create a first list of the Module column and zip it (pairwise) with a second 
 ```
 
 ### 2.4 Sections Matter!
-It may be of interest which module may be classified in a certain study section. This offers deeper insights into the curriculum. Therefore, we write a dictionary with study sections as keys and lists of modules as values. Each module list (value) is assigned to a certain section (key).
+It may be of interest to **classify the modules** in a certain study section. This offers deeper **insights into the curriculum**. Therefore, we write a dictionary with study sections as keys and lists of modules as values. **Each module list (value) is assigned to a certain section (key)**.
 
 ```python
   import numpy as np
@@ -246,10 +249,10 @@ It may be of interest which module may be classified in a certain study section.
                                     )
 ```
 
-The "for-loop" searches for strings that are included in the values (lists) for each index of the dictionary. If a certain module is included in the list of an index, the key of this index is assigned to a column "Sections". If the value is not in this list, the column does not change at all.
+The "for-loop" searches for strings that are included in the values (lists) for each index of the dictionary. **If a certain module is included in the list of an index, the key of this index is assigned to a column "Sections"**. Otherwise, the column does not change at all.
 
 ### 2.5 Quantitative or Qualitative?
-Finally, universities distinguish between qualitative and quantitative modules. Since there is no identifier which type a module is assigned to we have to set up a list manually. It is important to work in the respective order of the modules in the dataset to obtain proper allocations. Doublechecking is mandatory!
+Finally, universities distinguish between **qualitative and quantitative modules**. Since there is no identifier which type a module is assigned to we have to set up a list manually. It is important to work in the respective order of the modules in the dataset to obtain proper allocations. **Doublechecking is mandatory** to avoid typing mistakes!
 
 ```python
   #create a list that assign the course type respectively to the module column
@@ -284,21 +287,26 @@ Finally, universities distinguish between qualitative and quantitative modules. 
   #check the lengths of both lists
   print(len(modules_eng), len(type_list))
 
-  #create a column "type from the type_list"
-  df_modules["type"] = pd.DataFrame(type_list)
+  #create a column "type"and replace values by dict
+  mod_type_dict = dict(zip(modules_eng,type_list))
+  df_modules["type"] = df_modules["Module_eng"]
+  df_modules["type"].replace(mod_type_dict, inplace=True)
 
   #double check if every type is assigned correctly
   display(df_modules.head())
   print("The dataframe has",df_modules.shape[0], "rows and", df_modules.shape[1],"columns")
 ```
 
-After the previous data mining the dataframe has a shape of 26 x 8 [rows x columns]:
+After the **previous data mining** the dataframe has a **shape of 26 x 8** [rows x columns]:
+
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/2_5_translate_sections_type.png)
+
 ### 3. Data Exploration / Data Mining
 ### 3.1 What is the Composition of the B.Sc. Economics in Konstanz?
-The most important information to answer this question are is the proportion of each study section relative to the degree.
-The following code snippet prints the composition of the programme as follows:
-    "credits abs." (= "proportion in %") credits in "study section"
+The most important information to answer this question is the **proportion of each study section** relative to the total credit points.
+The following code snippet prints the **composition of the programme** as follows:  
+
+    _"credits abs." (= "proportion in %") credits in "study section"_
 
 ```python
   #create a list of unique values
@@ -320,7 +328,7 @@ Output of the previous code:
 * 20.0 (= 11.1%) credits in Statistics
 
 ### 3.2 Visualizing the new Insights as Treemap
-As Data Scientist we are interested to communicate our computations in a user friendly way. Therefore I decided to visualize the results as treemap since it indicates dimensions well.
+As Data Scientist we are interested to **communicate user-friendly**. Therefore I decided to visualize the results as treemap since it **indicates dimensions** well.
 
 First, we introduce two lists. _credits_sec_sizes_ contains the absolute credit points per study section, whereas _credits_sec_labels_ serve as label data and contains the same information plus the name and relative fraction of each section.
 
@@ -341,7 +349,7 @@ First, we introduce two lists. _credits_sec_sizes_ contains the absolute credit 
   credits_sec_labels.append(str(i) +": \n"+str(value)+ " credits" +"\n" +"("+str(percent) +"%"+")" )
 ```
 
-Next, we plot our data with the squarify library and get the desired outcome.
+Next, we plot our data with the **Squarify** library and get the desired outcome.
 
 ```python
   import squarify #pip install squarify
