@@ -15,6 +15,7 @@ excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 ---
 
 In this blog post I am going to explain the steps starting from a data table we see on a particular web page, over data cleansing and manipulating thus we end up with a user-friendly presentation of the data.
+When performing the analysis steps I do only present the first few rows of the dataframe to save some space.
 
 The final result will be a visually representation of the bachelor programme I have attended in Konstanz:
 
@@ -91,16 +92,13 @@ At this point we scraped the data but cannot process the information we received
   df = pd.read_html(str(table), header=1)[0]
 ```
 
-Below, we find the dataset having many useless columns thus we have to tide up.
+Finally, we received a cross-sectional data table that provides observations in rows and different variables (e.g. Grade, Credits, Attempt, Module_nr) in the columns. However, since we have some columns that do not provide utility, we are going to tide up!
 
 ![df.head()](/assets/images/posts/25_05_20/1_4_df.png)
 
-Finally, we received a cross-sectional data table that provides observations in rows and different variables (e.g. Grade, Credits, Attempt, Module_nr and much more needless variables)
-
 ### 2. Wrangle Dangle Ding Dong!
-
 #### 2.1 Clean Data is good Data
-Since our dataset is quite small it seems relatively easy to structure our data.
+Our dataset is quite small thus it seems relatively easy to structure the data.
 We face several problems:
   1. Many variables that do not make sense
   2. German column names
@@ -109,7 +107,6 @@ We face several problems:
 The following code snippet solves the above mentioned problems. This step is not universal for all students since the provided conditions may vary depending on whether a student did an internship or not. Furthermore, some want to observe rather passed modules than every module that has ever been attended.
 
 ```python
-
   #inspect columns and select the data
   print(df.columns)
   df_table = df[["Titel.11", "Bewertung", "Bonus", "Versuch", "Nummer"]]
@@ -127,6 +124,7 @@ The following code snippet solves the above mentioned problems. This step is not
   #check if the DataFrame includes all credits
   print(df_modules["Credits"].sum(), "of 180 credits included in the data")
 ```
+![df_clean.head()](/assets/images/posts/25_05_20/2_1_df.png)
 
 #### 2.2 Rename Modules that cannot be distinguished from Others
 During the double check of the most recent changes we notice 3 modules "Anerkennung" that cannot be distinguished from each other. These are modules I have attended abroad and should be renamed since the scraping process was not able to receive the correct names.
@@ -140,6 +138,7 @@ During the double check of the most recent changes we notice 3 modules "Anerkenn
   #check if the modules are correctly renamed
   df_modules[df_modules["Module_nr"].str.len() == 2]
 ```
+![df_unique_modules.head()](/assets/images/posts/25_05_20/2_2_abroad_correction.png)
 
 #### 2.3 Provide English Translations of the Modules
 We create a first list of the Module column and zip it (pairwise) with a second list that includes english translations. The resulting object is a german(keys) - english(values) dictionary. Finally, we assign the english names to a new column.
@@ -276,11 +275,13 @@ Finally, universities distinguish between qualitative and quantitative modules. 
   df_modules["type"].replace(mod_type_dict, inplace=True)
 
   #double check if every type is assigned correctly
-  df_modules
+  display(df_modules.head())
+  print("The dataframe has",df_modules.shape[0], "rows and", df_modules.shape[1],"columns")
 ```
 
+After the previous data mining the dataframe has a shape of 26 x 8 [rows x columns]:
+![df_unique_modules.head()](/assets/images/posts/25_05_20/2_5_translate_sections_type.png)
 ### 3. Data Exploration / Data Mining
-
 #### 3.1 How is the composition of the B.Sc. Economics in Konstanz?
 The most important information to answer this question are is the proportion of each study section relative to the degree.
 The following code snippet prints the composition of the programme as follows:
@@ -296,6 +297,14 @@ The following code snippet prints the composition of the programme as follows:
     percent = round(sum((df_modules["Credits"][df_modules["Section"] == i]) / sum(df_modules["Credits"]))*100, 1)
     print(value, "(=", percent, "%)", "credits in", i)
 ```
+Output:
+  43.5 (= 24.2 %) credits in Business Studies
+  58.5 (= 32.5 %) credits in Economics
+  29.0 (= 16.1 %) credits in Internship
+  3.0 (= 1.7 %) credits in Law
+  18.0 (= 10.0 %) credits in Mathematics
+  8.0 (= 4.4 %) credits in Psychology
+  20.0 (= 11.1 %) credits in Statistics
 
 #### 3.2 Visualizing the new Insights as Treemap
 As Data Scientist we are interested to communicate our computations in a user friendly way. Therefore I decided to visualize the Results as Treemap since it indicates dimensions well.
