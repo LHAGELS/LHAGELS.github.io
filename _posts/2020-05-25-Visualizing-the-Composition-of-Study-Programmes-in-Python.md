@@ -13,15 +13,15 @@ header:
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 ---
 
-In this blog post I am going to explain the worksteps starting from a data table we see on a webpage, over data cleaning and manipulating thus we end up with a user friendly illustration of the data.
+In this blog post I am going to explain the steps starting from a data table we see on a particular web page, over data cleansing and manipulating thus we end up with a user-friendly presentation of the data.
 
 The final illustration will be a visually composition representation of the bachelor programme I have attended in Konstanz:
 
 {% include Squarify_Treemap.html %}
 
-#This is how we start:
+# Let's start from scratch!
 
-## 1. Let's scrape some data from the web
+## 1. Scrape some data from the web
 There are several libraries for web scraping available. The most common in python are BeautifulSoup and Selenium. Both have their advantages and disadvantages but are intuitively and easy to apply.
 Due to complexity issues of the exam table I use a combination of both in this project.
 
@@ -75,7 +75,7 @@ Soup_expanded provides the HTML-code of the exam results.
 ```
 
 ### 1.4 Create a Pandas Dataframe
-At this point we scraped the data but cannot process the information we received so far. In order to clean, manipulate and visualize the data we assign the HTML-code to a Pandas DataFrame.
+At this point we scraped the data but cannot process the information we received so far. In order to perform data cleansing and manipulation to visualize the data, we assign the HTML-code to a Pandas DataFrame.
 
 ```python
   import pandas as pd
