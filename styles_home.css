@@ -28,9 +28,6 @@ body {
 .background_text {
   padding: 20px;
   background-color: transparent;
-  border: 1px white solid;
-  border-radius: 20px
-  margin-bottom: 5%;
   margin-right: 2em;
   margin-left: 2em;
 }
