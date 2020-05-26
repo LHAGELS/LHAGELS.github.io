@@ -28,7 +28,7 @@ The final result will be a visually representation of the B.Sc. Economics in Kon
 ## Let's start from scratch!
 
 ### 1. Scrape some Data from the Web
-There are several libraries for web scraping available. The most common used in python are **BeautifulSoup and Selenium**. Both have their advantages and disadvantages but are **intuitively and easy to apply**.  
+There are several libraries for web scraping available. The most common used in python are **BeautifulSoup and Selenium** because they are **to apply intuitively**.  
 Due to complexity issues of the exam table we want to scrape in this session I use a combination of both in this project. **Selenium unveils** the required information while **Beautifulsoup extracts** the HTML-code in this case.
 
 ### 1.1 Set-up the Webdriver for your Browser
@@ -72,7 +72,7 @@ The required information about the web page's elements can be found by the **web
 
 ### 1.3 Find the Table of interest and extract the HTML Code with BeautifulSoup
 In the next step we need to **extract the unveiled information**. For this purpose we make use of the **BeautifulSoup** library to receive the HTML-code of the results table that ca be **found by its xpath**. The xpath is also provided by the web developer tool of your browser.
-The extracted HTML-code that contains unwrapped information is assigned to the variable _Soup_expanded_.
+The extracted HTML-code that contains unwrapped information is assigned to the variable _soup_expanded_.
 
 ```python
   from bs4 import BeautifulSoup
