@@ -1,5 +1,6 @@
 body {
-   margin: 5em 2em 5em 2em;
+   margin: 5em 0em 5em 0em;
+   border: 1px #314057 solid;
 }
 
 .hero {
@@ -44,11 +45,15 @@ body {
    font-weight: 300;
    background-color: #435876;
    border-radius: 20px 20px 0px 0px;
+   margin: 0px;
+   padding: 0.25em 0.25em 0.25em 0.25em;
 }
 .hero-subtitle {
    font-size: 2em;
    font-weight: 100;
    background-color: #435876;
+   margin: 0px;
+   padding: 0.25em 0.25em 0.25em 0.25em;
 }
 .hero-button {
    background-color: rgba(71, 215, 74, 0.1);
