@@ -9,6 +9,7 @@ body {
   border: 0.25px solid rgba(38, 57, 85, 1);
   border-radius: 20px 20px 20px 20px;
   margin-right:3em;
+}
 
 .hero {
    position: relative;
