@@ -1,12 +1,10 @@
 body {
-   margin: 0;
-   padding: 0;
+   margin: 5em 2em 5em 2em;
 }
 
 .hero {
    position: relative;
-   width: 100vw;
-   height: 100vh;
+   height: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -38,7 +36,7 @@ body {
 }
 
 .hero-content {
-   position: absolute;
+   position: relative;
    font-family: "Calibri", sans-serif;
    color: white;
    text-align: center;
@@ -49,7 +47,7 @@ body {
    font-weight: 300;
    margin-top: 0px;
    margin-bottom: 0px;
-   background-color: transparent;
+   background-color: #435876;
    border-radius: 20px 20px 0px 0px;
 }
 .hero-subtitle {
@@ -57,7 +55,7 @@ body {
    font-weight: 100;
    margin-top: 0rem;
    margin-top: 1em;
-   background-color: transparent;
+   background-color: #435876;
 }
 .hero-button {
    background-color: rgba(71, 215, 74, 0.1);
