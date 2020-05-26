@@ -30,7 +30,11 @@ body {
 .background_text {
   padding: 20px;
   background-color: transparent;
+  border: 1px white solid;
+  border-radius: 20px
   margin-bottom: 5%;
+  margin-right: 2em;
+  margin-left: 2em;
 }
 
 .hero-content {
@@ -46,16 +50,14 @@ body {
    margin-top: 0px;
    margin-bottom: 0px;
    background-color: transparent;
-   padding: 0.25em 0.25em 0.25em 0.25em;
    border-radius: 20px 20px 0px 0px;
 }
 .hero-subtitle {
    font-size: 2em;
    font-weight: 100;
    margin-top: 0rem;
-   margin-bottom: 0px;
+   margin-top: 1em;
    background-color: transparent;
-   padding: 0.5em 0.5em 0.5em 0.5em;
 }
 .hero-button {
    background-color: rgba(71, 215, 74, 0.1);
