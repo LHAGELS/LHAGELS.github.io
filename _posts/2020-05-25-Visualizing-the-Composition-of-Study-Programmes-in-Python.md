@@ -21,9 +21,7 @@ In this blog post I am going to explain the **methodology of a data science proj
 
 When performing the analysis I often do only present the first few rows of the dataframe to save some space. Furthermore, you may read the comments in the coding-section (indicated with **#**) to get a better understanding of the written code.
 
-The final result will be an **interactive visual representation** of the B.Sc. Economics in Konstanz:
-
-{% include posts_25.05.20_3_2_ects_by_modules.html %}
+The final result will be an **interactive visual representation** of the B.Sc. Economics in Konstanz at the end of this post.
 
 ## Let's start from scratch!
 
