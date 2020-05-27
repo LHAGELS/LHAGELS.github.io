@@ -430,4 +430,5 @@ Since Squarify does not provide easy access to this type of set-up we switch to 
 ```
 
 We yield the desired data visualization:
+
 {% include posts_25.05.20_3_2_ects_by_modules.html %}
