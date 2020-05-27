@@ -21,7 +21,7 @@ In this blog post I am going to explain the **methodology of a data science proj
 
 When performing the analysis I often do only present the first few rows of the dataframe to save some space. Furthermore, you may read the comments in the coding-section (indicated with **#**) to get a better understanding of the written code.
 
-The final result will be a visually representation of the B.Sc. Economics in Konstanz:
+The final result will be an **interactive visual representation** of the B.Sc. Economics in Konstanz:
 
 {% include posts_25.05.20_3_2_ects_by_modules.html %}
 
@@ -390,7 +390,7 @@ Next, we plot our data using the **Squarify** library and get the desired outcom
 
 ### 3.2 Create an interactive Treemap of the Degree Composition
 
-Finally, we go one step further and include the type of modules in our plot. First we calculate the fraction of both quantitative and qualitative modules:
+Finally, we go one step further and **include the type of modules** in our plot. First we calculate the fraction of both **quantitative and qualitative modules**:
 
 ```python
   #create a list of unique values
@@ -403,7 +403,7 @@ Finally, we go one step further and include the type of modules in our plot. Fir
     print(value, "(=", percent, "%)", "credits in", i, "modules")
 ```
 
-The types have a division of approximately 2/3 qualitative and 1/3 quantitative modules:
+The types have a division of approximately **2/3 qualitative** and **1/3 quantitative** modules:
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/3_2_division_types.png)
 
 It may be of interest for the audience to get as much information as possible of a data visualization. Therefore we expand the treemap by the module types.
@@ -429,6 +429,12 @@ Since Squarify does not provide easy access to this type of set-up we switch to 
   fig.show()
 ```
 
-We yield the desired data visualization:
+We yield the desired interactive data visualization that includes the module type, module section and the module itself:
 
 {% include posts_25.05.20_3_2_ects_by_modules.html %}
+
+Beyond this, you can think of including your grades in the treemap. Otherwise I plot of your grades over time may be also of interest.
+
+Just **feel free** and **be creative**!
+
+**ENJOY :)**
