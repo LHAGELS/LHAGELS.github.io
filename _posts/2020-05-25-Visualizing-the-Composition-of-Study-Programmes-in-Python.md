@@ -23,7 +23,7 @@ When performing the analysis I often do only present the first few rows of the d
 
 The final result will be a visually representation of the B.Sc. Economics in Konstanz:
 
-{% include Squarify_Treemap.html %}
+{% include posts_25.05.20_3_2_ects_by_modules.html %}
 
 ## Let's start from scratch!
 
@@ -327,8 +327,27 @@ Output of the previous code:
 * 8.0 (= 4.4%) credits in Psychology
 * 20.0 (= 11.1%) credits in Statistics
 
-### 3.2 Visualizing the new Insights as Treemap
-As Data Scientist we are interested to **communicate user-friendly**. Therefore I decided to visualize the results as treemap since it **indicates dimensions** well.
+### 3.1.1 Seaborn's Barplot as visual Communication Tool
+As Data Scientist we are interested to **communicate user-friendly**. Therefore I decided to visualize the results in a barplot first since it **gives us short impressions** of the data. Moreover, Seaborn as well as Matplotlib deliver well formatted plots that can be drawn quickly.
+
+```python
+  import seaborn as sns
+  import matplotlib.pyplot as plt
+
+  fig, ax = plt.subplots(figsize=(16,8))
+  sns.barplot(data=df_modules, y="Credits", x="Section", alpha=0.8, ci=None, estimator=sum, ax=ax)
+  plt.title("Total Credits by Study Sections", fontsize=25)
+  plt.ylabel("#Credits", fontsize=20)
+  plt.xlabel("", fontsize=20)
+  plt.yticks(size=12)
+  plt.xticks(size=12)
+  plt.show()
+```
+
+The barplot looks as follows:
+![df_unique_modules.head()](/assets/images/posts/25_05_20/3_1_barplot_credits_sections.png)
+
+### 3.1.2 Squarify's Treemap as visual Communication Tool
 
 First, we introduce two lists. _credits_sec_sizes_ contains the absolute credit points per study section, whereas _credits_sec_labels_ serve as label data and contains the same information plus the name and relative fraction of each section.
 
@@ -349,7 +368,7 @@ First, we introduce two lists. _credits_sec_sizes_ contains the absolute credit 
   credits_sec_labels.append(str(i) +": \n"+str(value)+ " credits" +"\n" +"("+str(percent) +"%"+")" )
 ```
 
-Next, we plot our data with the **Squarify** library and get the desired outcome.
+Next, we plot our data using the **Squarify** library and get the desired outcome:
 
 ```python
   import squarify #pip install squarify
@@ -368,3 +387,47 @@ Next, we plot our data with the **Squarify** library and get the desired outcome
 ```
 
 {% include Squarify_Treemap.html %}
+
+### 3.2 Create an interactive Treemap of the Degree Composition
+
+Finally, we go one step further and include the type of modules in our plot. First we calculate the fraction of both quantitative and qualitative modules:
+
+```python
+  #create a list of unique values
+  type = df_modules["type"].sort_values().unique()
+
+  #check for each value in list
+  for i in type:
+    value = sum(df_modules["Credits"][df_modules["type"] == i])
+    percent = round(sum((df_modules["Credits"][df_modules["type"] == i]) / sum(df_modules["Credits"]))*100, 1)
+    print(value, "(=", percent, "%)", "credits in", i, "modules")
+```
+
+The types have a division of approximately 2/3 qualitative and 1/3 quantitative modules:
+![df_unique_modules.head()](/assets/images/posts/25_05_20/3_2_division_types.png)
+
+It may be of interest for the audience to get as much information as possible of a data visualization. Therefore we expand the treemap by the module types.
+Since Squarify does not provide easy access to this type of set-up we switch to the Plotly library:
+
+```python
+  import plotly.express as px
+  #copy of our DataFrame
+  df_plotly = df_modules
+
+  #introduce a new column as single root node
+  df_plotly["Programme"] = "B.Sc. Economics" # in order to have a single root node
+  #Capitalize the type values
+  df_plotly["type"] = df_plotly["type"].str.capitalize()
+
+  #plot the treemap
+  fig = px.treemap(df_plotly, path=["Programme","type","Module_eng"], values="Credits",
+               color="Credits", hover_data=["Credits"],
+               color_continuous_scale="Blues",
+               color_continuous_midpoint=np.average(df_plotly["Credits"], weights=df_plotly["Credits"]),
+              )
+  fig.update_layout(showlegend=False)
+  fig.show()
+```
+
+We yield the desired data visualization:
+{% include posts_25.05.20_3_2_ects_by_modules.html %}
