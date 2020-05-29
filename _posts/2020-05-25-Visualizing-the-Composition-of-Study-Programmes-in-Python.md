@@ -429,7 +429,7 @@ Since Squarify does not provide easy access to this type of set-up we switch to 
 
 We yield the desired interactive data visualization that includes the module type, module section and the module itself:
 {% include posts_25.05.20_3_2_ects_by_modules.html %}
-Beyond this, you can think of including your grades in the treemap or plot your grades over time to explore whether you results vary over time.
+Beyond this, you can think of including a further layer that reflect your grades in the treemap or plot your grades over time to explore whether your results are constant or vary over time.
 
 Just **feel free** and **be creative**!
 
