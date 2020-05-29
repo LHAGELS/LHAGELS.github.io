@@ -326,7 +326,7 @@ Output of the previous code:
 * 20.0 (= 11.1%) credits in Statistics
 
 ### 3.1.1 Seaborn's Barplot as visual Communication Tool
-As Data Scientist we are interested to **communicate user-friendly**. Therefore I decided to visualize the results in a barplot first since it **gives us short impressions** of the data. Moreover, Seaborn as well as Matplotlib deliver well formatted plots that can be drawn quickly.
+As Data Scientists we are interested to **communicate user-friendly**. Therefore I decided to visualize the results in a barplot first since it **gives us very quick impressions** of the data. Moreover, Seaborn as well as Matplotlib deliver well formatted plots that can be drawn easily as well as intuitively.
 
 ```python
   import seaborn as sns
@@ -366,7 +366,7 @@ First, we introduce two lists. _credits_sec_sizes_ contains the absolute credit 
   credits_sec_labels.append(str(i) +": \n"+str(value)+ " credits" +"\n" +"("+str(percent) +"%"+")" )
 ```
 
-Next, we plot our data using the **Squarify** library and get the desired outcome:
+Next, we plot our data using the **Squarify** library and receive the following outcome:
 
 ```python
   import squarify #pip install squarify
@@ -404,8 +404,8 @@ Finally, we go one step further and **include the type of modules** in our plot.
 The types have a division of approximately **2/3 qualitative** and **1/3 quantitative** modules:
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/3_2_division_types.png)
 
-It may be of interest for the audience to get as much information as possible of a data visualization. Therefore we expand the treemap by the module types.
-Since Squarify does not provide easy access to this type of set-up we switch to the Plotly library:
+It may be of interest for the audience to get as much information as possible from an image. Therefore we **expand the treemap by the module types**.
+Since Squarify does not provide easy access to this type of set-up we switch to the **Plotly** library:
 
 ```python
   import plotly.express as px
@@ -427,7 +427,7 @@ Since Squarify does not provide easy access to this type of set-up we switch to 
   fig.show()
 ```
 
-We yield the desired interactive data visualization that includes the module type, module section and the module itself:
+We yield the desired **interactive data visualization** that includes the module type, module section and the module itself:
 {% include posts_25.05.20_3_2_ects_by_modules.html %}
 Beyond this, you can think of including a further layer that reflect your grades in the treemap or plot your grades over time to explore whether your results are constant or vary over time.
 
