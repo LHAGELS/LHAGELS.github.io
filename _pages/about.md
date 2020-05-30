@@ -8,7 +8,7 @@ date: May 18, 2020
 ---
 
 <figure style="width: 30%" class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/hawaii.jpg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about_1.png" alt="">
 </figure>
 
 {: .text-justify}
@@ -18,11 +18,11 @@ I was born and grew up in the near of Hamburg, Germany. After the Abitur in 2014
 I was born and grew up in the near of Hamburg, Germany. After the Abitur in 2014 (A-levels) I did an apprenticeship (two-years) in whole- and foreign sale at GARPA - Garten- und Park Einrichtungen GmbH. I am B.Sc. Economics graduate at the University of Konstanz (2016 - 2020) and prospective Master student at the Erasmus University Rotterdam starting my studies in the field of `Data Science & Marketing Analytics` in 2020.  
 This is my personal blog to keep track of my projects and different HOWTOs related to Data Science as well as my recent experiences.
 
-One year ago I started a Data Science course on Coursera and began to understand the complexity of this emerging field. This is why I first focussed on my studies to finish my Bachelor-Thesis [Data Analysis with Stata](/portfolio/) and the subsequent internship in the Research & Development department of the Mercedes Benz AG (Content-Management S-/E-/C- and GLC -Class). Besides, I supported my former supervisor of the Bachelor-Thesis in statistical analysis and data visualization (with Stata) related to his current research paper. After finishing the Bachelor degree in Konstanz I returned to my Data Science journey (full-time) and completed several courses on datacamp [see Certificates](/certificates/). I have acquired skills in programming in Python and R, Machine Learning and Deep Learning techniques. By my studies I am already familiar with statistical modelling as well as testing procedures.
+One year ago I started a Data Science course on Coursera and began to understand the complexity of this emerging field. This is why I first focussed on my studies to finish my Bachelor-Thesis [Data Analysis with Stata](/portfolio/) and the subsequent internship in the Research & Development department of the Mercedes Benz AG (Content-Management S-/E-/C- and GLC -Class). Besides, I supported my former supervisor of the Bachelor-Thesis in statistical analysis and data visualization (with Stata) related to his current research paper. After finishing the Bachelor degree in Konstanz I returned to my Data Science journey (full-time) and completed several courses on datacamp ([See Certificates](/certificates/)). I have acquired skills in programming in Python and R, Machine Learning and Deep Learning techniques. By my studies I am already familiar with statistical modelling as well as testing procedures.
 
 Now, I am happy to join the Erasmus University in Rotterdam to gain more specific knowledge in Data Science.
 
-**Keep track of my progress in my [Blog](/home/) or [Portfolio](/portfolio/) section.**
+**Keep track of my progress in the [Blog](/home/) or [Portfolio](/portfolio/) section.**
 
 I am looking for job opportunities as Junior Data Scientist where I can help companies **optimize marketing and product development** by delivering actionable data insights using **Python and/or R** (or similar technologies). Since I am at the beginning of my career, I am looking forward to a **steep learning curve** and am always **ready to make the necessary effort!**
 
