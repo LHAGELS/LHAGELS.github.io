@@ -12,7 +12,6 @@ date: May 18, 2020
 </figure>
 
 {: .text-justify}
-
 ## My Background
 I was born and grew up in the near of Hamburg, Germany. After the Abitur in 2014 (A-levels) I did an apprenticeship (two-years) in whole- and foreign sale at GARPA - Garten- und Park Einrichtungen GmbH. In 2016 I moved to Konstanz to attend the B.Sc. Economics at the University Konstanz. During my studies I took part of the Erasmus+ programme and studied a semester abroad in Utrecht, Netherlands and completed my studies in the first half of 2020.
 
