@@ -1,5 +1,5 @@
 ---
-title: "Visualizing the Composition of Study Programmes in Python"
+title: "How to Visualize the Composition of your University Programme in Python"
 tags:
   - Web Scraping
   - Data Cleansing
