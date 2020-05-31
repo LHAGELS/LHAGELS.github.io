@@ -20,7 +20,7 @@ One year ago (2019) I started a Data Science course on Coursera and began to und
 
 Now, I am happy to join the Erasmus University in Rotterdam to gain more specific knowledge in Data Science.
 
-You are welcome to keep track of my progress in the [Blog](/home/) or [Portfolio](/portfolio/) section.
+You are welcome to keep track of my progress in the [Blog](/year-archive/) or [Portfolio](/portfolio/) section.
 
 I am looking for job opportunities as Junior Data Scientist where I can help companies **optimize marketing and product development** by delivering actionable data insights using **Python and/or R** (or similar technologies). Since I am at the beginning of my career, I am looking forward to a **steep learning curve** and am always **ready to make the necessary effort!**
 

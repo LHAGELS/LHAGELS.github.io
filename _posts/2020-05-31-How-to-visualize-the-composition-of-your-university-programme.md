@@ -304,8 +304,6 @@ After the **previous data mining** the dataframe has a **shape of 26 x 8** [rows
 The most important information to answer this question is the **proportion of each study section** relative to the total credit points.
 The following code snippet prints the **composition of the programme** as follows:  
 
-_"credits abs." (= "proportion in %") credits in "study section"_
-
 ```python
   #create a list of unique values
   sections = list(df_modules["Section"].sort_values().unique())
