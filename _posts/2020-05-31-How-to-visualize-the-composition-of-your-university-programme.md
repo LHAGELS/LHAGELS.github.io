@@ -3,27 +3,28 @@ title: "Visualizing the Composition of Study Programmes in Python"
 tags:
   - Web Scraping
   - Data Cleansing
-  - Data manipulation
+  - Data Manipulation
   - Data Mining
   - Data Visualization
   - Selenium
   - BeautifulSoup
   - Python
 
-date: May 25, 2020
+date: May 31, 2020
 header:
   teaser: /assets/images/thumbnails/squarify_treemap.png
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 
 ---
 
-In this blog post I am going to explain the **methodology of a data science project** with simplified data starting at **Web Scraping** a data table from a particular web page, over **data cleansing and manipulating** thus we end up with a user-friendly **data visualization**.
+In this blog post I am going to explain the **methodology of a data science project** with simplified data starting at **Web Scraping** a data table from a particular web page, over **data cleansing and manipulating** thus we end up with a user-friendly **visualization** of our data.
 
-When performing the analysis I often do only present the first few rows of the dataframe to save some space. Furthermore, you may read the comments in the coding-section (indicated with **#**) to get a better understanding of the written code.
+When performing the analysis I often do only present the first few rows of the data to save some space. Furthermore, you may read the comments in the coding-section (indicated with **#**) to get a better understanding of the written code.
 
 The final result will be an **interactive visual representation** of the B.Sc. Economics in Konstanz at the end of this post.
 
 ## Let's start from scratch!
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important: Unless you are not a student from the University of Konstanz the first steps do highly vary. In this case you should first examine the website with the web-developer tool and adjust the elements! If you need consultation in doing so, do not hesitate to contact me!</b>
 
 ### 1. Scrape some Data from the Web
 There are several libraries for web scraping available. The most common used in python are **BeautifulSoup and Selenium** because they are **to apply intuitively**.  
