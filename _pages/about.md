@@ -11,12 +11,11 @@ date: May 31, 2020
 </figure>
 ## My Background
 {: .text-justify}
-I was born and grew up in the near of Hamburg, Germany. After the Abitur in 2014 (A-levels) I did an apprenticeship (two-years) in whole- and foreign sale at GARPA - Garten- und Park Einrichtungen GmbH. In 2016 I moved to Konstanz to attend the B.Sc. Economics at the University Konstanz. During my studies I took part of the Erasmus+ programme and studied a semester abroad in Utrecht, Netherlands and completed my studies in the first half of 2020.
+I was born and grew up in the near of **Hamburg**, Germany. After the **Abitur** in 2014 (A-levels) I did a **two-years apprenticeship** in whole- and foreign sale at GARPA - Garten- und Park Einrichtungen GmbH. In 2016 I moved to **Konstanz** to attend the **B.Sc. Economics at the University Konstanz**. During my studies I took part of the **Erasmus+ programme** and studied a semester abroad in **Utrecht**, Netherlands and completed my studies in the first half of 2020. I am prospective Master student at the **Erasmus University Rotterdam** starting my studies in the field of **`Data Science & Marketing Analytics`** in 2020.  
 
-I was born and grew up in the near of Hamburg, Germany. After the Abitur in 2014 (A-levels) I did an apprenticeship (two-years) in whole- and foreign sale at GARPA - Garten- und Park Einrichtungen GmbH. I am B.Sc. Economics graduate at the University of Konstanz (2016 - 2020) and prospective Master student at the Erasmus University Rotterdam starting my studies in the field of `Data Science & Marketing Analytics` in 2020.  
-This is my personal blog to keep track of my projects and different HOWTOs related to Data Science as well as my recent experiences.
+This is my personal blog to keep track of my projects and different **HOWTOs related to Data Science as well as my recent experiences**.
 
-One year ago I started a Data Science course on Coursera and began to understand the complexity of this emerging field. This is why I first focussed on my studies to finish my Bachelor-Thesis [Data Analysis with Stata](/portfolio/) and the subsequent internship in the Research & Development department of the Mercedes Benz AG (Content-Management S-/E-/C- and GLC -Class). Besides, I supported my former supervisor of the Bachelor-Thesis in statistical analysis and data visualization (with Stata) related to his current research paper. After finishing the Bachelor degree in Konstanz I returned to my Data Science journey (full-time) and completed several courses on datacamp ([See Certificates](/certificates/)). I have acquired skills in programming in Python and R, Machine Learning and Deep Learning techniques. By my studies I am already familiar with statistical modelling as well as testing procedures.
+One year ago (2019) I started a Data Science course on Coursera and began to understand the complexity of this emerging field. This is why I first focussed on my studies to finish my Bachelor-Thesis `Development Opportunities of Micro-Entrepreneurs: Evidence from Kenya` [Data Analysis with Stata](/portfolio/) and the subsequent **internship** in the Research & Development department of the **Mercedes Benz AG in Sindelfingen** (Content-Management S-/E-/C- and GLC -Class). Besides, I supported my former supervisor of the Bachelor-Thesis in **statistical analysis and data visualization** (with Stata) related to his current research paper. After finishing the Bachelor degree in Konstanz I returned to my Data Science journey (full-time) and completed several courses on Datacamp ([See Certificates](/certificates/)). I have acquired skills like **programming in Python and R, Machine Learning as well as Deep Learning techniques**. By my studies I am already **familiar with statistical modelling and testing** procedures.
 
 Now, I am happy to join the Erasmus University in Rotterdam to gain more specific knowledge in Data Science.
 
@@ -33,5 +32,5 @@ Python (Pandas, Numpy, Sklearn),  Data Cleaning, Data Visualization (Matplotlib,
 I am ready to apply my Data Science skills to solve **Marketing, Sales, Logistic or Product problems** full-time as Junior Data Scientist.
 
 ## Hobbies
-To balance the pressure of studying, I love to go for a run or visit the gym. Otherwise, I really love quiet places and surroundings to keep up with my current book.
+To balance the pressure of studying, I love to **go for a run or visit the gym**. Otherwise, I really love quiet places and surroundings to keep up with my current book.
 {: .text-justify}
