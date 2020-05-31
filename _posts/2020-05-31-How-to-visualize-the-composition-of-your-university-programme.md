@@ -24,7 +24,9 @@ When performing the analysis I often do only present the first few rows of the d
 The final result will be an **interactive visual representation** of the B.Sc. Economics in Konstanz at the end of this post.
 
 ## Let's start from scratch!
-
+<i class="far fa-sticky-note"></i> **Note:** Unless you are not a student of the University of Konstanz the first steps may highly vary. In this case you should examine the website with the web-developer tool first to find the relevant elements. If you need further consultation, do not hesitate to contact me!
+  {: .notice--info}
+  {: .text-justify}
 ### 1. Scrape some Data from the Web
 There are several libraries for web scraping available. The most common used in python are **BeautifulSoup and Selenium** because they are **to apply intuitively**.  
 Due to complexity issues of the exam table we want to scrape in this session I use a combination of both in this project. **Selenium unveils** the required information while **Beautifulsoup extracts** the HTML-code in this case.
