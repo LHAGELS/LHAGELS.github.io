@@ -78,10 +78,10 @@
 }
 
 .background_sidebar {
-  padding: 20px;
+  padding: 0.75em 1em 0.5em 0.75em;
   background-image: linear-gradient(268deg, #405f8f, #1c3050);
   border: 0.25px solid rgba(38, 57, 85, 1);
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 10px;
   margin-right:3em;
 
   @include breakpoint($large) {
@@ -146,8 +146,7 @@
   }
 
   img {
-    max-width: 215px;
-    border-radius: 1em;
+    border-radius: 7.5px;
     margin: auto;
     border: 0px solid white;
     // @include breakpoint($large) {
