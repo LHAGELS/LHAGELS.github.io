@@ -304,7 +304,7 @@ After the **previous data mining** the dataframe has a **shape of 26 x 8** [rows
 The most important information to answer this question is the **proportion of each study section** relative to the total credit points.
 The following code snippet prints the **composition of the programme** as follows:  
 
-    _"credits abs." (= "proportion in %") credits in "study section"_
+_"credits abs." (= "proportion in %") credits in "study section"_
 
 ```python
   #create a list of unique values
@@ -427,7 +427,7 @@ Since Squarify does not provide easy access to this type of set-up we switch to 
   fig.show()
 ```
 
-We yield the desired **interactive data visualization** that includes the module type, module section and the module itself:
+We yield the desired **interactive data visualization** that includes the modules as well as their types and sections:
 {% include posts_25.05.20_3_2_ects_by_modules.html %}
 Beyond this, you can think of including a further layer that reflect your grades in the treemap or plot your grades over time to explore whether your results are constant or vary over time.
 
