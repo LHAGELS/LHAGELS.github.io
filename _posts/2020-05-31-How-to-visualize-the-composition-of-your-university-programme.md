@@ -24,7 +24,6 @@ When performing the analysis I often do only present the first few rows of the d
 The final result will be an **interactive visual representation** of the B.Sc. Economics in Konstanz at the end of this post.
 
 ## Let's start from scratch!
-{% include important.html content="Unless you are not a student from the University of Konstanz the first steps do highly vary. In this case you should first examine the website with the web-developer tool and adjust the elements! If you need consultation in doing so, do not hesitate to contact me!" %}
 
 ### 1. Scrape some Data from the Web
 There are several libraries for web scraping available. The most common used in python are **BeautifulSoup and Selenium** because they are **to apply intuitively**.  
