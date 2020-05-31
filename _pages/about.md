@@ -4,9 +4,11 @@ permalink: /about/
 title: About
 author_profile: true
 classes: wide
-date: May 18, 2020
+date: May 31, 2020
 ---
-
+<figure style="width: 30%" class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about_1.png" alt="">
+</figure>
 ## My Background
 <figure style="width: 30%" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about_1.png" alt="">
