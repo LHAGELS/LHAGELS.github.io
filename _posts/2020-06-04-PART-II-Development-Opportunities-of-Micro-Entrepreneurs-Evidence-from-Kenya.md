@@ -27,7 +27,7 @@ The received results are put into the context of macroeconomic theory to take po
 
 <center>
   <figure style="width: 80%">
-    <img src="{{ site.url }}{{ sitebaseurl }}/assets/images/posts/04_06_20/figure2.png" alt="Difference in Profits between Business Sectors">
+    <img src="{{ site.url }}{{ sitebaseurl }}/assets/images/posts/04_06_20/table2.png" alt="Difference in Profits between Business Sectors">
   </figure>
 </center>
 
