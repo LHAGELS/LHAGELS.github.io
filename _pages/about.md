@@ -8,7 +8,7 @@ date: May 31, 2020
 ---
 
 ## My Background
-<figure style="width: 30%" class="align-right">
+<figure style="width: 40%" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about_1.png" alt="">
 </figure>
 {: .text-justify}
