@@ -11,6 +11,7 @@ date: May 31, 2020
 <figure style="width: 40%" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about_1.png" alt="">
 </figure>
+
 {: .text-justify}
 I was born and grew up in the near of Hamburg, Germany. After the **Abitur** in 2014 (A-levels) I did a **two-years apprenticeship** in whole- and foreign sale at GARPA - Garten- und Park Einrichtungen GmbH. In 2016 I moved to Konstanz to attend the **B.Sc. Economics at the University Konstanz**. During my studies I took part of the **Erasmus+ programme** and studied a semester abroad in Utrecht, Netherlands and completed my studies in the first half of 2020. I am prospective Master student at the **Erasmus University Rotterdam** starting my studies in the field of `Data Science & Marketing Analytics` in 2020.  
 
