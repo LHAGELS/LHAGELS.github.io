@@ -41,8 +41,8 @@ Table 1 reproduces baseline profits of micro-enterprises in each business sector
 
 ## 2.2 Cycling Profits among Business Sectors
 
-<figure style="width: 75%" class="align-middle">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/03_06_20/figure1.png" alt="">
+<figure style="width: 75%" class="center">
+  <img src="{{ site.url }}{{ sitecenterassets/images/posts/03_06_20/figure1.png" alt="">
 </figure>
 ![Micro-Enterprise Profits among Business Sectors](/assets/images/posts/03_06_20/figure1.png)
 
