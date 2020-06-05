@@ -42,8 +42,9 @@ Table 1 reproduces baseline profits of micro-enterprises in each business sector
 ## 2.2 Cycling Profits among Business Sectors
 
 <figure style="width: 75%" class="center">
-  <img src="{{ site.url }}{{ sitecenterassets/images/posts/03_06_20/figure1.png" alt="">
+  <img src="{{ site.url }}{{ sitebaseurl }}/assets/images/posts/03_06_20/figure1.png" alt="">
 </figure>
+
 ![Micro-Enterprise Profits among Business Sectors](/assets/images/posts/03_06_20/figure1.png)
 
 In the following section the average profits of each business sector are described to show off some evidence of economic cycles in Dandora, Kenya. Unfortunately the observed period only has a length of 17 months thus a delimitation of high and low economic cycles is only valid to a limited extent. Hence the follow-up waves in terms of months as "t ∈ {1,2,3,4,7,12,17}" . The economic cycle is assumed to “start” two months after baseline survey (wave 2) with low economic activity with increases in profits. Three months after baseline survey (wave 3 & 4) the economic activity somewhat stagnates seven months after baseline survey (wave 5) and reaches maximum profits and is determined as period of high economic activity. 12 months after baseline survey (wave 6) the economic activity dropped again which suggests this to be a low economic period. In wave 7 (17 months after baseline survey) is determined as a period with rising economic activity in the next economic cycle (See Figure 1).It is important to understand the dynamics of the treatments effects in the business sectors over time. The sample data of Dandora’s Micro-Enterprises is a suitable approximation of the economics activity of the whole country measured by the GDP of Kenya.
