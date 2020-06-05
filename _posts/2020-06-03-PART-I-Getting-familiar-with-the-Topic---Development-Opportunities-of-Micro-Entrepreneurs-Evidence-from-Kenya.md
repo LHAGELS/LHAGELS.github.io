@@ -1,5 +1,5 @@
 ---
-title: "PART I Getting familiar with the Topic - Development Opportunities of Micro-Entrepreneurs: Evidence from Kenya"
+title: "Part I.: Development Opportunities of Micro-Entrepreneurs: Evidence from Kenya"
 tags:
   - Policy development
   - BS Economics
@@ -54,4 +54,4 @@ In the following section the average profits of each business sector are describ
 
 Finally, we got an introduction to the topic and got familiar with the business as well as economic characteristics.
 
-Catch up with ANCOVA (ANalysis of COVAriances) and Logistic Regression that delivered the **results in [PART II](.......)** or skip this part to directly enter the **discussion and conclusion section in [PART III](.......)**.
+Catch up with ANCOVA (ANalysis of COVAriances) and Logistic Regression that delivered the **results in [part II.](.......)** or skip this part to directly enter the **discussion and conclusion section in [part III.](.......)**.
