@@ -23,7 +23,7 @@ excerpt: "In this series I summarize the main findings of my data analysis accor
 <blockquote>
 "Understanding the reason that these firms have low profits and why they generate so little employment is key for designing policy to improve the welfare of the urban poor."  
 (Brooks, Donovan & Johnson 2018: 197)
-</blockquote> 
+</blockquote>
 This paper aims to **shed light on differences between business sectors to investigate target audiences for specific development approaches**. Furthermore, it elaborates whether micro-enterprises of different business sectors vary in their **growth probabilities** and **profits** while receiving either class training or mentoring. Beyond it explains possible differences on the **macroeconomic level**. Therefore the research question is specified as follows:
 
 <blockquote>
@@ -61,5 +61,5 @@ In the following section the **average profits of each business sector** are des
 
 Finally, we got an introduction to the topic and got familiar with the business as well as economic characteristics. It is important to understand the dynamics of the treatment effects in the business sectors over time. Therefore the analysis in part II focusses on delimitations within treatment groups as well as business sectors.
 
-Catch up with ANCOVA (ANalysis of COVAriances) and Logistic Regression that deliver the **results in [part II](.......)** or skip this part to directly enter the **discussion and conclusion section in [part III](.......)**.
+Catch up with ANCOVA (ANalysis of COVAriances) and Logistic Regression that deliver the **results in [part II](https://lhagels.github.io/Part-II-Development-Opportunities-of-Micro-Entrepreneurs-Evidence-from-Kenya/)** or skip this part to directly enter the **discussion and conclusion section in [part III](.......)** where I discuss possible policy implications.
   {: .text-justify}
