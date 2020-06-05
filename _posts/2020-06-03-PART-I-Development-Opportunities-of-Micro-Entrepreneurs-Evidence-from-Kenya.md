@@ -7,9 +7,10 @@ tags:
   - Stata
   - Logistic Regression
   - Multivariate Regression
+  - Micro-Entrepreneurs
 date: June 3, 2020
 header:
-  teaser: /assets/images/thumbnails/Bachelor-Thesis.png
+  teaser: /assets/images/thumbnails/bachelor-thesis.png
 excerpt: "In this series I summarize the main findings of my data analysis according micro-entrepreneurs in Kenya"
 
 ---
