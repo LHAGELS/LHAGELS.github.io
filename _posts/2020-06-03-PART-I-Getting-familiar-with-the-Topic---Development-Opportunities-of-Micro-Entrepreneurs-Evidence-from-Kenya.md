@@ -29,7 +29,7 @@ To answer the research question an investigation of the gathered data during the
 
 # 2. Descriptive Statistics
 ## 2.1 Micro-Enterprises and Treatment Characteristics
-![Descriptive Statistics of Micro-Enterprises among Business Sectors](/assets/images/posts/03_06_20/Table_1.png)
+![Descriptive Statistics of Micro-Enterprises among Business Sectors](/assets/images/posts/03_06_20/table1.png)
 
 The sample includes 368 inexperienced, female business owners who participated in follow-up surveys that generated time series data of variables that may correlate with business performance. The field experiment was conducted from end of 2014 to April 2016 while the treatment period lasted one month in November 2014. For this micro-enterprises were randomly assigned into three groups.
 First mentorship, within this group each micro-entrepreneur is paired with an experienced mentor, who has been operating in the same business sector for at least 5 years or is older than 40 years. Second class training, formal business classes are provided to micro-entrepreneurs to improve knowledge in business practices. Third, the control group who receives neither.
@@ -39,7 +39,7 @@ Table 1 reproduces baseline profits of micro-enterprises in each business sector
   {: .notice--info}
 
 ## 2.2 Cycling Profits among Business Sectors
-![Micro-Enterprise Profits among Business Sectors](/assets/images/posts/03_06_20/Figure_1.png)
+![Micro-Enterprise Profits among Business Sectors](/assets/images/posts/03_06_20/figure1.png)
 In the following section the average profits of each business sector are described to show off some evidence of economic cycles in Dandora, Kenya. Unfortunately the observed period only has a length of 17 months thus a delimitation of high and low economic cycles is only valid to a limited extent. Hence the follow-up waves in terms of months as "t ∈ {1,2,3,4,7,12,17}" . The economic cycle is assumed to “start” two months after baseline survey (wave 2) with low economic activity with increases in profits. Three months after baseline survey (wave 3 & 4) the economic activity somewhat stagnates seven months after baseline survey (wave 5) and reaches maximum profits and is determined as period of high economic activity. 12 months after baseline survey (wave 6) the economic activity dropped again which suggests this to be a low economic period. In wave 7 (17 months after baseline survey) is determined as a period with rising economic activity in the next economic cycle (See Figure 1).It is important to understand the dynamics of the treatments effects in the business sectors over time. The sample data of Dandora’s Micro-Enterprises is a suitable approximation of the economics activity of the whole country measured by the GDP of Kenya.
 
 <i class="far fa-sticky-note"></i> **Note:** Evidence and further explanations are delivered in the full view!
