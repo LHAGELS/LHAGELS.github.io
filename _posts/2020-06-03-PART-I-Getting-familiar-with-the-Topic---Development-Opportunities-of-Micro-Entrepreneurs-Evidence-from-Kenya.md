@@ -16,14 +16,15 @@ excerpt: "In this series I summarize the main findings of my data analysis accor
   {: .text-justify}
 # 1. Introduction
 
-<i class="far fa-sticky-note"></i> **Note:** If you are interested in the full depth of this analysis as well as recent research visit the [portfolio](/portfolio/) section to view the full bachelor thesis including the Stata code.
+<i class="far fa-sticky-note"></i> **Note:** If you are interested in the full depth of this analysis as well as recent research visit the [portfolio](/portfolio/) section to view the full paper including the Stata code.
   {: .notice--info}
 
-_"Understanding the reason that these firms  have low profits and why they generate so little employment is key for designing policy to improve the welfare of the urban poor.”_ (Brooks, Donovan & Johnson 2018: 197)  
-This paper aims to shed light on differences between business sectors to investigate target audiences for specific development approaches. Furthermore it elaborates whether micro-enterprises of different business sectors vary in their growth probabilities and profits while receiving either class training or mentoring. Beyond it explains possible differences on the macroeconomic level. Therefore the research question is specified as follows:
+_"Understanding the reason that these firms have low profits and why they generate so little employment is key for designing policy to improve the welfare of the urban poor.”_ (Brooks, Donovan & Johnson 2018: 197)  
+This paper aims to **shed light on differences between business sectors to investigate target audiences for specific development approaches**. Furthermore, it elaborates whether micro-enterprises of different business sectors vary in their growth probabilities and profits while **receiving either class training or mentoring**. Beyond it explains possible differences on the **macroeconomic level**. Therefore the research question is specified as follows:
 
-Research Question:  
+<q>
 _To what extent do micro-enterprises of individual business sectors in developing countries benefit differently if they receive either class training or mentoring?_
+</q>
 
 To answer the research question an investigation of the gathered data during the development study conducted by Brooks et al. (2018) has been made. At the end of 2014, they assigned female micro-entrepreneurs from Kenya to groups that receive class training, mentoring or neither to elaborate differences in profits over the next 17 months after the treatment.
 
@@ -56,5 +57,5 @@ In the following section the average profits of each business sector are describ
 
 Finally, we got an introduction to the topic and got familiar with the business as well as economic characteristics.
 
-Catch up with ANCOVA (ANalysis of COVAriances) and Logistic Regression that delivered the **results in [part II](.......)** or skip this part to directly enter the **discussion and conclusion section in [part III](.......)**.
+Catch up with ANCOVA (ANalysis of COVAriances) and Logistic Regression that deliver the **results in [part II](.......)** or skip this part to directly enter the **discussion and conclusion section in [part III](.......)**.
   {: .text-justify}
