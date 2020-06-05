@@ -114,5 +114,5 @@ The growth probability of **mentees in the retail sector is equal to 62% in the 
 Finally, we analysed the data and got convenient knowledge about treatment groups and their profits in each business sector.  
 The first suggestion would be to aim the Street-Food sector when introducing development policies since they yield substantially high profits. But after investigating the growth rates of both Retail and Street-Food sector we find the **Street-Food sector only increasing in the short-run** thus the **"average growth rate"** might be **biased upwards**. When focussing the **"point growth rate"** we find the **Retail sector** to have a **higher growth rate than the Street-Food sector**. Therefore we conclude rather the **Retail sector to be stable** and therefore to be a great addressee of **development policies**.
 
-Lastly, we have to draw further conclusions from our analysis and discuss possible policy implications. Therefore, you should follow the last part of this series ([part II](.....)).
+Lastly, we have to draw further conclusions from our analysis and discuss possible policy implications. Therefore, you should follow finish this journey of this series in [part III](https://lhagels.github.io/Part-III-Development-Opportunities-of-Micro-Entrepreneurs-Evidence-from-Kenya/).
   {: .text-justify}
