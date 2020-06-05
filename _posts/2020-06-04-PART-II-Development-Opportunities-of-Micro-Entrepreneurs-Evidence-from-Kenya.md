@@ -13,11 +13,11 @@ header:
 excerpt: "In this series I summarize the main findings of my data analysis according micro-entrepreneurs in Kenya"
 
 ---
-# About Profits, Growth Rates and Elasticities
 
 Part II of this series addresses the results we calculate with help of ANCOVA and Logistic Regression if you have missed the introduction make sure to stay tuned first and jump right into [part I](https://lhagels.github.io/PART-I-Development-Opportunities-of-Micro-Entrepreneurs-Evidence-from-Kenya/)! It may ease to follow the analysis.
 
   {: .text-justify}
+# About Profits, Growth Rates and Elasticities
 
 ## 3. Results
 In this section certain approaches are conducted to elaborate differences among micro-enterprises. An ANCOVA Regression is conducted to determine the **profit deviations of both treatment groups from the control group**. I do only summarize the main findings in this post
