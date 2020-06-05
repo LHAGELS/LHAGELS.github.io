@@ -1,5 +1,5 @@
 ---
-title: "PART I Getting familiar with the Topic - Development Opportunities of Micro-Entrepreneurs: Evidence from Kenya""
+title: "PART I Getting familiar with the Topic - Development Opportunities of Micro-Entrepreneurs: Evidence from Kenya"
 tags:
   - Policy development
   - BS Economics
