@@ -13,7 +13,7 @@ header:
 excerpt: "In this series I summarize the main findings of my data analysis according micro-entrepreneurs in Kenya"
 
 ---
-
+  {: .text-justify}
 # 1. Introduction
 
 <i class="far fa-sticky-note"></i> **Note:** If you are interested in the full depth of this analysis as well as recent research visit the [portfolio](/portfolio/) section to view the full bachelor thesis including the Stata code.
@@ -51,3 +51,4 @@ In the following section the average profits of each business sector are describ
 Finally, we got an introduction to the topic and got familiar with the business as well as economic characteristics.
 
 Catch up with ANCOVA (ANalysis of COVAriances) and Logistic Regression that delivered the **results in [part II](.......)** or skip this part to directly enter the **discussion and conclusion section in [part III](.......)**.
+  {: .text-justify}
