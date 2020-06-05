@@ -8,6 +8,7 @@ tags:
   - Logistic Regression
   - Multivariate Regression
   - Micro-Entrepreneurs
+  
 date: June 4, 2020
 header:
   teaser: /assets/images/thumbnails/bachelor-thesis.png

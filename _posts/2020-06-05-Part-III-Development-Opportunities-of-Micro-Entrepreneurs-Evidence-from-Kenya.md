@@ -8,6 +8,7 @@ tags:
   - Logistic Regression
   - Multivariate Regression
   - Micro-Entrepreneurs
+  
 date: June 5, 2020
 header:
   teaser: /assets/images/thumbnails/bachelor-thesis.png
@@ -41,6 +42,6 @@ Recent literature investigated social learning in various contexts like mentorin
 
 Thank you for following my first series and the interest on my Bachelor Thesis submitted at the University of Konstanz!
 
-**ENJOY!:)**
+**ENJOY :)**
 
 {: .text-justify}
