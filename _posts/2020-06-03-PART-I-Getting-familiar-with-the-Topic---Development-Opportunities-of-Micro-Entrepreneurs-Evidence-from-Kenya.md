@@ -30,7 +30,7 @@ To answer the research question an investigation of the gathered data during the
 # 2. Descriptive Statistics
 ## 2.1 Micro-Enterprises and Treatment Characteristics
 <center>
-  <figure style="width: 75%">
+  <figure style="width: 85%">
     <img src="{{ site.url }}{{ sitebaseurl }}/assets/images/posts/03_06_20/table1.png" alt="Descriptive Statistics of Micro-Enterprises among Business Sectors">
   </figure>
 </center>
@@ -44,7 +44,7 @@ Table 1 reproduces baseline profits of micro-enterprises in each business sector
 
 ## 2.2 Cycling Profits among Business Sectors
 <center>
-  <figure style="width: 30%">
+  <figure style="width: 60%">
     <img src="{{ site.url }}{{ sitebaseurl }}/assets/images/posts/03_06_20/figure1.png" alt="Micro-Enterprise Profits among Business Sectors">
   </figure>
 </center>
