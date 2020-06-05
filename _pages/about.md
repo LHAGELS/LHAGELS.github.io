@@ -6,15 +6,15 @@ author_profile: true
 classes: wide
 date: May 31, 2020
 ---
+<div> align="justify">
 
 ## My Background
 <figure style="width: 40%" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about_1.png" alt="">
 </figure>
 
-<div> align="justify">
 I was born and grew up in the near of Hamburg, Germany. After the **Abitur** in 2014 (A-levels) I did a **two-years apprenticeship** in whole- and foreign sale at GARPA - Garten- und Park Einrichtungen GmbH. In 2016 I moved to Konstanz to attend the **B.Sc. Economics at the University Konstanz**. During my studies I took part of the **Erasmus+ programme** and studied a semester abroad in Utrecht, Netherlands. Now, I am prospective Master student at the **Erasmus University Rotterdam** starting my studies in the field of `Data Science & Marketing Analytics` in 2020.  
-</div>
+
 This is my personal blog to keep track of my projects and different **HOWTOs related to Data Science as well as my recent experiences**.
 
 ### My Transition to Data Science
@@ -37,4 +37,6 @@ I am ready to apply my Data Science skills to solve **Marketing, Sales, Logistic
 
 ## Hobbies
 To balance the pressure of studying, I love to **go for a run or visit the gym**. Otherwise, I really love quiet places and surroundings to keep up with my current book.
-{: .text-justify}
+
+
+</div>
