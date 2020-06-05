@@ -16,7 +16,7 @@ header:
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 
 ---
-
+{: .text-justify}
 In this blog post I am going to explain the **methodology of a data science project** with simplified data starting at **Web Scraping** a data table from a particular web page, over **data cleansing and manipulating** thus we end up with a user-friendly **visualization** of our data.
 
 When performing the analysis I often do only present the first few rows of the data to save some space. Furthermore, you may read the comments in the coding-section (indicated with **#**) to get a better understanding of the written code.
