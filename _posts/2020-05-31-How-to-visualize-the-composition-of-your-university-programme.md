@@ -26,8 +26,9 @@ The final result will be an **interactive visual representation** of the B.Sc. E
 ## Let's start from scratch!
 <i class="far fa-sticky-note"></i> **Note:** Unless you are not a student of the University of Konstanz the first steps may highly vary. In this case you should examine the website with the web-developer tool first to find the relevant elements. If you need further consultation, do not hesitate to contact me!
   {: .notice--info}
-  {: .text-justify}
+
 ### 1. Scrape some Data from the Web
+{: .text-justify}
 There are several libraries for web scraping available. The most common used in python are **BeautifulSoup and Selenium** because they are **to apply intuitively**.  
 Due to complexity issues of the exam table we want to scrape in this session I use a combination of both in this project. **Selenium unveils** the required information while **Beautifulsoup extracts** the HTML-code in this case.
 
@@ -65,12 +66,14 @@ Due to complexity issues of the exam table we want to scrape in this session I u
   driver.find_element_by_id("...id of element that expands the whole table").click()
 ```
 
+{: .text-justify}
 First, the algorithm opens the login page and continues entering the login details and "click" submit. Second, it navigates to the page that contains exam results and **expands all the root nodes to unveil all modules**. At this point we are able to **extract the desired HTML-code** from the web page.  
 The required information about the web page's elements can be found by the **web developer tool** of your browser. (_Check out the web for further explanation_)  
 
 ![Selenium Worksteps](/assets/videos/selenium-login-and-toggle.gif)
 
 ### 1.3 Find the Table of interest and extract the HTML Code with BeautifulSoup
+{: .text-justify}
 In the next step we need to **extract the unveiled information**. For this purpose we make use of the **BeautifulSoup** library to receive the HTML-code of the results table that ca be **found by its xpath**. The xpath is also provided by the web developer tool of your browser.
 The extracted HTML-code that contains unwrapped information is assigned to the variable _soup_expanded_.
 
@@ -85,6 +88,7 @@ The extracted HTML-code that contains unwrapped information is assigned to the v
 ```
 
 ### 1.4 Create a Pandas Dataframe
+{: .text-justify}
 At this point we scraped the data but **cannot process the information so far** since it is still in HTML-format. In order to perform data cleansing and manipulation to with the goal to visualize data, we **assign the HTML-code to a Pandas DataFrame**.
 
 ```python
@@ -100,6 +104,7 @@ At this point we scraped the data but **cannot process the information so far** 
   print(df["Bonus"].sum(), "of 180 credits")
 ```
 
+{: .text-justify}
 Finally, we receive a **cross-sectional data** table that provides **observations in rows** and different **variables in the columns** (e.g. Grade, Credits, Attempt, Module_nr). However, since we have some columns that are a bit messy, we are going to tide them up! The dataframe has a shape of **74x25 [rows x columns]**. I do not remember that I participated in that many exams! There may be a bug!!
 Further, when adding up all credits included in the data, we receive unbeatable **1193 credit points**.
 
@@ -107,6 +112,7 @@ Further, when adding up all credits included in the data, we receive unbeatable 
 
 ### 2. Wrangle Dangle Ding Dong!
 ### 2.1 Clean Data is good Data
+{: .text-justify}
 Our dataset is small thus it seems quite easy to be structured.
 We face several **problems**:
   1. Many **variables repeat information**  
@@ -116,6 +122,7 @@ We face several **problems**:
   3. Some modules cannot be distinguished from another
      (caused by the root node style of the original web table)
 
+{: .text-justify}
 The following code snippet solves the above mentioned problems. This process is **not universal** since the provided conditions may vary depending on whether a student did an internship or not. Furthermore, some want rather observe only passed modules than every module that has ever been attended.
 
 ```python
@@ -139,11 +146,14 @@ The following code snippet solves the above mentioned problems. This process is 
 ![df_clean.head()](/assets/images/posts/25_05_20/2_1_df.png)  
 ![df_shape](/assets/images/posts/25_05_20/2_1_after.png)
 
+{: .text-justify}
 The shape of our data has **reduced from 74x25 to 26x5** [rows x columns]. In addition the number of credit points **decreased from 1193 to 180** credits.  
 
+{: .text-justify}
 This seems to be much **more reliable!**
 
 ### 2.2 Rename Modules that cannot be distinguished from others
+{: .text-justify}
 During **doublechecking** our data after the recent changes, we notice three modules called "Anerkennung" that cannot be distinguished from each other. These are modules I have attended abroad. We should **rename these modules manually** since the scraping process was not able to receive the correct names in the automated process.
 
 ```python
@@ -158,6 +168,7 @@ During **doublechecking** our data after the recent changes, we notice three mod
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/2_2_abroad_correction.png)
 
 ### 2.3 Provide English Translations of the Modules
+{: .text-justify}
 We create a first list of the Module column and **zip it pairwise** with a second list including the English translations. The resulting object is a **German(keys)-English(values)** dictionary. Finally, we assign the English module names to a new column.
 
 ```python
@@ -201,6 +212,7 @@ We create a first list of the Module column and **zip it pairwise** with a secon
 ```
 
 ### 2.4 Sections Matter!
+{: .text-justify}
 It may be of interest to **classify the modules** in a certain study section. This offers deeper **insights into the curriculum**. Therefore, we write a dictionary with study sections as keys and lists of modules as values. **Each module list (value) is assigned to a certain section (key)**.
 
 ```python
@@ -248,10 +260,11 @@ It may be of interest to **classify the modules** in a certain study section. Th
                                      df_modules["Section"]
                                     )
 ```
-
+{: .text-justify}
 The "for-loop" searches for strings that are included in the values (lists) for each index of the dictionary. **If a certain module is included in the list of an index, the key of this index is assigned to a column "Sections"**. Otherwise, the column does not change at all.
 
 ### 2.5 Quantitative or Qualitative?
+{: .text-justify}
 Finally, universities distinguish between **qualitative and quantitative modules**. Since there is no identifier which type a module is assigned to we have to set up a list manually. It is important to work in the respective order of the modules in the dataset to obtain proper allocations. **Doublechecking is mandatory** to avoid typing mistakes!
 
 ```python
@@ -303,6 +316,7 @@ After the **previous data mining** the dataframe has a **shape of 26 x 8** [rows
 
 ### 3. Data Exploration / Data Mining
 ### 3.1 What is the Composition of the B.Sc. Economics in Konstanz?
+{: .text-justify}
 The most important information to answer this question is the **proportion of each study section** relative to the total credit points.
 The following code snippet prints the **composition of the programme** as follows:  
 
@@ -326,6 +340,7 @@ Output of the previous code:
 * 20.0 (= 11.1%) credits in Statistics
 
 ### 3.1.1 Seaborn's Barplot as visual Communication Tool
+{: .text-justify}
 As Data Scientists we are interested to **communicate user-friendly**. Therefore I decided to visualize the results in a barplot first since it **gives us very quick impressions** of the data. Moreover, Seaborn as well as Matplotlib deliver well formatted plots that can be drawn easily as well as intuitively.
 
 ```python
@@ -346,7 +361,7 @@ The barplot looks as follows:
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/3_1_barplot_credits_sections.png)
 
 ### 3.1.2 Squarify's Treemap as visual Communication Tool
-
+{: .text-justify}
 First, we introduce two lists. _credits_sec_sizes_ contains the absolute credit points per study section, whereas _credits_sec_labels_ serve as label data and contains the same information plus the name and relative fraction of each section.
 
 ```python
@@ -365,7 +380,7 @@ First, we introduce two lists. _credits_sec_sizes_ contains the absolute credit 
     percent = round(sum((df_modules["Credits"][df_modules["Section"] == i]) / sum(df_modules["Credits"]))*100, 1)
   credits_sec_labels.append(str(i) +": \n"+str(value)+ " credits" +"\n" +"("+str(percent) +"%"+")" )
 ```
-
+{: .text-justify}
 Next, we plot our data using the **Squarify** library and receive the following outcome:
 
 ```python
@@ -401,9 +416,11 @@ Finally, we go one step further and **include the type of modules** in our plot.
     print(value, "(=", percent, "%)", "credits in", i, "modules")
 ```
 
+{: .text-justify}
 The types have a division of approximately **2/3 qualitative** and **1/3 quantitative** modules:
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/3_2_division_types.png)
 
+{: .text-justify}
 It may be of interest for the audience to get as much information as possible from an image. Therefore we **expand the treemap by the module types**.
 Since Squarify does not provide easy access to this type of set-up we switch to the **Plotly** library:
 
@@ -427,6 +444,7 @@ Since Squarify does not provide easy access to this type of set-up we switch to 
   fig.show()
 ```
 
+{: .text-justify}
 We yield the desired **interactive data visualization** that includes the modules as well as their types and sections:
 {% include posts_25.05.20_3_2_ects_by_modules.html %}
 Beyond this, you can think of including a further layer that reflect your grades in the treemap or plot your grades over time to explore whether your results are constant or vary over time.

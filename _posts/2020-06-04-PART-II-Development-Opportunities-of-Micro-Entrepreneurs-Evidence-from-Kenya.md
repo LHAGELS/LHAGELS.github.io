@@ -16,11 +16,13 @@ excerpt: "In this series I summarize the main findings of my data analysis accor
 
 ---
 
+{: .text-justify}
 Part II of this series addresses the results we calculate with help of ANCOVA and Logistic Regression if you have missed the introduction make sure to stay tuned first and jump right into [part I](https://lhagels.github.io/PART-I-Development-Opportunities-of-Micro-Entrepreneurs-Evidence-from-Kenya/)! It may ease to follow the analysis.
 
-{: .text-justify}
+
 # About Profits, Growth Rates and Elasticities
 ## 3. Results
+{: .text-justify}
 In this section certain approaches are conducted to elaborate differences among micro-enterprises. An ANCOVA Regression is conducted to determine the **profit deviations of both treatment groups from the control group**. I do only summarize the main findings in this post
 
 <i class="far fa-sticky-note"></i> **Note:** Recall, if you are interested in the methodology such as statistical models and explanations as well as robustness checks view the full paper!
@@ -32,8 +34,8 @@ The received results are put into the **context of macroeconomic theory** to tak
 <i class="far fa-sticky-note"></i> **Note:** The coefficients determine the deviation from the control group.
   {: .notice--info}
 
-{: .text-justify}
 ### 3.1. Differences among Business Sectors within Treatments
+{: .text-justify}
 The data delivers slight evidence of ascending profits of the control, class and mentor treatment, respectively. Further the data suggests that **street-food micro-enterprises benefit particularly from mentoring**. Determinants and characteristics that differentiate this sector from others like **high competition** and the relevance of having a **unique market position** could be interpreted as **possible driver of this effect** as determined by Roy and Wheeler (2006).  
 According to Brooks et al. (2018), successful entrepreneurs deliver local information to mentees who therefore achieve a better market position in contrast to participants of class trainings offered by a local university. Micro-enterprises in the **service sector** are suggested to even **benefit negatively from a class treatment** since the sign of its coefficient is negative and significant at the 1% level. In the mentor treatment the sign is also negative but its profit mean settles around the same values as it does in the control group thus it cannot be interpreted as significantly different.
 
@@ -100,16 +102,16 @@ In other words, a good is defined as a luxury good if the consumption of this go
 In contrast, normal goods like basic foods have lower elasticities thus the consumer demand increased (_decreased_) by a lower degree during high economic activity (_low economic activity_).  
 Recent studies deliver evidence that suggests **high income elasticities of take-away food in developing countries as partial drivers of the sharp decline in profits of street-food micro-enterprises**. In contrast, **retailers** in Kenya experienced **declines by a lower degree since they supply basic food rather than take-away food**. As mentioned above basic food is characterised by a lower income elasticity thus consumers rather avoid the consumption of take-away food than the consumption of basic food.
 
-{: .text-justify}
 ### 3.3. Growth Probabilities at the End of one Economic Cycle
+{: .text-justify}
 **Logistic regression** is conducted to investigate differences in the likelihood of a grown profit among treatment groups. As examined previously an **economic cycle is suggested to be 12 months** in length.
 First, **“average growth”** is defined by the difference between the profits at baseline and the **average yield profits from wave 1 until wave 6**, this is equal to a period of 12 months after the treatment. Second, the same analysis is conducted again but narrowed in the definition of profit growth. Now, growth is determined by **"point growth"**. Thus it investigates the likelihood of **profit growth after exactly 12 months** instead of the average value within this period.
 
 <i class="far fa-sticky-note"></i> **Note:** Recall, if you are interested in the methodology such as statistical models used in this paper have a look at the full paper!
   {: .notice--info}
 
-{: .text-justify}
 ### 3.3.1. Overview of Probabilities
+{: .text-justify}
 Table 5 summarizes the likelihoods of groups within each sector. According to the “average” values, **mentees are most successful with exception of the mentees in the service sector** where no evidence of significant different probabilities has been found. Nearly **70% of mentees** who operate in the **street-food** sector record growths in **average profits** and therefore establish as the salient subgroup of micro-enterprises. **In contrast, this subgroup only reaches a probability of 22% with respect to the point approach**.
 The growth probability of **mentees in the retail sector is equal to 62% in the average-approach** while **53% of mentees still experience a growth in the point approach** (see above, street-food sector =22%). This provides evidence that the **retail sector indicates as stable even under circumstances where the otherwise strong street-food sector performs poorly**.
 

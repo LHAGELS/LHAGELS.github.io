@@ -16,7 +16,7 @@ excerpt: "In this series I summarize the main findings of my data analysis accor
 
 ---
 
-{: .text-justify}
+
 # Dive into the topic and get a first Impression!
 ## 1. Introduction
 
