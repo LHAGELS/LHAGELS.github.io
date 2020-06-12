@@ -17,8 +17,8 @@ excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 
 ---
 Table of Contents
-1. [ Scrape some Data from the Web ](### Scrape some Data from the Web)
-2. [ Wrangle Dangle Ding Dong! ](### 2. Wrangle Dangle Ding Dong!)
+1. [ Scrape some Data from the Web ](###Scrape some Data from the Web)
+2. [ Wrangle Dangle Ding Dong! ](###2. Wrangle Dangle Ding Dong!)
 3. [ Data Exploration / Data Mining ](### 3. Data Exploration / Data Mining)
 
 {: .text-justify}
