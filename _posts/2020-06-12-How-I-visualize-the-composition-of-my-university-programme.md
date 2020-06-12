@@ -1,5 +1,5 @@
 ---
-title: "How to Visualize the Composition of your University Programme in Python"
+title: "How I Visualize the Composition of my University Programme in Python"
 tags:
   - Web Scraping
   - Data Cleansing
@@ -10,7 +10,7 @@ tags:
   - BeautifulSoup
   - Python
 
-date: May 31, 2020
+date: June 12, 2020
 header:
   teaser: /assets/images/thumbnails/squarify_treemap.png
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
@@ -19,18 +19,18 @@ excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 {: .text-justify}
 In this blog post I am going to explain the **methodology of a data science project** with simplified data starting at **Web Scraping** a data table from a particular web page, over **data cleansing and manipulating** thus we end up with a user-friendly **visualization** of our data.
 
-When performing the analysis I often do only present the first few rows of the data to save some space. Furthermore, you may read the comments in the coding-section (indicated with **#**) to get a better understanding of the written code.
+When performing the analysis I often only present the first few rows of the data to save some space. Furthermore, you may read the comments in the coding-section (indicated with **#**) to get a better understanding of the written code.
 
 The final result will be an **interactive visual representation** of the B.Sc. Economics in Konstanz at the end of this post.
 
 ## Let's start from scratch!
-<i class="far fa-sticky-note"></i> **Note:** Unless you are not a student of the University of Konstanz the first steps may highly vary. In this case you should examine the website with the web-developer tool first to find the relevant elements. If you need further consultation, do not hesitate to contact me!
+<i class="far fa-sticky-note"></i> **Note:** Unless you are a student of the University of Konstanz the first steps may highly vary. In this case you should examine the website with the web-developer tool first to find the relevant elements. If you need further consultation, do not hesitate to contact me!
   {: .notice--info}
 
 ### 1. Scrape some Data from the Web
 {: .text-justify}
-There are several libraries for web scraping available. The most common used in python are **BeautifulSoup and Selenium** because they are **to apply intuitively**.  
-Due to complexity issues of the exam table we want to scrape in this session I use a combination of both in this project. **Selenium unveils** the required information while **Beautifulsoup extracts** the HTML-code in this case.
+There are several libraries for web scraping available. The most common used in Python are **BeautifulSoup and Selenium** because they are **intuitive to apply**.  
+Due to complexity issues of the exam table we want to scrape in this session I use a combination of both in this project. **Selenium unveils** the required information while **Beautifulsoup extracts** the HTML-code in this case. We urgently have to unveil the full information with help of Selenium! Otherwise we are not able to scrape the full table!
 
 ### 1.1 Set-up the Webdriver for your Browser
 ```python
@@ -67,14 +67,14 @@ Due to complexity issues of the exam table we want to scrape in this session I u
 ```
 
 {: .text-justify}
-First, the algorithm opens the login page and continues entering the login details and "click" submit. Second, it navigates to the page that contains exam results and **expands all the root nodes to unveil all modules**. At this point we are able to **extract the desired HTML-code** from the web page.  
+First, the algorithm opens the login page and continues entering the login details and "clicking" submit. Second, it navigates to the page that contains exam results and **expands all the root nodes to unveil all modules**. At this point we are able to **extract the desired HTML-code** from the web page.  
 The required information about the web page's elements can be found by the **web developer tool** of your browser. (_Check out the web for further explanation_)  
 
 ![Selenium Worksteps](/assets/videos/selenium-login-and-toggle.gif)
 
 ### 1.3 Find the Table of interest and extract the HTML Code with BeautifulSoup
 {: .text-justify}
-In the next step we need to **extract the unveiled information**. For this purpose we make use of the **BeautifulSoup** library to receive the HTML-code of the results table that ca be **found by its xpath**. The xpath is also provided by the web developer tool of your browser.
+In the next step we need to **extract the unveiled information**. For this purpose we make use of the **BeautifulSoup** library to receive the HTML-code of the results table that can be **found by its xpath**. The xpath is also provided by the web developer tool of your browser.
 The extracted HTML-code that contains unwrapped information is assigned to the variable _soup_expanded_.
 
 ```python
@@ -89,7 +89,7 @@ The extracted HTML-code that contains unwrapped information is assigned to the v
 
 ### 1.4 Create a Pandas Dataframe
 {: .text-justify}
-At this point we scraped the data but **cannot process the information so far** since it is still in HTML-format. In order to perform data cleansing and manipulation to with the goal to visualize data, we **assign the HTML-code to a Pandas DataFrame**.
+At this point we scraped the data but **cannot process the information so far** since it is still in HTML-format. In order to perform data cleansing and manipulation with the goal to visualize data, we **assign the HTML-code to a Pandas DataFrame**.
 
 ```python
   import pandas as pd
@@ -105,8 +105,8 @@ At this point we scraped the data but **cannot process the information so far** 
 ```
 
 {: .text-justify}
-Finally, we receive a **cross-sectional data** table that provides **observations in rows** and different **variables in the columns** (e.g. Grade, Credits, Attempt, Module_nr). However, since we have some columns that are a bit messy, we are going to tide them up! The dataframe has a shape of **74x25 [rows x columns]**. I do not remember that I participated in that many exams! There may be a bug!!
-Further, when adding up all credits included in the data, we receive unbeatable **1193 credit points**.
+Finally, we receive a **cross-sectional data** table that provides **observations in rows** and different **variables in the columns** (e.g. Grade, Credits, Attempt, Module_nr). However, since we have some columns that are a bit messy, we are going to tidy them up! The dataframe has a shape of **74x25 [rows x columns]**. I do not remember that I participated in that many exams! There may be a bug!!
+Further, when adding up all credits included in the data, we receive unrealistic **1193 credit points**.
 
 ![df.head()](/assets/images/posts/25_05_20/1_4_df.png)
 
@@ -123,7 +123,7 @@ We face several **problems**:
      (caused by the root node style of the original web table)
 
 {: .text-justify}
-The following code snippet solves the above mentioned problems. This process is **not universal** since the provided conditions may vary depending on whether a student did an internship or not. Furthermore, some want rather observe only passed modules than every module that has ever been attended.
+The following code snippet solves the above mentioned problems. This process is **not universal** since the provided conditions may vary depending on whether a student did an internship or not. Furthermore, some want rather observe only positive results (Grade 1.0 up to 4.0) than every module that has ever been attended.
 
 ```python
   #inspect columns and select the data
@@ -147,7 +147,7 @@ The following code snippet solves the above mentioned problems. This process is 
 ![df_shape](/assets/images/posts/25_05_20/2_1_after.png)
 
 {: .text-justify}
-The shape of our data has **reduced from 74x25 to 26x5** [rows x columns]. In addition the number of credit points **decreased from 1193 to 180** credits.  
+The shape of our data **reduced from 74x25 to 26x5** [rows x columns]. In addition the number of credit points which **decreased from 1193 to 180** credits.  
 
 {: .text-justify}
 This seems to be much **more reliable!**
@@ -447,7 +447,7 @@ Since Squarify does not provide easy access to this type of set-up we switch to 
 {: .text-justify}
 We yield the desired **interactive data visualization** that includes the modules as well as their types and sections:
 {% include posts_25.05.20_3_2_ects_by_modules.html %}
-Beyond this, you can think of including a further layer that reflect your grades in the treemap or plot your grades over time to explore whether your results are constant or vary over time.
+Beyond this, you can think of including a further layer that reflects your grades in the treemap or plot your grades over time to explore whether your results are constant or vary over time.
 
 Just **feel free** and **be creative**!
 
