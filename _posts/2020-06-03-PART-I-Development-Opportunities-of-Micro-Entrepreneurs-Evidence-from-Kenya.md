@@ -32,8 +32,9 @@ toc_label: "Table of Contents"
 (Brooks, Donovan & Johnson 2018: 197)
 </blockquote>
 {: .text-justify}
-This paper aims to **shed light on differences between business sectors to investigate target audiences for specific development approaches**. Furthermore, it elaborates whether micro-enterprises of different business sectors vary in their **growth probabilities** and **profits** while receiving either class training or mentoring. Beyond it explains possible differences on the **macroeconomic level**.  
-Therefore the research question is specified as follows:
+This paper aims to **shed light on differences between business sectors to investigate target audiences for specific development approaches**. Furthermore, it elaborates whether micro-enterprises of different business sectors vary in their **growth probabilities** and **profits** while receiving either class training or mentoring. Beyond it explains possible differences on the **macroeconomic level**.
+
+Research question:
 {: .text-justify}
 <blockquote>
 To what extent do micro-enterprises of individual business sectors in developing countries benefit differently if they receive either class training or mentoring?
