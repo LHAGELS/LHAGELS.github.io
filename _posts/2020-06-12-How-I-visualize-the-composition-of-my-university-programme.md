@@ -14,7 +14,9 @@ date: June 12, 2020
 header:
   teaser: /assets/images/thumbnails/squarify_treemap.png
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
-
+toc: true
+toc_sticky: true
+toc_label: "My Table of Contents"
 ---
 Table of Contents
 1. [ Scrape some Data from the Web ](###Scrape some Data from the Web)
