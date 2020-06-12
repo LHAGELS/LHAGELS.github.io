@@ -110,7 +110,6 @@
   }
 
   @include breakpoint($x-large) {
-    width: 60%;
     margin-right: -1 * $right-sidebar-width;
   }
 }
