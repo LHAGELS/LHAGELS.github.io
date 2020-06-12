@@ -18,11 +18,6 @@ toc: true
 toc_sticky: false
 toc_label: "Table of Contents"
 ---
-Table of Contents
-1. [ Scrape some Data from the Web ](###Scrape some Data from the Web)
-2. [ Wrangle Dangle Ding Dong! ](###2. Wrangle Dangle Ding Dong!)
-3. [ Data Exploration / Data Mining ](### 3. Data Exploration / Data Mining)
-
 {: .text-justify}
 In this blog post I am going to explain the **methodology of a data science project** with simplified data starting at **Web Scraping** a data table from a particular web page, over **data cleansing and manipulating** thus we end up with a user-friendly **visualization** of our data.
 
