@@ -20,7 +20,7 @@ excerpt: "In this series I summarize the main findings of my data analysis accor
 # Dive into the topic and get a first Impression!
 ## 1. Introduction
 
-<i class="far fa-sticky-note"></i> **Note:** If you are interested in the full depth of this analysis as well as recent research visit the [portfolio](/portfolio/) section to view the full paper including the Stata code.
+<i class="far fa-sticky-note"></i> **Note:** If you are interested in the full depth of this analysis as well as recent research check out the full paper [Development Opportunities of Micro-Entrepreneurs: Evidence from Kenya](/assets/docs/bachelor_thesis.pdf) including the Stata code.
   {: .notice--info}
 
 {: .text-justify}
