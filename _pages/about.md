@@ -37,7 +37,7 @@ Feel free to [contact me](mailto: Lucas.Hagelstein@gmail.com) or leave a message
 ### Keywords:
 
 {: .text-justify}
-Python (Pandas, Numpy, Sklearn),  Data Cleaning, Data Visualization (Matplotlib, Seaborn), SQL, Machine Learning (Linear Regression, Logistic Regression, ANCOVA Regression, Classification, Clustering etc.), Probability/Statistics, Deep Learning (Keras).
+Python (**Pandas, Numpy, Sklearn**),  Data Cleaning, Data Visualization (**Matplotlib, Seaborn**), SQL, Machine Learning (**Linear Regression, Logistic Regression, ANCOVA Regression, Classification, Clustering etc.**), Probability/Statistics , Deep Learning (**Keras**).
 
 ## Hobbies
 {: .text-justify}
