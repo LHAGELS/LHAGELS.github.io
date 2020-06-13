@@ -10,9 +10,9 @@ main:
     url: /academics/
   - title: <i class="fas fa-briefcase"></i> Portfolio
     url: /portfolio/
-  - title: "Resume"
+  - title: <i class="fas fa-user"></i> Resume
     url: /resume/
-  - title: "Certificates"
+  - title: <i class="fas fa-award"></i> Certificates
     url: /certificates/
-  - title: "Archive"
+  - title: <i class="fas fa-archive"></i> Archive
     url: /year-archive/
