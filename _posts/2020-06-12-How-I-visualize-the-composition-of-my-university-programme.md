@@ -447,7 +447,9 @@ Since Squarify does not provide easy access to this type of set-up we switch to 
 
 {: .text-justify}
 We yield the desired **interactive data visualization** that includes the modules as well as their types and sections:
+![ects_by_module](/assets/images/posts/25_05_20/3_2_ects_by_modules.png)
 {% include posts_25.05.20_3_2_ects_by_modules.html %}
+
 Beyond this, you can think of including a further layer that reflects your grades in the treemap or plot your grades over time to explore whether your results are constant or vary over time.
 
 Just **feel free** and **be creative**!
