@@ -2,13 +2,13 @@
 main:
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: <i class="fas fa-home"></i> "Home"
+  - title: <i class="fas fa-home"></i> Home
     url: /home/
-  - title: "About"
+  - title: <i class="far fa-address-card"></i> About
     url: /about/
-  - title: "Academics"
+  - title: <i class="fas fa-graduation-cap"></i> Academics
     url: /academics/
-  - title: "Portfolio"
+  - title: <i class="fas fa-briefcase"></i> Portfolio
     url: /portfolio/
   - title: "Resume"
     url: /resume/
