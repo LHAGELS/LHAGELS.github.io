@@ -28,7 +28,7 @@ The final result will be an **interactive visual representation** of the B.Sc. E
 <i class="far fa-sticky-note"></i> **Note:** Unless you are a student of the University of Konstanz the first steps may highly vary. In this case you should examine the website with the web-developer tool first to find the relevant elements. If you need further consultation, do not hesitate to contact me!
   {: .notice--info}
 
-## 1. Scrape some Data from the Web
+# 1. Scrape some Data from the Web
 {: .text-justify}
 There are several libraries for web scraping available. The most common used in Python are **BeautifulSoup and Selenium** because they are **intuitive to apply**.  
 Due to complexity issues of the exam table we want to scrape in this session I use a combination of both in this project. **Selenium unveils** the required information while **Beautifulsoup extracts** the HTML-code in this case. We urgently have to unveil the full information with help of Selenium! Otherwise we are not able to scrape the full table!
