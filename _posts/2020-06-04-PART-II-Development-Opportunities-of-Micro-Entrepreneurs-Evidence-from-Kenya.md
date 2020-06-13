@@ -33,7 +33,7 @@ Recall, if you are interested in the methodology such as statistical models and 
 {: .text-justify}
 The received results are put into the **context of macroeconomic theory** to take possible externalities into account. Lastly, growth probabilities are determined in two different approaches. This enhances to **define a prospective target audiences for development policies**.
 
-<i class="far fa-exclamation-circle fa-lg"></i> **Important:**  The regression coefficients determine the deviation from the control group.
+<i class="fas fa-exclamation-circle fa-lg"></i> **Important:**  The regression coefficients determine the deviation from the control group.
   {: .notice--warning}
 
 ## 3.1. Differences among Business Sectors within Treatments
