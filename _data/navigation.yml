@@ -4,13 +4,13 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: <i class="fas fa-home"></i> Home
     url: /home/
-  - title: <i class="far fa-user"></i> About
+  - title: <i class="fas fa-user"></i> About
     url: /about/
   - title: <i class="fas fa-graduation-cap"></i> Academics
     url: /academics/
   - title: <i class="fas fa-briefcase"></i> Portfolio
     url: /portfolio/
-  - title: <i class="fas fa-address-card"></i> Resume
+  - title: <i class="far fa-address-card"></i> Resume
     url: /resume/
   - title: <i class="fas fa-award"></i> Certificates
     url: /certificates/
