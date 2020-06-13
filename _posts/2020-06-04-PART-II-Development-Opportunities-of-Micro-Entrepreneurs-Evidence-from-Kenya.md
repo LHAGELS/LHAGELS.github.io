@@ -26,14 +26,14 @@ Part II of this series addresses the results we calculate with help of ANCOVA an
 {: .text-justify}
 In this section certain approaches are conducted to elaborate differences among micro-enterprises. An ANCOVA Regression is conducted to determine the **profit deviations of both treatment groups from the control group**. I do only summarize the main findings in this post
 
-<i class="fas fa-check-double fa-lg"></i> **Note:**  
+<i class="far fa-check-circle fa-lg"></i> **Note:**  
 Recall, if you are interested in the methodology such as statistical models and explanations as well as robustness checks view the [full paper](/assets/docs/bachelor_thesis.pdf)!
   {: .notice--success}
 
 {: .text-justify}
 The received results are put into the **context of macroeconomic theory** to take possible externalities into account. Lastly, growth probabilities are determined in two different approaches. This enhances to **define a prospective target audiences for development policies**.
 
-<i class="fas fa-exclamation-circle fa-lg"></i> **Note:**  The regression coefficients determine the deviation from the control group.
+<i class="far fa-exclamation-circle fa-lg"></i> **Important:**  The regression coefficients determine the deviation from the control group.
   {: .notice--warning}
 
 ## 3.1. Differences among Business Sectors within Treatments
@@ -109,7 +109,7 @@ Recent studies deliver evidence that suggests **high income elasticities of take
 **Logistic regression** is conducted to investigate differences in the likelihood of a grown profit among treatment groups. As examined previously an **economic cycle is suggested to be 12 months** in length.
 First, **“average growth”** is defined by the difference between the profits at baseline and the **average yield profits from wave 1 until wave 6**, this is equal to a period of 12 months after the treatment. Second, the same analysis is conducted again but narrowed in the definition of profit growth. Now, growth is determined by **"point growth"**. Thus it investigates the likelihood of **profit growth after exactly 12 months** instead of the average value within this period.
 
-<i class="fas fa-check-double fa-lg"></i> **Note:**  
+<i class="far fa-check-circle fa-lg"></i> **Note:**  
 Recall, if you are interested in the methodology such as statistical models used in this paper have a look at the [full paper](/assets/docs/bachelor_thesis.pdf)!
   {: .notice--success}
 
