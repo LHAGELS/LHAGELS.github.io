@@ -19,8 +19,6 @@ toc_label: "Dive into the topic and get a first Impression!"
 
 ---
 
-
-# Dive into the topic and get a first Impression!
 # 1. Introduction
 
 <i class="far fa-sticky-note"></i> **Note:** If you are interested in the full depth of this analysis as well as recent research check out the full paper [Development Opportunities of Micro-Entrepreneurs: Evidence from Kenya](/assets/docs/bachelor_thesis.pdf) including the Stata code.

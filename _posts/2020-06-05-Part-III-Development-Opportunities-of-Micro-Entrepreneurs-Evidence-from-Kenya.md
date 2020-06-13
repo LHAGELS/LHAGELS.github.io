@@ -21,8 +21,6 @@ toc_label: "Let's share our Wisdom with Policymakers!"
 {: .text-justify}
 Part III of this series provides the process of sharing the gained insights with the audience. If you missed any previous part I advise you to catch up in [part I](https://lhagels.github.io/PART-I-Development-Opportunities-of-Micro-Entrepreneurs-Evidence-from-Kenya/) or [part II](https://lhagels.github.io/Part-II-Development-Opportunities-of-Micro-Entrepreneurs-Evidence-from-Kenya/)!
 
-# Let's share our Wisdom with Policymakers!
-
 # 4. Discussion
 {: .text-justify}
 The preceded analysis of micro-enterprise profit variations in Kenya raises interest in some major topics that should affect policy development.

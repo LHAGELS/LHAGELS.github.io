@@ -25,7 +25,6 @@ When performing the analysis I often only present the first few rows of the data
 
 The final result will be an **interactive visual representation** of the B.Sc. Economics in Konstanz at the end of this post.
 
-# Let's start from scratch!
 <i class="far fa-sticky-note"></i> **Note:** Unless you are a student of the University of Konstanz the first steps may highly vary. In this case you should examine the website with the web-developer tool first to find the relevant elements. If you need further consultation, do not hesitate to contact me!
   {: .notice--info}
 
