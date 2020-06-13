@@ -453,8 +453,6 @@ We yield the desired **interactive data visualization** that includes the module
 
 ![ects_by_modules](/assets/images/posts/25_05_20/3_2_final_plot.png)
 
-{% include posts_25.05.20_3_2_ects_by_modules.html %}
-
 Beyond this, you can think of including a further layer that reflects your grades in the treemap or plot your grades over time to explore whether your results are constant or vary over time.
 
 Just **feel free** and **be creative**!
