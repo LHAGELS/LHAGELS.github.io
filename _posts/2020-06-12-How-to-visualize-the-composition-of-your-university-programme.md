@@ -449,8 +449,7 @@ Since Squarify does not provide easy access to this type of set-up we switch to 
 {: .text-justify}
 We yield the desired **interactive data visualization** that includes the modules as well as their types and sections:
 
-<i class="fas fa-check-double fa-lg"></i> **Note:**  
-[Click here to view the interactive plot!](/assets/images/posts/25_05_20/posts_25.05.20_3_2_ects_by_modules.html)
+<i class="fas fa-check-double fa-lg"></i> **Note:** [Click here to view the interactive plot!](/assets/images/posts/25_05_20/posts_25.05.20_3_2_ects_by_modules.html)
   {: .notice--success}
 
 ![ects_by_modules](/assets/images/posts/25_05_20/3_2_final_plot.png)
