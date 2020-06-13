@@ -25,7 +25,8 @@ When performing the analysis I often only present the first few rows of the data
 
 The final result will be an **interactive visual representation** of the B.Sc. Economics in Konstanz at the end of this post.
 
-<i class="fas fa-exclamation-circle fa-lg"></i>  **Important:** Unless you are a student of the University of Konstanz the first steps may highly vary. In this case you should examine the website with the web-developer tool first to find the relevant elements. If you need further consultation, do not hesitate to contact me!
+<i class="fas fa-exclamation-circle fa-lg"></i>  **Important:**  
+Unless you are a student of the University of Konstanz the first steps may highly vary. In this case you should examine the website with the web-developer tool first to find the relevant elements. If you need further consultation, do not hesitate to contact me!
   {: .notice--warning}
 
 # 1. Scrape some Data from the Web
@@ -448,7 +449,8 @@ Since Squarify does not provide easy access to this type of set-up we switch to 
 {: .text-justify}
 We yield the desired **interactive data visualization** that includes the modules as well as their types and sections:
 
-<i class="fas fa-check-double fa-lg"></i> **Note:** [Click here to view the interactive plot!](/assets/images/posts/25_05_20/posts_25.05.20_3_2_ects_by_modules.html)
+<i class="fas fa-check-double fa-lg"></i> **Note:**  
+[Click here to view the interactive plot!](/assets/images/posts/25_05_20/posts_25.05.20_3_2_ects_by_modules.html)
   {: .notice--success}
 
 ![ects_by_modules](/assets/images/posts/25_05_20/3_2_final_plot.png)
