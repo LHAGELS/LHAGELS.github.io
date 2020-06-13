@@ -16,7 +16,7 @@ header:
 excerpt: "A short introduction in Web Scraping and Data Visualization in Python"
 toc: true
 toc_sticky: false
-toc_label: "Table of Contents"
+toc_label: "Let's start from scratch!"
 ---
 {: .text-justify}
 In this blog post I am going to explain the **methodology of a data science project** with simplified data starting at **Web Scraping** a data table from a particular web page, over **data cleansing and manipulating** thus we end up with a user-friendly **visualization** of our data.

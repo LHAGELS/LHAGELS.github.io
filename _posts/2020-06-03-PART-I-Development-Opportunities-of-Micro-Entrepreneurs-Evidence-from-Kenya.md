@@ -15,13 +15,13 @@ header:
 excerpt: "In this series I summarize the main findings of my data analysis according micro-entrepreneurs in Kenya"
 toc: true
 toc_sticky: false
-toc_label: "Table of Contents"
+toc_label: "Dive into the topic and get a first Impression!"
 
 ---
 
 
 # Dive into the topic and get a first Impression!
-## 1. Introduction
+# 1. Introduction
 
 <i class="far fa-sticky-note"></i> **Note:** If you are interested in the full depth of this analysis as well as recent research check out the full paper [Development Opportunities of Micro-Entrepreneurs: Evidence from Kenya](/assets/docs/bachelor_thesis.pdf) including the Stata code.
   {: .notice--info}
@@ -43,8 +43,8 @@ To what extent do micro-enterprises of individual business sectors in developing
 {: .text-justify}
 To answer the research question an **investigation of the gathered data during the development study conducted by Brooks et al. (2018)** has been made. At the end of 2014, they assigned **female micro-entrepreneurs** from Kenya to groups that **receive class training, mentoring or neither** to elaborate differences in profits over the next 17 months after the treatment.
 
-## 2. Descriptive Statistics
-### 2.1 Micro-Enterprises and Treatment Characteristics
+# 2. Descriptive Statistics
+## 2.1 Micro-Enterprises and Treatment Characteristics
 <center>
   <figure style="width: 80%">
     <img src="{{ site.url }}{{ sitebaseurl }}/assets/images/posts/03_06_20/table1.png" alt="Descriptive Statistics of Micro-Enterprises among Business Sectors">

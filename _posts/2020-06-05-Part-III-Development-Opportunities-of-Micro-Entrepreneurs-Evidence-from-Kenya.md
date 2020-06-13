@@ -15,7 +15,7 @@ header:
 excerpt: "In this series I summarize the main findings of my data analysis according micro-entrepreneurs in Kenya"
 toc: true
 toc_sticky: false
-toc_label: "Table of Contents"
+toc_label: "Let's share our Wisdom with Policymakers!"
 
 ---
 {: .text-justify}
@@ -23,7 +23,7 @@ Part III of this series provides the process of sharing the gained insights with
 
 # Let's share our Wisdom with Policymakers!
 
-## 4. Discussion
+# 4. Discussion
 {: .text-justify}
 The preceded analysis of micro-enterprise profit variations in Kenya raises interest in some major topics that should affect policy development.
 Many women in developing countries have **problems to find work for wage**, are **forced to earn money** or simply try to **increase living standards** of their children. (World development report, 2012) Therefore a **distinction of women’s motivation** to start a micro-enterprise in developing countries should have been made. Sohn and Diez (2018) divided micro-enterprises into two groups: **necessity-driven** and **opportunity-driven**. Whereas necessity-driven entrepreneurs are more likely to operate in the informal sector.  
@@ -34,7 +34,7 @@ According to Pollin (2009) employment subsidies in the formal sector have **posi
 The dataset of Dandora offers similar results. The **service sector’s** chance to employ workers is equal to **51%** at an **exit rate after treatment of only 1.4%** whereas **retailers** only have a chance of **12%** to employ workers at an **exit rate of 4.3%**.  
 Regarding to further results, mentees in the street-food sector yield the highest profits followed by mentees in the retail sector. However, overall, the retail sector performs stable even under circumstances in which the otherwise strong street-food sector performs poorly, especially in low economic cycles. Therefore the **retail sector might be a suitable target group for approaches by the use of employment subsidies that may cause a pull effect for micro-enterprise vendors to shift from the informal to the formal sector**. As a result they may be faced with less constraints to **expand their business more sustainably**. In this context, the street-food sector might also be a suitable target group since major problems in this sector like lacks in storage possibilities and clean water access are closely associated with disadvantages of the informal sector.
 
-## 5. Conclusion
+# 5. Conclusion
 {: .text-justify}
 Finally, the paper adds some new insights to the existing literature of micro-enterprises in developing countries.
 Mentoring has high average treatment effects in the retail as well as in the street-food sector, while mentees in the service sector seem to benefit even negatively. However, the driver of this effect cannot be interpreted unambiguously thus further research should focus on this business sector to possibly validate the provided evidence by this paper regarding negative treatment effects in the service sector.  
