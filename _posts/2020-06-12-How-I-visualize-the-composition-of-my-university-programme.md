@@ -25,16 +25,16 @@ When performing the analysis I often only present the first few rows of the data
 
 The final result will be an **interactive visual representation** of the B.Sc. Economics in Konstanz at the end of this post.
 
-## Let's start from scratch!
+# Let's start from scratch!
 <i class="far fa-sticky-note"></i> **Note:** Unless you are a student of the University of Konstanz the first steps may highly vary. In this case you should examine the website with the web-developer tool first to find the relevant elements. If you need further consultation, do not hesitate to contact me!
   {: .notice--info}
 
-### 1. Scrape some Data from the Web
+## 1. Scrape some Data from the Web
 {: .text-justify}
 There are several libraries for web scraping available. The most common used in Python are **BeautifulSoup and Selenium** because they are **intuitive to apply**.  
 Due to complexity issues of the exam table we want to scrape in this session I use a combination of both in this project. **Selenium unveils** the required information while **Beautifulsoup extracts** the HTML-code in this case. We urgently have to unveil the full information with help of Selenium! Otherwise we are not able to scrape the full table!
 
-### 1.1 Set-up the Webdriver for your Browser
+## 1.1 Set-up the Webdriver for your Browser
 ```python
   #pip install bs4 selenium
   from selenium import webdriver
@@ -45,7 +45,7 @@ Due to complexity issues of the exam table we want to scrape in this session I u
   options.add_argument("--disable-setuid-sandbox")
 ```
 
-### 1.2 Login on the Website and Navigate to Exam Results
+## 1.2 Login on the Website and Navigate to Exam Results
 ```python
   driver = webdriver.Chrome("...path to you chromedriver.exe...", options=options)#
 
@@ -74,7 +74,7 @@ The required information about the web page's elements can be found by the **web
 
 ![Selenium Worksteps](/assets/videos/selenium-login-and-toggle.gif)
 
-### 1.3 Find the Table of interest and extract the HTML Code with BeautifulSoup
+## 1.3 Find the Table of interest and extract the HTML Code with BeautifulSoup
 {: .text-justify}
 In the next step we need to **extract the unveiled information**. For this purpose we make use of the **BeautifulSoup** library to receive the HTML-code of the results table that can be **found by its xpath**. The xpath is also provided by the web developer tool of your browser.
 The extracted HTML-code that contains unwrapped information is assigned to the variable _soup_expanded_.
@@ -89,7 +89,7 @@ The extracted HTML-code that contains unwrapped information is assigned to the v
   soup_expanded = BeautifulSoup(driver.page_source)
 ```
 
-### 1.4 Create a Pandas Dataframe
+## 1.4 Create a Pandas Dataframe
 {: .text-justify}
 At this point we scraped the data but **cannot process the information so far** since it is still in HTML-format. In order to perform data cleansing and manipulation with the goal to visualize data, we **assign the HTML-code to a Pandas DataFrame**.
 
@@ -112,8 +112,8 @@ Further, when adding up all credits included in the data, we receive unrealistic
 
 ![df.head()](/assets/images/posts/25_05_20/1_4_df.png)
 
-### 2. Wrangle Dangle Ding Dong!
-### 2.1 Clean Data is good Data
+# 2. Wrangle Dangle Ding Dong!
+## 2.1 Clean Data is good Data
 {: .text-justify}
 Our dataset is small thus it seems quite easy to be structured.
 We face several **problems**:
@@ -154,7 +154,7 @@ The shape of our data **reduced from 74x25 to 26x5** [rows x columns]. In additi
 {: .text-justify}
 This seems to be much **more reliable!**
 
-### 2.2 Rename Modules that cannot be distinguished from others
+## 2.2 Rename Modules that cannot be distinguished from others
 {: .text-justify}
 During **doublechecking** our data after the recent changes, we notice three modules called "Anerkennung" that cannot be distinguished from each other. These are modules I have attended abroad. We should **rename these modules manually** since the scraping process was not able to receive the correct names in the automated process.
 
@@ -169,7 +169,7 @@ During **doublechecking** our data after the recent changes, we notice three mod
 ```
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/2_2_abroad_correction.png)
 
-### 2.3 Provide English Translations of the Modules
+## 2.3 Provide English Translations of the Modules
 {: .text-justify}
 We create a first list of the Module column and **zip it pairwise** with a second list including the English translations. The resulting object is a **German(keys)-English(values)** dictionary. Finally, we assign the English module names to a new column.
 
@@ -213,7 +213,7 @@ We create a first list of the Module column and **zip it pairwise** with a secon
   df_modules["Module_eng"].replace(modules_dict, inplace=True)
 ```
 
-### 2.4 Sections Matter!
+## 2.4 Sections Matter!
 {: .text-justify}
 It may be of interest to **classify the modules** in a certain study section. This offers deeper **insights into the curriculum**. Therefore, we write a dictionary with study sections as keys and lists of modules as values. **Each module list (value) is assigned to a certain section (key)**.
 
@@ -265,7 +265,7 @@ It may be of interest to **classify the modules** in a certain study section. Th
 {: .text-justify}
 The "for-loop" searches for strings that are included in the values (lists) for each index of the dictionary. **If a certain module is included in the list of an index, the key of this index is assigned to a column "Sections"**. Otherwise, the column does not change at all.
 
-### 2.5 Quantitative or Qualitative?
+## 2.5 Quantitative or Qualitative?
 {: .text-justify}
 Finally, universities distinguish between **qualitative and quantitative modules**. Since there is no identifier which type a module is assigned to we have to set up a list manually. It is important to work in the respective order of the modules in the dataset to obtain proper allocations. **Doublechecking is mandatory** to avoid typing mistakes!
 
@@ -316,8 +316,8 @@ After the **previous data mining** the dataframe has a **shape of 26 x 8** [rows
 
 ![df_unique_modules.head()](/assets/images/posts/25_05_20/2_5_translate_sections_type.png)
 
-### 3. Data Exploration / Data Mining
-### 3.1 What is the Composition of the B.Sc. Economics in Konstanz?
+# 3. Data Exploration / Data Mining
+## 3.1 What is the Composition of the B.Sc. Economics in Konstanz?
 {: .text-justify}
 The most important information to answer this question is the **proportion of each study section** relative to the total credit points.
 The following code snippet prints the **composition of the programme** as follows:  
@@ -403,7 +403,7 @@ Next, we plot our data using the **Squarify** library and receive the following 
 
 {% include Squarify_Treemap.html %}
 
-### 3.2 Create an interactive Treemap of the Degree Composition
+## 3.2 Create an interactive Treemap of the Degree Composition
 
 Finally, we go one step further and **include the type of modules** in our plot. First we calculate the fraction of both **quantitative and qualitative modules**:
 
