@@ -23,7 +23,7 @@ In this blog post I am going to explain the **methodology of a data science proj
 
 When performing the analysis I often only present the first few rows of the data to save some space. Furthermore, you may read the comments in the coding-section (indicated with **#**) to get a better understanding of the written code.
 
-The final result will be an **interactive visual representation** of the B.Sc. Economics in Konstanz at the end of this post.
+The final result will be an **[interactive visual representation](/assets/images/posts/25_05_20/posts_25.05.20_3_2_ects_by_modules.html)** of the B.Sc. Economics in Konstanz.
 
 <i class="fas fa-exclamation-circle fa-lg"></i>  **Important:**  
 Unless you are a student of the University of Konstanz the first steps may highly vary. In this case you should examine the website with the web-developer tool first to find the relevant elements. If you need further consultation, do not hesitate to contact me!
